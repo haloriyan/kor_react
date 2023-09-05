@@ -1,0 +1,43 @@
+.Item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.ItemLeft {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ItemRight {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.Title {
+    font-size: 32px;
+    font-weight: 700;
+}
+.Circle {
+    width: 15px;
+    height: 15px;
+    background-color: #172c5690;
+    border-radius: 99px;
+}
+.VertLine {
+    width: 4px;
+    background-color: #172c5690;
+    margin: 10px 0px;
+}
+.Time {
+    margin-bottom: 10px;
+    color: #eb2f28;
+}
+.Description {
+    font-size: 14px;
+    color: #555;
+    line-height: 22px;
+    margin-top: 10px;
+}

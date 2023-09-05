@@ -1,0 +1,162 @@
+.Header {
+    position: fixed;
+    top: 0px;left: 0px;right: 0px;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px 1px #ddd;
+    /* background: linear-gradient(to left, #172c56 65%, #fff 95%); */
+    color: #172c56;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 40px;
+    z-index: 4;
+}
+.LogoWrapper {
+    width: 200px;
+    position: relative;
+}
+.Logo {
+    object-fit: cover;
+}
+.ChooseLangArea {
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: #eee;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.OptionItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.LanguageOptions {
+    position: absolute;
+    top: 100%;
+    background-color: #172c56;
+    color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.FlagIcon {
+    height: 30px;
+}
+
+.Navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 20px;
+    flex-grow: 1;
+    justify-content: center;
+}
+.NavItem {
+    padding: 30px 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #172c56;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    
+}
+.NavItemActive {
+    text-decoration: underline;
+}
+.NavigationMobile,.MenuToggle {
+    display: none;
+}
+.Navigation ul {
+    position: fixed;
+    background-color: #172c56;
+    border-radius: 12px;
+    top: -662px;
+    margin-left: -20px;
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.NavItem:focus ul,
+.NavItem:hover ul {
+    top: 50px;
+}
+.NavSubItem {
+    padding: 12px 35px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 480px) {
+    .Header {
+        /* background: linear-gradient(to left, #172c56 5%, #fff 65%); */
+        background-color: #fff;
+        gap: 20px;
+        padding: 0px 20px;
+    }
+    .Navigation {
+        display: none;
+    }
+    .MenuToggle {
+        display: block;
+        color: #172c56;
+    }
+    .NavigationMobile {
+        display: block;
+        position: fixed;
+        top: 52px;right: -140%;bottom: 0px;
+        transition: 0.4s;
+        width: 100%;
+        background-color: #fff;
+        padding-top: 80px;
+    }
+    .NavigationMobileActive {
+        right: 0%;
+    }
+    .NavItem {
+        color: #172c56;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 15px 20px;
+        font-size: 32px;
+        flex-wrap: wrap;
+    }
+    .NavSubItem {
+        font-size: 20px;
+        color: #172c5690;
+        text-decoration: none !important;
+        margin: 10px 0px;
+    }
+    .NavigationMobileActive .NavItem ul {
+        position: static;
+        width: 100%;
+        margin: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: none;
+    }
+    .NavItem:hover ul,
+    .NavItem:focus ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .LogoWrapper {
+        flex-grow: 1;
+    }
+    .MenuToggle {
+        padding: 10px;
+    }
+}

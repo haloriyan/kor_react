@@ -1,0 +1,49 @@
+.Label {
+    font-size: 12px;
+    color: #888;
+    margin-top: 20px;
+}
+.Wrapper {
+    background-color: #eee;
+}
+.Area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+.Area input,
+.Area textarea {
+    padding: 0px 10px;
+    display: flex;
+    flex-grow: 1;
+    border: none;
+    background: none;
+    font-size: 14px;
+    color: #252525;
+}
+.Area textarea {
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Area input:focus,
+.Area textarea:focus {
+    outline: none;
+}
+.BottomLine {
+    height: 2px;
+    background-color: #172c56;
+    width: 0%;
+    transition: 0.4s;
+}
+.Wrapper:has(input:focus) .BottomLine,
+.Wrapper:has(textarea:focus) .BottomLine {
+    width: 100%;
+}
+.IconArea {
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}

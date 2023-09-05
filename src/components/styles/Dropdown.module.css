@@ -1,0 +1,17 @@
+.DropdownArea {
+    position: relative;
+}
+.Box {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+.OptionArea {
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}

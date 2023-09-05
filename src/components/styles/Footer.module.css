@@ -1,0 +1,64 @@
+.Footer {
+    background-color: #ecf0f1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+}
+.FooterLogo {
+    width: 200px;
+}
+.FooterCenter {
+    flex-grow: 1;
+}
+.FooterRight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.RightItem {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc;
+    color: #777;
+    border-radius: 5px;
+    aspect-ratio: 1;
+    transition: 0.4s;
+}
+.RightItem:hover {
+    color: #fff;
+}
+.Facebook:hover {
+    background-color: #2196f3;
+}
+.Instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.Youtube:hover {
+    background-color: #e74c3c;
+}
+.Twitter:hover {
+    background-color: #1DA1F2;
+}
+
+@media (max-width: 480px) {
+    .Footer {
+        flex-direction: column;
+        padding: 25px;
+    }
+    
+    .FooterCenter,
+    .FooterRight { width: 100%; }
+
+    .FooterLogo {
+        width: auto;
+        height: 80px;
+    }
+}

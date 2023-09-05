@@ -1,0 +1,63 @@
+.Jumbo {
+    height: 400px;
+    position: relative;
+}
+.Background {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    filter: blur(2px);
+}
+.Content {
+    position: absolute;
+    top: 0px;left: 0px;right: 0px;bottom: 0px;
+    background-color: #2195f390;
+    color: #fff;
+    padding: 0px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.Separator {
+    width: 60px;
+    height: 3px;
+    background-color: #fff;
+    margin-top: 60px;
+}
+.Title {
+    font-size: 42px;
+    margin-top: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.ActionWrapper {
+    display: flex;
+    flex-direction: row;
+}
+.Action {
+    display: flex;
+    gap: 20px;
+    background-color: #ff5655;
+    padding: 15px 35px;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .Content {
+        padding: 0px 25px;
+    }
+    .Jumbo,.Background {
+        height: 250px;
+    }
+    .Separator { margin-top: 20px;margin-bottom: 20px; }
+    .Title {
+        font-size: 24px;
+    }
+}
