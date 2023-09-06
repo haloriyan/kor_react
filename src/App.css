@@ -8,11 +8,15 @@ body {
   position: absolute;
   top: 82px;left: 0px;right: 0px;
 }
+.wrapper {
+  padding: 50px;
+}
 
 @media (max-width: 480px) {
   .content {
     top: 55px;
   }
+  .wrapper { padding: 20px; }
   .hideOnMobile {
     display: none !important;
   }

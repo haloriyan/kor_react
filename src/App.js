@@ -4,6 +4,8 @@ import Home from "./Home";
 import Exhibition from "./KMTE";
 import BusinessMeeting from "./KMTM";
 import Program from "./Program";
+import Floorplan from "./kmte/Floorplan";
+import Rundown from "./kmte/Rundown";
 
 const App = () => {
 	return (
@@ -11,8 +13,11 @@ const App = () => {
 			<Routes>
 				<Route path="/" Component={Home} />
 				<Route path="/kmte" Component={Exhibition} />
+				<Route path="/kmte/floorplan" Component={Floorplan} />
+				<Route path="/kmte/rundown" Component={Rundown} />
 				<Route path="/kmtm" Component={BusinessMeeting} />
 				<Route path="/program" Component={Program} />
+				<Route path="/kmte/program" Component={Program} />
 				<Route path="/contact" Component={Contact} />
 			</Routes>
 		</BrowserRouter>

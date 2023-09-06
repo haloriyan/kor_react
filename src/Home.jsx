@@ -16,9 +16,8 @@ const Home = () => {
         <>
             <Header />
             <div className="content">
-                <img src="/images/slide_banner.jpeg" alt="Top Banner" style={{
+                <img src="/images/banner_5-2.jpeg" alt="Top Banner" style={{
                     width: '100%',
-                    aspectRatio: 16/9,
                     objectFit: 'cover'
                 }} />
                 {/* <SliderBanner
@@ -38,14 +37,14 @@ const Home = () => {
                     descriptionStyle={{fontSize: 15}}
                 />
 
-                <div className={styles.EventArea}>
+                {/* <div className={styles.EventArea}>
                     <a href="/kmtm" className={styles.EventItem}>
                         <img src="/images/kmtm-bg.jpeg" alt="KMTM" style={{width: '100%',borderRadius: 10}} />
                     </a>
                     <a href="/kmte" className={styles.EventItem}>
                         <img src="/images/kmte-bg.jpeg" alt="KMTE" style={{width: '100%',borderRadius: 10}} />
                     </a>
-                </div>
+                </div> */}
 
                 <Section
                     reversed={true}

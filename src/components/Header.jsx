@@ -1,6 +1,6 @@
 import '../App.css';
 import styles from "./styles/Header.module.css";
-import { BiChevronDown, BiMenu, BiChevronUp } from "react-icons/bi";
+import { BiChevronDown, BiMenu, BiChevronUp, BiCaretLeft, BiChevronLeft, BiChevronRight } from "react-icons/bi";
 import {Dropdown, Option} from "./Dropdown";
 import { useState, useEffect } from "react";
 import Lang from "./Lang";
@@ -37,17 +37,26 @@ const Header = ({active = ''}) => {
 
     return (
         <header className={styles.Header}>
-            <a href="/" className={styles.LogoWrapper}>
+            <a href="/" className={`${styles.LogoWrapper} ${styles.LogoDesktop}`}>
+                <img
+                    src={'/images/Logo_Inline.png'}
+                    height={50}
+                    width={'100%'}
+                    className={`${styles.Logo}`}
+                    alt="Logo"
+                />
+            </a>
+            <a href="/" className={`${styles.LogoWrapper} ${styles.LogoMobile}`}>
                 <img
                     src={'/images/logo_no_tagline.png'}
                     height={50}
                     width={150}
-                    className={styles.Logo}
+                    className={`${styles.Logo}`}
                     alt="Logo"
                 />
             </a>
 
-            <nav className={styles.Navigation}>
+            <nav className={styles.Navigation} style={{maxWidth: '50%'}}>
                 <a href="/" className={`${styles.NavItem} ${active === '' ? styles.NavItemActive : ''}`}>
                     HOME
                 </a>
@@ -59,7 +68,23 @@ const Header = ({active = ''}) => {
                             KMTM
                         </a>
                         <a href="/kmte" className={styles.NavSubItem}>
-                            KMTE
+                            <div style={{position: 'relative'}}>
+                                KMTE <BiChevronRight />
+                                <ul className={styles.SubSubMenu}>
+                                    <a href="/kmte">
+                                        Overview
+                                    </a>
+                                    <a href="/kmte/floorplan">
+                                        Floorplan
+                                    </a>
+                                    <a href="/kmte/rundown">
+                                        Rundown
+                                    </a>
+                                    <a href="/kmte/program">
+                                        Activity Program
+                                    </a>
+                                </ul>
+                            </div>
                         </a>
                     </ul>
                 </a>
@@ -88,6 +113,18 @@ const Header = ({active = ''}) => {
                         <a href="/kmte" className={styles.NavSubItem}>
                             KMTE
                         </a>
+                        <a href="/kmte" className={`${styles.NavSubItem} ${styles.SubSubItemMobile}`}>
+                            Overview
+                        </a>
+                        <a href="/kmte/floorplan" className={`${styles.NavSubItem} ${styles.SubSubItemMobile}`}>
+                            Floorplan
+                        </a>
+                        <a href="/kmte/rundown" className={`${styles.NavSubItem} ${styles.SubSubItemMobile}`}>
+                            Rundown
+                        </a>
+                        <a href="/kmte/program" className={`${styles.NavSubItem} ${styles.SubSubItemMobile}`}>
+                            Activity Program
+                        </a>
                     </ul>
                 </a>
                 {/* <a href="/about" className={`${styles.NavItem} ${active === 'about' ? styles.NavItemActive : ''}`}>
@@ -103,11 +140,10 @@ const Header = ({active = ''}) => {
 
             <div className={styles.LogoWrapper}>
                 <div className={styles.ChooseLangArea} id="ChooseLangArea" onClick={() => setShowLangOpt(!showLangOpt)}>
-                    <img 
-                        src={`/images/${sitelang}.png`} alt="Sitelang" 
-                        className={styles.FlagIcon}
-                    />
-                    <div style={{display: 'flex',flexGrow: 1}} className='hideOnMobile'><Lang ctx={sitelang} /></div>
+                    <div style={{display: 'flex',flexDirection: 'column',flexGrow: 1}}>
+                        <div className={styles.ChooseLangLabel}><Lang ctx='lang' /></div>
+                        <div style={{display: 'flex',flexGrow: 1}} className='hideOnMobile'><Lang ctx={sitelang} /></div>
+                    </div>
                     {
                         showLangOpt ? <BiChevronUp /> : <BiChevronDown />
                     }
@@ -117,18 +153,10 @@ const Header = ({active = ''}) => {
                     showLangOpt &&
                     <div className={styles.LanguageOptions} id="LanguageOptions">
                         <div className={styles.OptionItem} onClick={() => setLang('id')}>
-                            <img 
-                                src={`/images/id.png`} alt="ID" 
-                                className={styles.FlagIcon}
-                            />
-                            <div className='hideOnMobile'><Lang ctx="id" /></div>
+                            <div><Lang ctx="id" /></div>
                         </div>
                         <div className={styles.OptionItem} onClick={() => setLang('en')}>
-                            <img 
-                                src={`/images/en.png`} alt="EN" 
-                                className={styles.FlagIcon}
-                            />
-                            <div className="hideOnMobile"><Lang ctx="en" /></div>
+                            <div><Lang ctx="en" /></div>
                         </div>
                     </div>
                 }

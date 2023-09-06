@@ -1,6 +1,6 @@
 import { BiChevronRight, BiHome } from "react-icons/bi";
 import styles from "./styles/Jumbo.module.css";
-const Jumbo = ({title = 'Exhibition', action = null, breadcrumb = null, background = "/jumbo_background.jpg"}) => {
+const Jumbo = ({title = 'Exhibition', action = null, middleBreadcrumb = null, breadcrumb = null, background = "/jumbo_background.jpg"}) => {
     return (
         <div className={styles.Jumbo}>
             <img 
@@ -11,6 +11,13 @@ const Jumbo = ({title = 'Exhibition', action = null, breadcrumb = null, backgrou
                 <div className={styles.Navigation}>
                     <BiHome />
                     <BiChevronRight />
+                    {
+                        middleBreadcrumb !== null &&
+                        <>
+                            <div>{middleBreadcrumb}</div>
+                            <BiChevronRight />
+                        </>
+                    }
                     {
                         breadcrumb === null ? title : breadcrumb
                     }
