@@ -5,13 +5,12 @@ import Input from "./components/Input";
 import Jumbo from "./components/Jumbo";
 import { BiMap, BiLogoFacebook, BiLogoInstagram, BiLogoTwitter, BiLogoYoutube, BiCalendar } from "react-icons/bi";
 import Lang from "./components/Lang";
+import { useEffect } from "react";
 
 const Contact = () => {
-    
-    
-    // useEffect(() => {
-    //     setLang(localStorage.getItem('sitelang'))
-    // })
+    useEffect(() => {
+        document.title = "Contact Us - KMTF 2023"
+    }, [])
     return (
         <>
             <Header active="contact" />

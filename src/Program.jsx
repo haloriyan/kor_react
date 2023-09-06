@@ -3,8 +3,13 @@ import Footer from "./components/Footer";
 import Jumbo from "./components/Jumbo";
 import Section from "./components/Section";
 import Lang from "./components/Lang";
+import { useEffect } from "react";
 
 const Program = () => {
+    useEffect(() => {
+        document.title = "Program - KMTF 2023"
+    }, [])
+    
     return (
         <>
             <Header active="program" />

@@ -5,8 +5,13 @@ import Jumbo from "./components/Jumbo";
 import Section from "./components/Section";
 import styles from './styles/Home.module.css';
 import Lang from "./components/Lang";
+import { useEffect } from "react";
 
 const BusinessMeeting = () => {
+    useEffect(() => {
+        document.title = "KMTM - KMTF 2023"
+    }, [])
+    
     return (
         <>
             <Header active="exhibition" />

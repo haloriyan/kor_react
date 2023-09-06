@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Jumbo from "./components/Jumbo";
@@ -6,12 +6,15 @@ import Section from "./components/Section";
 import Lang from "./components/Lang";
 
 const Exhibition = () => {
+    useEffect(() => {
+        document.title = "KMTE - KMTF 2023"
+    }, [])
     return (
         <>
             <Header active="exhibition" />
             <div className="content">
                 {/* <Jumbo title="Korean Medical Tourism Exhibition" breadcrumb={'KMTE'} /> */}
-                <img src="/images/kmtm-bg.jpeg" alt="KMTM-bg" style={{
+                <img src="/images/kmte-bg.jpeg" alt="KMTE-bg" style={{
                     width: '100%'
                 }} />
                 <div style={{padding: 50}}>

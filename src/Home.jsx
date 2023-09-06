@@ -5,11 +5,15 @@ import styles from './styles/Home.module.css';
 import Section from "./components/Section";
 import { BiCalendar, BiMap } from "react-icons/bi";
 import Lang from "./components/Lang";
+import { useEffect } from "react";
 
 const Home = () => {
+    useEffect(() => {
+        document.title = "Korean Medical Tourism Festival 2023"
+    }, [])
+
     return (
         <>
-        cok
             <Header />
             <div className="content">
                 <img src="/images/slide_banner.jpeg" alt="Top Banner" style={{
