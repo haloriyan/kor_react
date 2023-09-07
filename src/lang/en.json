@@ -6,6 +6,8 @@
     "contact_us": "Contact Us",
     "meet_us": "Meet Us",
     "october": "October",
+    "saturday": "Saturday",
+    "sunday": "Minggu",
     "name": "Name",
     "email": "Email",
     "message": "Message",
@@ -29,6 +31,8 @@
 
     "kmtm_description": "Korean Medical Tourism Mart, offering services for beauty and health are featured at the Korea Medical Tourism Mart. Visitors have the chance to meet the seller 1-On-1 Business Meetings. If You are considering receiving medical attention or having cosmetic surgery in Korea.",
     "kmtm_title": "Where Will KMTM be Held?",
+    "time": "TIME",
+    "program": "PROGRAM",
 
     "las": "sd"
 }

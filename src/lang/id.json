@@ -6,6 +6,8 @@
     "contact_us": "Hubungi Kami",
     "meet_us": "Kunjungi Kami",
     "october": "Oktober",
+    "saturday": "Sabtu",
+    "sunday": "Minggu",
     "name": "Nama",
     "email": "Email",
     "message": "Pesan",
@@ -29,6 +31,9 @@
 
     "kmtm_description": "Korean Medical Tourism Mart, menawarkan layanan kecantikan dan kesehatan yang diselenggarakan pada Korea Medical Tourism Festival 2023. Pengunjung memiliki kesempatan untuk bertemu penjual secara 1-On-1 Business Meeting, jika Anda mempertimbangkan untuk mendapatkan perhatian medis atau berencana operasi kosmetik di Korea.",
     "kmtm_title": "Di mana KMTM akan diadakan?",
+
+    "time": "WAKTU",
+    "program": "PROGRAM",
 
     "last": "sd"
 }

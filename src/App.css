@@ -12,6 +12,17 @@ body {
   padding: 50px;
 }
 
+table {
+  width: 100%;
+}
+td,th {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0px;
+}
+th {
+  text-align: left;
+}
+
 @media (max-width: 480px) {
   .content {
     top: 55px;
