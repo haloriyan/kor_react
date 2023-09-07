@@ -95,7 +95,7 @@ const Header = ({active = ''}) => {
                     PROGRAM
                 </a>
                 <a href="/contact" className={`${styles.NavItem} ${active === 'contact' ? styles.NavItemActive : ''}`}>
-                    CONTACT
+                    CONTACT US
                 </a>
             </nav>
 
@@ -134,7 +134,7 @@ const Header = ({active = ''}) => {
                     <div style={{flexGrow: 1}}>PROGRAM</div>
                 </a>
                 <a href="/contact" className={`${styles.NavItem} ${active === 'contact' ? styles.NavItemActive : ''}`}>
-                    <div style={{flexGrow: 1}}>CONTACT</div>
+                    <div style={{flexGrow: 1}}>CONTACT US</div>
                 </a>
             </nav>
 

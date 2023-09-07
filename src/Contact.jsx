@@ -20,6 +20,19 @@ const Contact = () => {
                 <div className={styles.Wrapper}>
                     <div className={styles.Left}>
                         <div className={styles.Title}><Lang ctx="meet_us" /></div>
+                        <b>Alamat :</b>
+                        <div>Wisma GKBI 21th Fl. Suite 2102A</div>
+                        <div>Jl. Jend. Sudirman Kav.28 Jakarta 10210, Indonesia</div>
+
+                        <div style={{height: 30}}></div>
+                        <b>Jam Kerja :</b>
+                        <div>08:00 - 17:00</div>
+
+                        <div style={{height: 30}}></div>
+
+                        <b>Hari Kerja</b>
+                        <div>Senin - Jumat (kecuali hari libur nasional)</div>
+
                         <div className={styles.BoxBar}>
                             <div className={styles.BarIcon}>
                                 <BiMap size={20} />
@@ -46,6 +59,26 @@ const Contact = () => {
                     </div>
                     <div className={styles.Right}>
                         <div className={styles.Title}><Lang ctx="find_us" /></div>
+                        <b>No. Telepon :</b>
+                        <div>62-21-5785-3030</div>
+                        
+                        <div style={{height: 30}}></div>
+
+                        <b>No. Fax :</b>
+                        <div>62-21-5785-3029</div>
+
+                        <div style={{height: 30}}></div>
+
+                        <b>Email</b>
+                        <div>ktojakarta@knto.or.kr</div>
+
+                        <div style={{height: 30}}></div>
+
+                        <b>Website</b>
+                        <div>www.visitkorea.or.id</div>
+
+                        <div style={{height: 30}}></div>
+
                         <div style={{flexDirection: 'row',display: 'flex', gap: 20}}>
                             <a href="https://facebook.com/Koreatourismorganizationindonesiaoffice/" target="_blank" className={`${styles.SocialIcon} ${styles.Facebook}`}>
                                 <BiLogoFacebook />
