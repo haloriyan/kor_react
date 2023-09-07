@@ -74,6 +74,9 @@ const Header = ({active = ''}) => {
                                     <a href="/kmtm/rundown">
                                         Rundown
                                     </a>
+                                    <a href="/kmtm/floorplan">
+                                        Floorplan
+                                    </a>
                                 </ul>
                             </div>
                         </a>
@@ -123,8 +126,11 @@ const Header = ({active = ''}) => {
                         <a href="/kmte" className={`${styles.NavSubItem} ${styles.SubSubItemMobile}`}>
                             Overview
                         </a>
-                        <a href="/kmte/rundown" className={`${styles.NavSubItem} ${styles.SubSubItemMobile}`}>
+                        <a href="/kmtm/rundown" className={`${styles.NavSubItem} ${styles.SubSubItemMobile}`}>
                             Rundown
+                        </a>
+                        <a href="/kmtm/floorplan" className={`${styles.NavSubItem} ${styles.SubSubItemMobile}`}>
+                            Floorplan
                         </a>
                         <a href="/kmte" className={styles.NavSubItem}>
                             KMTE

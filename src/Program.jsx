@@ -17,7 +17,12 @@ const Program = () => {
                 <Jumbo title="Program" background="/images/kmte-bg.jpeg" />
 
                 <Section
-                    image={'/images/mcu.jpg'}
+                    image={'/images/scan-gift-mystery.png'}
+                    imageStyle={{
+                        aspectRatio: 1/1,
+                        width: 'auto',
+                        height: 250
+                    }}
                     title={'Scan Gift Mystery'}
                     description={
                         <Lang ctx="scan_gift_description" />
@@ -25,7 +30,12 @@ const Program = () => {
                     descriptionStyle={{fontSize: 16}}
                 />
                 <Section
-                    image={'/images/facial.jpg'}
+                    image={'/images/lucky-draw.png'}
+                    imageStyle={{
+                        width: 'auto',
+                        height: 250,
+                        aspectRatio: 1/1,
+                    }}
                     title={'Lucky Draw'}
                     description={
                         <Lang ctx="lucky_draw_description" />
@@ -34,7 +44,12 @@ const Program = () => {
                     reversed={true}
                 />
                 <Section
-                    image={'/images/GATE_1.jpg'}
+                    image={'/images/instagram-challenge.png'}
+                    imageStyle={{
+                        aspectRatio: 1/1,
+                        width: 'auto',
+                        height: 250
+                    }}
                     title={'Instagram Challenge'}
                     description={
                         <Lang ctx="instagram_challenge_description" />

@@ -27,11 +27,26 @@ const Exhibition = () => {
                         <Lang ctx="kmte_title" />
                     </h3>
 
+                    <div className="CardArea">
+                        <div className="CardItem">
+                            <img src="/images/scan-gift-mystery.png" alt="Scan Gift" className="CardImage" />
+                        </div>
+                        <div className="CardItem">
+                            <img src="/images/lucky-draw.png" alt="Lucky Draw" className="CardImage" />
+                        </div>
+                        <div className="CardItem">
+                            <img src="/images/instagram-challenge.png" alt="Instagram Challenge" className="CardImage" />
+                        </div>
+                        <div className="CardItem">
+                            <div className="CardTitle">AND MORE...</div>
+                        </div>
+                    </div>
+
                     <Section
                         title={'Talk Show'}
                         description={<Lang ctx="talkshow_description" />}
                         descriptionStyle={{fontSize: 20,lineHeight: '32px'}}
-                        image={'/images/ill.jpg'}
+                        image={'/images/talk-show.png'}
                         imageStyle={{
                             aspectRatio: 1/1,
                             width: 250,
@@ -55,7 +70,7 @@ const Exhibition = () => {
                         title={<Lang ctx="make_candle_title" />}
                         description={<Lang ctx="make_candle_description" />}
                         descriptionStyle={{fontSize: 20,lineHeight: '32px'}}
-                        image={'/images/candle.jpg'}
+                        image={'/images/make-your-own-candle.png'}
                         imageStyle={{
                             aspectRatio: 1/1,
                             width: 250,
@@ -67,7 +82,7 @@ const Exhibition = () => {
                         title={"What's Your Tea Type"}
                         description={"What’s Your Tea Type kiosk, Visitors can choose what’s your tea type recommendation in easy way. "}
                         descriptionStyle={{fontSize: 20,lineHeight: '32px'}}
-                        image={'/images/candle.jpg'}
+                        image={'/images/whats-your-tea-type.png'}
                         imageStyle={{
                             aspectRatio: 1/1,
                             width: 250,
@@ -79,7 +94,7 @@ const Exhibition = () => {
                         title={"K-Nail Art"}
                         description={"Experience and choose your own favorite colour for your pretty nails."}
                         descriptionStyle={{fontSize: 20,lineHeight: '32px'}}
-                        image={'/images/candle.jpg'}
+                        image={'/images/k-nail.png'}
                         imageStyle={{
                             aspectRatio: 1/1,
                             width: 250,
@@ -91,7 +106,7 @@ const Exhibition = () => {
                         title={"K-Make Over"}
                         description={"Experience the simple Korean looks from the Make Up Experts."}
                         descriptionStyle={{fontSize: 20,lineHeight: '32px'}}
-                        image={'/images/candle.jpg'}
+                        image={'/images/k-beauty.png'}
                         imageStyle={{
                             aspectRatio: 1/1,
                             width: 250,
@@ -103,7 +118,7 @@ const Exhibition = () => {
                         title={"Techno Area"}
                         description={"Experiences a fun games Throwing ball & Arrow using Virtual Reality at Techno Booth, get more points and get following exchange gifts. "}
                         descriptionStyle={{fontSize: 20,lineHeight: '32px'}}
-                        image={'/images/candle.jpg'}
+                        image={'/images/techno-booth.jpg'}
                         imageStyle={{
                             aspectRatio: 1/1,
                             width: 250,
