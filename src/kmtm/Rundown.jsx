@@ -12,7 +12,7 @@ const KMTMRundown = () => {
         <>
             <Header active="event" />
             <div className="content">
-                <Jumbo title="Rundown" middleBreadcrumb={'KMTM'} />
+                <Jumbo title="Rundown" middleBreadcrumb={'KMTM'} background="/images/kmtm-bg.jpeg" />
                 <div className="wrapper">
                     <h2><Lang ctx="friday" />, 27 <Lang ctx="october" /> 2023</h2>
                     <img src="/images/KMTM_Rundown.png" alt="KMTM Rundown" style={{width: '100%'}} />

@@ -15,7 +15,7 @@ const Rundown = () => {
         <>
             <Header active="event" />
             <div className="content">
-                <Jumbo title="Rundown" middleBreadcrumb={'KMTE'} />
+                <Jumbo title="Rundown" middleBreadcrumb={'KMTE'} background="/images/kmte-bg.jpeg" />
                 <div className="wrapper">
                     <div className={styles.tab}>
                         <div className={`${styles.TabItem} ${tab === 'day1' ? styles.TabActive : ''}`} onClick={() => setTab('day1')}>

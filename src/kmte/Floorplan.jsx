@@ -9,6 +9,7 @@ const Floorplan = () => {
             <Header active="event" />
             <div className="content">
                 <Jumbo
+                    background="/images/kmte-bg.jpeg"
                     middleBreadcrumb={'KMTE'}
                     title="Floorplan"
                 />

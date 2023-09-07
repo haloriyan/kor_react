@@ -15,7 +15,7 @@ const Contact = () => {
         <>
             <Header active="contact" />
             <div className="content">
-                <Jumbo title={<Lang ctx="contact_us" />} />
+                <Jumbo title={<Lang ctx="contact_us" />} background="/images/banner_5-2.jpeg" />
                 <div style={{height: 50}}></div>
                 <div className={styles.Wrapper}>
                     <div className={styles.Left}>

@@ -6,17 +6,18 @@
     width: 100%;
     height: 400px;
     object-fit: cover;
-    filter: blur(2px);
 }
 .Content {
     position: absolute;
     top: 0px;left: 0px;right: 0px;bottom: 0px;
-    background-color: #2195f390;
+    /* background-color: #2195f390; */
+    background: linear-gradient(to left, #ffffff00 10%, #2196f3);
     color: #fff;
     padding: 0px 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* align-items: flex-end; */
 }
 .Navigation {
     display: flex;

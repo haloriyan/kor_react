@@ -16,10 +16,10 @@ const BusinessMeeting = () => {
         <>
             <Header active="exhibition" />
             <div className="content">
-                {/* <Jumbo title="Korean Medical Tourism Mart" breadcrumb={'KMTM'} background="/images/kmtm-bg.jpeg" /> */}
-                <img src="/images/kmtm-bg.jpeg" alt="KMTM-bg" style={{
+                <Jumbo title="Korean Medical Tourism Mart" breadcrumb={'KMTM'} background="/images/kmtm-bg.jpeg" />
+                {/* <img src="/images/kmtm-bg.jpeg" alt="KMTM-bg" style={{
                     width: '100%'
-                }} />
+                }} /> */}
                 <div style={{padding: 50}}>
                     <Section
                         title={''}

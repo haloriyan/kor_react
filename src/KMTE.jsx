@@ -13,10 +13,7 @@ const Exhibition = () => {
         <>
             <Header active="exhibition" />
             <div className="content">
-                {/* <Jumbo title="Korean Medical Tourism Exhibition" breadcrumb={'KMTE'} /> */}
-                <img src="/images/kmte-bg.jpeg" alt="KMTE-bg" style={{
-                    width: '100%'
-                }} />
+                <Jumbo title="Korean Medical Tourism Exhibition" breadcrumb={'KMTE'} background="/images/kmte-bg.jpeg" />
                 <div style={{padding: 50}}>
                     <Section
                         title={''}
