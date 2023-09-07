@@ -6,6 +6,7 @@ import BusinessMeeting from "./KMTM";
 import Program from "./Program";
 import Floorplan from "./kmte/Floorplan";
 import Rundown from "./kmte/Rundown";
+import KMTMRundown from "./kmtm/Rundown";
 
 const App = () => {
 	return (
@@ -16,6 +17,7 @@ const App = () => {
 				<Route path="/kmte/floorplan" Component={Floorplan} />
 				<Route path="/kmte/rundown" Component={Rundown} />
 				<Route path="/kmtm" Component={BusinessMeeting} />
+				<Route path="/kmtm/rundown" Component={KMTMRundown} />
 				<Route path="/program" Component={Program} />
 				<Route path="/kmte/program" Component={Program} />
 				<Route path="/contact" Component={Contact} />
