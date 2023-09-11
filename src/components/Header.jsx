@@ -161,6 +161,7 @@ const Header = ({active = ''}) => {
             </nav>
 
             <div className={styles.LogoWrapper}>
+                <div style={{flexGrow: 1}}></div>
                 <div className={styles.ChooseLangArea} id="ChooseLangArea" onClick={() => setShowLangOpt(!showLangOpt)}>
                     <div style={{display: 'flex',flexDirection: 'column',flexGrow: 1}}>
                         <div className={styles.ChooseLangLabel}><Lang ctx='lang' /></div>
