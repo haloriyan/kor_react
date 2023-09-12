@@ -18,7 +18,7 @@ const Exhibition = () => {
                     <Section
                         title={''}
                         description={<Lang ctx="kmte_description" />}
-                        image={'/images/ill.jpg'}
+                        image={'/images/kto_booth.jpg'}
                         descriptionStyle={{fontSize: 16,lineHeight: '32px'}}
                         separator={false}
                     />
