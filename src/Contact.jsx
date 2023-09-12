@@ -15,7 +15,7 @@ const Contact = () => {
         <>
             <Header active="contact" />
             <div className="content">
-                <Jumbo title={<Lang ctx="contact_us" />} background="/images/banner_5-2.jpeg" />
+                <Jumbo background="/images/banner_5-2.jpeg" />
                 <div style={{height: 50}}></div>
                 <div className={styles.Wrapper}>
                     <div className={styles.Left}>
@@ -33,11 +33,11 @@ const Contact = () => {
                         <b>Hari Kerja</b>
                         <div>Senin - Jumat (kecuali hari libur nasional)</div>
 
-                        <div className={styles.BoxBar}>
+                        <div className={styles.BoxBar} style={{marginTop: 40}}>
                             <div className={styles.BarIcon}>
                                 <BiMap size={20} />
                             </div>
-                            <div className={styles.BarText}>Pakuwon Mall, Jl. Mayjend Jonosewojo No. 2, Surabaya</div>
+                            <div className={styles.BarText}>Jl. Mayjend Jonosewojo No. 2, Surabaya</div>
                         </div>
                         <div className={styles.BoxBar}>
                             <div className={styles.BarIcon}>

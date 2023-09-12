@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px 40px;
+    padding: 10px 40px;
     z-index: 4;
 }
 .LogoWrapper {
@@ -19,6 +19,7 @@
     position: relative;
 }
 .Logo {
+    height: 80px;
     object-fit: cover;
 }
 .LogoMobile { display: none; }
@@ -139,6 +140,9 @@
     }
     .LogoMobile {
         display: flex;
+    }
+    .Logo {
+        height: 50px;
     }
     .Header {
         /* background: linear-gradient(to left, #172c56 5%, #fff 65%); */

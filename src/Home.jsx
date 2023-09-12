@@ -55,19 +55,19 @@ const Home = () => {
                                 <div className={styles.BarIcon}>
                                     <BiMap size={20} />
                                 </div>
-                                <div className={styles.BarText}>Pakuwon Mall, Jl. Mayjend Jonosewojo No. 2, Surabaya</div>
+                                <div className={styles.BarText}>Jl. Mayjend Jonosewojo No. 2, Surabaya</div>
                             </div>
                             <div className={styles.BoxBar}>
                                 <div className={styles.BarIcon}>
                                     <BiCalendar size={20} />
                                 </div>
-                                <div className={styles.BarText}>27 Oct 2023 | Korean Medical Tourism Expo</div>
+                                <div className={styles.BarText}>28 - 29 Oct 2023 | Korean Medical Tourism Mart | The Westin Hotel</div>
                             </div>
                             <div className={styles.BoxBar}>
                                 <div className={styles.BarIcon}>
                                     <BiCalendar size={20} />
                                 </div>
-                                <div className={styles.BarText}>28 - 29 Oct 2023 | Korean Medical Tourism Mart</div>
+                                <div className={styles.BarText}>27 Oct 2023 | Korean Medical Tourism Expo | Pakuwon Mall</div>
                             </div>
                         </>
                     }

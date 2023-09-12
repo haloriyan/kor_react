@@ -16,7 +16,11 @@ const BusinessMeeting = () => {
         <>
             <Header active="exhibition" />
             <div className="content">
-                <Jumbo title="Korean Medical Tourism Mart" breadcrumb={'KMTM'} background="/images/kmtm-bg.jpeg" />
+                <Jumbo title={
+                    <div style={{textAlign: 'center'}}>
+                        <button className="JumboButton">Register</button>
+                    </div>
+                } breadcrumb={'KMTM'} background="/images/kmtm-bg.jpeg" />
                 {/* <img src="/images/kmtm-bg.jpeg" alt="KMTM-bg" style={{
                     width: '100%'
                 }} /> */}
@@ -24,12 +28,12 @@ const BusinessMeeting = () => {
                     <Section
                         title={''}
                         description={<Lang ctx="kmtm_description" />}
-                        image={'/images/ill.jpg'}
+                        image={'/images/1_on_1_meeting.jpg'}
                         descriptionStyle={{fontSize: 16,lineHeight: '32px'}}
                         separator={false}
                     />
 
-                    <h3 style={{textAlign: 'center',fontSize: 46,marginTop: 75,marginBottom: 75}}>
+                    <h3 style={{textAlign: 'center',fontSize: 46,marginTop: 20,marginBottom: 0}}>
                         <Lang ctx="kmtm_title" />
                     </h3>
 
@@ -42,7 +46,7 @@ const BusinessMeeting = () => {
                                     <div className={styles.BarIcon}>
                                         <BiMap size={20} />
                                     </div>
-                                    <div className={styles.BarText}>Pakuwon Mall, Jl. Mayjend Jonosewojo No. 2, Surabaya</div>
+                                    <div className={styles.BarText}>The Westin Hotel, Jl. Mayjend Jonosewojo No. 2, Surabaya</div>
                                 </div>
                                 <div className={styles.BoxBar}>
                                     <div className={styles.BarIcon}>

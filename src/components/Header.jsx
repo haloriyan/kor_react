@@ -39,7 +39,7 @@ const Header = ({active = ''}) => {
         <header className={styles.Header}>
             <a href="/" className={`${styles.LogoWrapper} ${styles.LogoDesktop}`}>
                 <img
-                    src={'/images/Logo_Inline.png'}
+                    src={'/images/logo_no_tagline.png'}
                     height={50}
                     width={'100%'}
                     className={`${styles.Logo}`}
@@ -70,9 +70,6 @@ const Header = ({active = ''}) => {
                                 <ul className={styles.SubSubMenu}>
                                     <a href="/kmtm">
                                         Overview
-                                    </a>
-                                    <a href="/kmtm/rundown">
-                                        Rundown
                                     </a>
                                     <a href="/kmtm/floorplan">
                                         Floorplan
@@ -125,9 +122,6 @@ const Header = ({active = ''}) => {
                         </a>
                         <a href="/kmte" className={`${styles.NavSubItem} ${styles.SubSubItemMobile}`}>
                             Overview
-                        </a>
-                        <a href="/kmtm/rundown" className={`${styles.NavSubItem} ${styles.SubSubItemMobile}`}>
-                            Rundown
                         </a>
                         <a href="/kmtm/floorplan" className={`${styles.NavSubItem} ${styles.SubSubItemMobile}`}>
                             Floorplan
