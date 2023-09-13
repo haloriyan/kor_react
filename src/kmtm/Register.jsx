@@ -48,7 +48,7 @@ const KMTMRegister = () => {
         <>
             <Header active="exhibition" />
             <div className="content">
-                <Jumbo background="/images/kmtm-bg.jpeg" />
+                <Jumbo background="/images/kmtm-bg.jpg" />
                 <div className="wrapper">
                     <form onSubmit={submit} className={styles.Form}>
                         <div className={styles.FormInner}>
