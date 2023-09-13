@@ -22,7 +22,7 @@ const BusinessMeeting = () => {
                             <button className="JumboButton">Register</button>
                         </a> */}
                     </div>
-                } breadcrumb={'KMTM'} background="/images/kmtm-bg.jpeg" />
+                } breadcrumb={'KMTM'} background="/images/kmtm-bg.jpg" />
                 {/* <img src="/images/kmtm-bg.jpeg" alt="KMTM-bg" style={{
                     width: '100%'
                 }} /> */}

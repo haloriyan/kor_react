@@ -28,14 +28,6 @@ const KMTMRegister = () => {
         }
     }, [siteLang]);
 
-    useEffect(() => {
-        if (message !== "") {
-            setTimeout(() => {
-                setMessage('');
-            }, 3500);
-        }
-    }, [message]);
-
     const submit = e => {
         axios.post(`https://app.kmtf2023.com/api/kmtm-register`, {
             name, email, phone, joinType, fromCompany,
@@ -68,10 +60,11 @@ const KMTMRegister = () => {
                             <select name="join_type" id="join_type" value={joinType} onChange={e => setJoinType(e.currentTarget.value)}>
                                 <option value="personal"><Lang ctx="personal" /></option>
                                 <option value="company"><Lang ctx="company" /></option>
+                                <option value="brand"><Lang ctx="brand" /></option>
                             </select>
 
                             {
-                                joinType === 'company' &&
+                                (joinType === 'company' || joinType === 'brand') &&
                                 <Input label={<Lang ctx="from_company" />} onInput={e => setFromCompany(e.currentTarget.value)} />
                             }
 

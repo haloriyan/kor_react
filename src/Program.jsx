@@ -14,7 +14,7 @@ const Program = () => {
         <>
             <Header active="program" />
             <div className="content">
-                <Jumbo background="/images/kmte-bg.jpeg" />
+                <Jumbo background="/images/kmte-bg.jpg" />
 
                 <Section
                     image={'/images/scan-gift-mystery.png'}

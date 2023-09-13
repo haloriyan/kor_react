@@ -16,7 +16,7 @@ const Home = () => {
         <>
             <Header />
             <div className="content">
-                <img src="/images/banner_5-2.jpeg" alt="Top Banner" style={{
+                <img src="/images/kmtf-bg.jpg" alt="Top Banner" style={{
                     width: '100%',
                     objectFit: 'cover'
                 }} />
