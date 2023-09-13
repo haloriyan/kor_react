@@ -12,7 +12,7 @@ const KMTMRegister = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
-    const [joinType, setJoinType] = useState('personal');
+    const [joinType, setJoinType] = useState('company');
     const [fromCompany, setFromCompany] = useState('');
     const [siteLang, setSiteLang] = useState(null);
     const [message, setMessage] = useState('');
