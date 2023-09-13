@@ -61,13 +61,13 @@ const Home = () => {
                                 <div className={styles.BarIcon}>
                                     <BiCalendar size={20} />
                                 </div>
-                                <div className={styles.BarText}>28 - 29 Oct 2023 | Korean Medical Tourism Mart | The Westin Hotel</div>
+                                <div className={styles.BarText}>27 Oct 2023 | Korean Medical Tourism Mart | The Westin Hotel</div>
                             </div>
                             <div className={styles.BoxBar}>
                                 <div className={styles.BarIcon}>
                                     <BiCalendar size={20} />
                                 </div>
-                                <div className={styles.BarText}>27 Oct 2023 | Korean Medical Tourism Expo | Pakuwon Mall</div>
+                                <div className={styles.BarText}>28 - 29 Oct 2023 | Korean Medical Tourism Expo | Grand Atrium Pakuwon Mall</div>
                             </div>
                         </>
                     }
