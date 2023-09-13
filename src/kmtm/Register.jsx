@@ -29,6 +29,9 @@ const KMTMRegister = () => {
     }, [siteLang]);
 
     const submit = e => {
+        if (name === "" || email === "" || phone === "") {
+            return false;
+        }
         axios.post(`https://app.kmtf2023.com/api/kmtm-register`, {
             name, email, phone, joinType, fromCompany,
             lang: siteLang
