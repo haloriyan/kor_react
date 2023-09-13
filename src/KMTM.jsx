@@ -18,7 +18,9 @@ const BusinessMeeting = () => {
             <div className="content">
                 <Jumbo title={
                     <div style={{textAlign: 'center'}}>
-                        <button className="JumboButton">Register</button>
+                        {/* <a href="/kmtm/register">
+                            <button className="JumboButton">Register</button>
+                        </a> */}
                     </div>
                 } breadcrumb={'KMTM'} background="/images/kmtm-bg.jpeg" />
                 {/* <img src="/images/kmtm-bg.jpeg" alt="KMTM-bg" style={{

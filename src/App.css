@@ -58,6 +58,16 @@ th {
   text-align: left;
 }
 
+select {
+  width: 100%;
+  padding: 0px 10px;
+  font-size: 14px;
+  height: 60px;
+  background-color: #eee;
+  border: none;
+  margin-top: 10px;
+}
+
 @media (max-width: 480px) {
   .content {
     top: 55px;

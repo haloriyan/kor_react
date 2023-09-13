@@ -1,0 +1,21 @@
+.Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Button {
+    width: 100%;
+    height: 60px;
+    background-color: #172c56;
+    border: none;
+    color: #fff;
+    margin-top: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+@media (max-width: 480px) {
+    .Form {
+        width: 100%;
+    }
+}
