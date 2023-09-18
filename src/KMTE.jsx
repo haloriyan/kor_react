@@ -4,16 +4,30 @@ import Header from "./components/Header";
 import Jumbo from "./components/Jumbo";
 import Section from "./components/Section";
 import Lang from "./components/Lang";
+import config from "./config";
 
 const Exhibition = () => {
     useEffect(() => {
-        document.title = "KMTE - KMTF 2023"
+        document.title = "KMTE - 2023 Korean Medical Tourism Festival"
     }, [])
     return (
         <>
             <Header active="exhibition" />
             <div className="content">
-                <Jumbo breadcrumb={'KMTE'} background="/images/kmte-bg.jpg" />
+                {/* <Jumbo breadcrumb={'KMTE'} background="/images/kmte-bg.jpg" /> */}
+                <Jumbo withNavigation={true} title={
+                    <>
+                        <div>Korean Medical Tourism Expo</div>
+                        {
+                            config.kmte_open &&
+                            <div style={{marginTop: 10}}>
+                                <a href="/kmte/register">
+                                    <button className="JumboButton">Register</button>
+                                </a>
+                            </div>
+                        }
+                    </>
+                } breadcrumb={'KMTM'} background="/images/Overlay.png" />
                 <div style={{padding: 50}}>
                     <Section
                         title={''}

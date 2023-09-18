@@ -9,23 +9,24 @@ import { useEffect } from "react";
 
 const BusinessMeeting = () => {
     useEffect(() => {
-        document.title = "KMTM - KMTF 2023"
+        document.title = "KMTM - 2023 Korean Medical Tourism Festival"
     }, [])
     
     return (
         <>
             <Header active="exhibition" />
             <div className="content">
-                <Jumbo title={
-                    <div style={{textAlign: 'center'}}>
-                        <a href="/kmtm/register">
-                            <button className="JumboButton">Register</button>
-                        </a>
-                    </div>
-                } breadcrumb={'KMTM'} background="/images/kmtm-bg.jpg" />
-                {/* <img src="/images/kmtm-bg.jpeg" alt="KMTM-bg" style={{
-                    width: '100%'
-                }} /> */}
+                <Jumbo withNavigation={true} title={
+                    <>
+                        <div>Korean Medical Tourism Mart</div>
+                        <div style={{marginTop: 10}}>
+                            <a href="/kmtm/register">
+                                <button className="JumboButton">Register</button>
+                            </a>
+                        </div>
+                    </>
+                } breadcrumb={'KMTM'} background="/images/Overlay.png" />
+                
                 <div style={{padding: 50}}>
                     <Section
                         title={''}

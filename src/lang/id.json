@@ -42,5 +42,8 @@
     "time": "WAKTU",
     "program": "PROGRAM",
 
+    "register_kmtm_button": "Mendaftar KMTM",
+    "register_kmte_button": "Mendaftar KMTE",
+
     "last": "sd"
 }

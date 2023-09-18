@@ -6,10 +6,11 @@ import Section from "./components/Section";
 import { BiCalendar, BiMap } from "react-icons/bi";
 import Lang from "./components/Lang";
 import { useEffect } from "react";
+import config from "./config";
 
 const Home = () => {
     useEffect(() => {
-        document.title = "Korean Medical Tourism Festival 2023"
+        document.title = "2023 Korean Medical Tourism Festival"
     }, [])
 
     return (
@@ -32,9 +33,22 @@ const Home = () => {
 
                 <Section
                     image={'/images/slide_banner.jpeg'}
-                    title={'Korean Medical Tourism Festival 2023'}
+                    title={'2023 Korean Medical Tourism Festival'}
                     description={<Lang ctx="kmtf_description" />}
                     descriptionStyle={{fontSize: 15}}
+                    action={
+                        <div className={styles.RegisterArea}>
+                            <a href="/kmtm/register" style={{flexGrow: config.kmte_open ? 1 : 0}} className={styles.RegisterButton} target="_blank">
+                                <Lang ctx="register_kmtm_button" />
+                            </a>
+                            {
+                                config.kmte_open &&
+                                <a href="#" className={styles.RegisterButton} target="_blank">
+                                    <Lang ctx="register_kmte_button" />
+                                </a>
+                            }
+                        </div>
+                    }
                 />
 
                 {/* <div className={styles.EventArea}>

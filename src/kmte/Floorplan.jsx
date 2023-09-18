@@ -5,17 +5,15 @@ import Footer from "../components/Footer";
 
 const Floorplan = () => {
     useEffect(() => {
-        document.title = "KMTE Floorplan - KMTF 2023"
+        document.title = "KMTE Floorplan - 2023 Korean Medical Tourism Festival"
     }, [])
     return (
         <>
             <Header active="event" />
             <div className="content">
-                <Jumbo
-                    background="/images/kmte-bg.jpeg"
-                    middleBreadcrumb={'KMTE'}
-                    title="Floorplan"
-                />
+                <Jumbo withNavigation={true} title={
+                    <div style={{textTransform: 'none'}}>KMTE Floorplan</div>
+                } middleBreadcrumb={'KMTE'} breadcrumb={'Floorplan'} background="/images/Overlay.png" />
 
                 <div className="wrapper" style={{textAlign: 'center'}}>
                     <img src="/kmte_floorplan.jpg" alt="KMTE Floorplan" style={{width: '100%'}} />

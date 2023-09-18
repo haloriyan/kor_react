@@ -41,5 +41,8 @@
     "time": "TIME",
     "program": "PROGRAM",
 
+    "register_kmtm_button": "Register to KMTM",
+    "register_kmte_button": "Register to KMTE",
+
     "las": "sd"
 }

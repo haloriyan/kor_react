@@ -18,7 +18,7 @@ const KMTMRegister = () => {
     const [message, setMessage] = useState('');
 
     useEffect(() => {
-        document.title = "Register to KMTM - Korean Medical Tourism Festival 2023";
+        document.title = "Register to KMTM - 2023 Korean Medical Tourism Festival";
     });
 
     useEffect(() => {

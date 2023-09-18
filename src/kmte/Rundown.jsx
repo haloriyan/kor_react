@@ -7,7 +7,7 @@ import styles from "../styles/Rundown.module.css";
 
 const Rundown = () => {
     useEffect(() => {
-        document.title = "Rundown KMTE - KMTF 2023";
+        document.title = "Rundown KMTE - 2023 Korean Medical Tourism Festival";
     }, []);
     const [tab, setTab] = useState('day1');
 
@@ -15,7 +15,7 @@ const Rundown = () => {
         <>
             <Header active="event" />
             <div className="content">
-                <Jumbo title="Rundown" middleBreadcrumb={'KMTE'} background="/images/kmte-bg.jpeg" />
+                <Jumbo title="Rundown" middleBreadcrumb={'KMTE'} background="/images/kmte-bg.jpg" />
                 <div className="wrapper">
                     <div className={styles.tab}>
                         <div className={`${styles.TabItem} ${tab === 'day1' ? styles.TabActive : ''}`} onClick={() => setTab('day1')}>

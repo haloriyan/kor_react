@@ -7,7 +7,7 @@ import { useEffect } from "react";
 
 const Program = () => {
     useEffect(() => {
-        document.title = "Program - KMTF 2023"
+        document.title = "Program - 2023 Korean Medical Tourism Festival"
     }, [])
     
     return (
