@@ -44,8 +44,8 @@ const KMTMRegister = () => {
     }, [siteLang]);
 
     const submit = e => {
-        // axios.post(`https://app.kmtf2023.com/api/kmtm-register`, {
-        axios.post(`http://127.0.0.1:8001/api/kmtm-register`, {
+        axios.post(`https://app.kmtf2023.com/api/kmtm-register`, {
+        // axios.post(`http://127.0.0.1:8001/api/kmtm-register`, {
             name, email, phone, joinType, fromCompany, answers, website, reference,
             lineOfBusiness, companyEstablished,
             lang: siteLang
