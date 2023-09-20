@@ -12,10 +12,14 @@
     "name": "Nama",
     "email": "Email",
     "phone": "No. Telepon",
+    "website": "Situs web / URL Profil SNS",
     "message": "Pesan",
     "personal": "B2C (Pribadi)",
     "company": "B2B (Perusahaan)",
-    "from_company": "Dari Perusahaan / Brand :",
+    "company_referer": "Referensi dari Perusahaan",
+    "from_company": "Dari Perusahaan / Brand",
+    "line_of_business": "Bidang / Lini Bisnis",
+    "established_year": "Tahun Berdiri",
     "join_type": "Mendaftar sebagai",
     "brand": "B2B (Brand)",
     "find_us": "Hubungi Kami!",
@@ -44,6 +48,105 @@
 
     "register_kmtm_button": "Mendaftar KMTM",
     "register_kmte_button": "Mendaftar KMTE",
+
+    "b2b_questions": [
+        {
+            "id": 1,
+            "required": true,
+            "parent_id": null,
+            "body": "Apakah perusahaan Anda pernah memberangkatkan pelanggan ke luar negeri untuk perawatan kesehatan / kecantikan?",
+            "type": "option",
+            "options": ["Ya", "Tidak"],
+            "answer": null
+        },
+        {
+            "id": 2,
+            "required": true,
+            "parent_id": 1,
+            "expected_parent_answer": "Ya",
+            "body": "Di negara mana biasanya perusahaan Anda memberangkatkan pelanggan?",
+            "type": "text",
+            "answer": null
+        },
+        {
+            "id": 3,
+            "required": true,
+            "parent_id": 1,
+            "expected_parent_answer": "Ya",
+            "body": "Berapa jumlah pelanggan yang telah perusahaan Anda berangkatkan ke luar negeri untuk perawatan kesehatan / kecantikan? (dalam 7 tahun terakhir)",
+            "type": "text",
+            "answer": null
+        },
+        {
+            "id": 4,
+            "required": true,
+            "parent_id": 1,
+            "expected_parent_answer": "Ya",
+            "body": "Jenis perawatan apa yang Anda tawarkan kepada pelanggan yang Anda berangkatkan ke luar negeri?",
+            "type": "text",
+            "answer": null
+        },
+        {
+            "id": 5,
+            "required": true,
+            "parent_id": 1,
+            "expected_parent_answer": "Tidak",
+            "body": "Mengapa Anda tertarik menghadiri event ini?",
+            "answer": null
+        },
+        { 
+            "id": 6,
+            "required": true,
+            "parent_id": null,
+            "body": "Apakah Anda tertarik untuk membangun jejaring / paket / atau memberangkatkan pelanggan menuju Korea untuk perawatan kesehatan / kecantikan?",
+            "type": "option",
+            "answer": null,
+            "options": ["Ya", "Tidak"]
+        },
+        {
+            "id": 7,
+            "required": true,
+            "parent_id": 6,
+            "expected_parent_answer": "Ya",
+            "body": "Bidang kesehatan Korea apa yang membuat Anda tertarik?",
+            "answer": null,
+            "type": "text"
+        },
+        {
+            "id": 8,
+            "required": true,
+            "parent_id": 6,
+            "expected_parent_answer": "Ya",
+            "body": "Apakah Anda memiliki target untuk event ini?",
+            "answer": null,
+            "type": "text"
+        },
+        {
+            "id": 9,
+            "required": true,
+            "parent_id": 6,
+            "expected_parent_answer": "Ya",
+            "body": "Apakah Anda memiliki target segmentasi untuk paket / jejaring yang akan Anda bangun dari event ini?",
+            "answer": null,
+            "type": "text"
+        },
+        {
+            "id": 10,
+            "required": true,
+            "parent_id": null,
+            "body": "Segmen pelanggan seperti apa yang menjadi target utama Anda?",
+            "answer": null,
+            "type": "text"
+        },
+        {
+            "id": 11,
+            "required": false,
+            "parent_id": null,
+            "body": "(Untuk travel agent) Paket seperti apa yang menjadi poin penjualan utama Anda?",
+            "answer": null,
+            "type": "text"
+        }
+    ],
 
     "last": "sd"
 }

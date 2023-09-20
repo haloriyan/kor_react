@@ -12,11 +12,15 @@
     "name": "Name",
     "email": "Email",
     "phone": "Phone Number",
+    "website": "Website / SNS Profile URL",
+    "company_referer": "Company referer",
     "message": "Message",
     "personal": "B2C (Personal)",
     "company": "B2B (Corporate)",
     "brand": "B2B (Brand)",
     "join_type": "Registering as",
+    "line_of_business": "Line of Business",
+    "established_year": "Established Year",
     "from_company": "From Company / Brand :",
     "find_us": "Contact Us!",
     "send": "Send",
@@ -38,11 +42,111 @@
 
     "kmtm_description": "Korean Medical Tourism Mart, offering services for beauty and health are featured at the Korea Medical Tourism Mart. Visitors have the chance to meet the seller 1-On-1 Business Meetings. If You are considering receiving medical attention or having cosmetic surgery in Korea.",
     "kmtm_title": "Where Will KMTM be Held?",
+    
     "time": "TIME",
     "program": "PROGRAM",
 
     "register_kmtm_button": "Register to KMTM",
     "register_kmte_button": "Register to KMTE",
+
+    "b2b_questions": [
+        {
+            "id": 1,
+            "required": true,
+            "parent_id": null,
+            "body": "Have you had any experience in sending customers abroad for medical / beauty treatment?",
+            "type": "option",
+            "options": ["Ya", "Tidak"],
+            "answer": null
+        },
+        {
+            "id": 2,
+            "required": true,
+            "parent_id": 1,
+            "expected_parent_answer": "Ya",
+            "body": "Where do you usually send the customer?",
+            "type": "text",
+            "answer": null
+        },
+        {
+            "id": 3,
+            "required": true,
+            "parent_id": 1,
+            "expected_parent_answer": "Ya",
+            "body": "Number of customer you have sent abroad for medical / beauty treatment? (for last 7 years)",
+            "type": "text",
+            "answer": null
+        },
+        {
+            "id": 4,
+            "required": true,
+            "parent_id": 1,
+            "expected_parent_answer": "Ya",
+            "body": "What kind of of treatment you have sent abroad?",
+            "type": "text",
+            "answer": null
+        },
+        {
+            "id": 5,
+            "required": true,
+            "parent_id": 1,
+            "expected_parent_answer": "Tidak",
+            "body": "Why are you interested in attending this event?",
+            "answer": null
+        },
+        { 
+            "id": 6,
+        "required": true,
+            "parent_id": null,
+            "body": "Are you interested in developing package / making network / or sending customer to Korea for medical / beauty treatment?",
+            "type": "option",
+            "answer": null,
+            "options": ["Ya", "Tidak"]
+        },
+        {
+            "id": 7,
+            "required": true,
+            "parent_id": 6,
+            "expected_parent_answer": "Ya",
+            "body": "What field of medical Korea are you interested in?",
+            "answer": null,
+            "type": "text"
+        },
+        {
+            "id": 8,
+            "required": true,
+            "parent_id": 6,
+            "expected_parent_answer": "Ya",
+            "body": "Do you have any target from this event?",
+            "answer": null,
+            "type": "text"
+        },
+        {
+            "id": 9,
+            "required": true,
+            "parent_id": 6,
+            "expected_parent_answer": "Ya",
+            "body": "Do you have any target segment for the package / network you will develop from this event?",
+            "answer": null,
+            "type": "text"
+        },
+        {
+            "id": 10,
+            "required": true,
+            "parent_id": null,
+            "body": "What segment of customer is your main target?",
+            "answer": null,
+            "type": "text"
+        },
+        {
+            "id": 11,
+            "required": false,
+            "parent_id": null,
+            "body": "(For travel agent) What kind of package is your main selling point?",
+            "answer": null,
+            "type": "text"
+        }
+    ],
 
     "las": "sd"
 }

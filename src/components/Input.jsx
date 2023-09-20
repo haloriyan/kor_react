@@ -1,6 +1,6 @@
 import styles from "./styles/Input.module.css";
 
-const Input = ({label = 'Label', icon = null, height = 60, type = 'text', multiline = false, placeholder, onInput}) => {
+const Input = ({label = 'Label', icon = null, height = 60, type = 'text', multiline = false, placeholder, onInput, required = true, value = null}) => {
     return (
         <>
             <div className={styles.Label}>{label}</div>
@@ -16,7 +16,7 @@ const Input = ({label = 'Label', icon = null, height = 60, type = 'text', multil
                         multiline ?
                             <textarea placeholder={placeholder} style={{height: 120}}></textarea>
                         :
-                        <input type={type} style={{height: height}} placeholder={placeholder} onInput={onInput} />
+                        <input type={type} style={{height: height}} placeholder={placeholder} onInput={onInput} required={required} value={value} />
                     }
                 </div>
 
