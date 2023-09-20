@@ -11,15 +11,15 @@ import lang from "../lang";
 import Radio from "../components/Radio";
 
 const KMTMRegister = () => {
-    const [name, setName] = useState('Tony Stark');
-    const [email, setEmail] = useState('tony@starkindustries.com');
-    const [phone, setPhone] = useState('085159772902');
-    const [website, setWebsite] = useState('https://tonystark.com');
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
+    const [website, setWebsite] = useState('');
     const [reference, setReference] = useState('');
     const [joinType, setJoinType] = useState('company');
-    const [fromCompany, setFromCompany] = useState('Stark Industries');
-    const [lineOfBusiness, setLineOfBusiness] = useState('Tech & Military');
-    const [companyEstablished, setCompanyEstablished] = useState('1975');
+    const [fromCompany, setFromCompany] = useState('');
+    const [lineOfBusiness, setLineOfBusiness] = useState('');
+    const [companyEstablished, setCompanyEstablished] = useState('');
     const [siteLang, setSiteLang] = useState(null);
     const [message, setMessage] = useState('');
     const [questions, setQuestions] = useState(null);
