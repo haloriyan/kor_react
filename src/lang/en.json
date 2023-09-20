@@ -56,14 +56,14 @@
             "parent_id": null,
             "body": "Have you had any experience in sending customers abroad for medical / beauty treatment?",
             "type": "option",
-            "options": ["Ya", "Tidak"],
+            "options": ["Yes", "No"],
             "answer": null
         },
         {
             "id": 2,
             "required": true,
             "parent_id": 1,
-            "expected_parent_answer": "Ya",
+            "expected_parent_answer": "Yes",
             "body": "Where do you usually send the customer?",
             "type": "text",
             "answer": null
@@ -72,7 +72,7 @@
             "id": 3,
             "required": true,
             "parent_id": 1,
-            "expected_parent_answer": "Ya",
+            "expected_parent_answer": "Yes",
             "body": "Number of customer you have sent abroad for medical / beauty treatment? (for last 7 years)",
             "type": "text",
             "answer": null
@@ -81,7 +81,7 @@
             "id": 4,
             "required": true,
             "parent_id": 1,
-            "expected_parent_answer": "Ya",
+            "expected_parent_answer": "Yes",
             "body": "What kind of of treatment you have sent abroad?",
             "type": "text",
             "answer": null
@@ -90,7 +90,7 @@
             "id": 5,
             "required": true,
             "parent_id": 1,
-            "expected_parent_answer": "Tidak",
+            "expected_parent_answer": "No",
             "body": "Why are you interested in attending this event?",
             "answer": null
         },
@@ -101,13 +101,13 @@
             "body": "Are you interested in developing package / making network / or sending customer to Korea for medical / beauty treatment?",
             "type": "option",
             "answer": null,
-            "options": ["Ya", "Tidak"]
+            "options": ["Yes", "No"]
         },
         {
             "id": 7,
             "required": true,
             "parent_id": 6,
-            "expected_parent_answer": "Ya",
+            "expected_parent_answer": "Yes",
             "body": "What field of medical Korea are you interested in?",
             "answer": null,
             "type": "text"
@@ -116,7 +116,7 @@
             "id": 8,
             "required": true,
             "parent_id": 6,
-            "expected_parent_answer": "Ya",
+            "expected_parent_answer": "Yes",
             "body": "Do you have any target from this event?",
             "answer": null,
             "type": "text"
@@ -125,7 +125,7 @@
             "id": 9,
             "required": true,
             "parent_id": 6,
-            "expected_parent_answer": "Ya",
+            "expected_parent_answer": "Yes",
             "body": "Do you have any target segment for the package / network you will develop from this event?",
             "answer": null,
             "type": "text"
