@@ -20,7 +20,7 @@ const Contact = () => {
                 <div className={styles.Wrapper}>
                     <div className={styles.Left}>
                         <div className={styles.Title}><Lang ctx="meet_us" /></div>
-                        <b>Alamat :</b>
+                        <b><Lang ctx="address" /></b>
                         <div>Wisma GKBI 21th Fl. Suite 2102A</div>
                         <div>Jl. Jend. Sudirman Kav.28 Jakarta 10210, Indonesia</div>
 
@@ -30,10 +30,10 @@ const Contact = () => {
 
                         <div style={{height: 30}}></div>
 
-                        <b>Hari Kerja</b>
-                        <div>Senin - Jumat (kecuali hari libur nasional)</div>
+                        <b><Lang ctx="work_day" /></b>
+                        <div><Lang ctx="work_day_value" /></div>
 
-                        <div className={styles.BoxBar} style={{marginTop: 40}}>
+                        {/* <div className={styles.BoxBar} style={{marginTop: 40}}>
                             <div className={styles.BarIcon}>
                                 <BiMap size={20} />
                             </div>
@@ -44,7 +44,7 @@ const Contact = () => {
                                 <BiCalendar size={20} />
                             </div>
                             <div className={styles.BarText}>27 - 29 <Lang ctx="october" /> 2023</div>
-                        </div>
+                        </div> */}
                         {/* <form action="#">
                             <Input label={<Lang ctx="name" />} icon={<BiUser />} />
                             <Input label={<Lang ctx="email" />} icon={<BiEnvelope />} />
@@ -59,7 +59,7 @@ const Contact = () => {
                     </div>
                     <div className={styles.Right}>
                         <div className={styles.Title}><Lang ctx="find_us" /></div>
-                        <b>No. Telepon :</b>
+                        <b><Lang ctx="phone" /> :</b>
                         <div>62-21-5785-3030</div>
                         
                         <div style={{height: 30}}></div>
