@@ -5,22 +5,44 @@ import styles from './styles/Home.module.css';
 import Section from "./components/Section";
 import { BiCalendar, BiMap } from "react-icons/bi";
 import Lang from "./components/Lang";
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import config from "./config";
 
 const Home = () => {
+    const videoRef = useRef(null);
+    const [headerOpacity, setHeaderOpacity] = useState(0.05);
+
+    const handleScroll = e => {
+        let pos = window.scrollY;
+        if (pos <= 18000) {
+            let calculate = pos / 18000 * 100;
+            if (calculate > 0.05) {
+                setHeaderOpacity(calculate);
+            }
+        }
+    }
+
     useEffect(() => {
-        document.title = "2023 Korean Medical Tourism Festival"
-    }, [])
+        document.title = "2023 Korean Medical Tourism Festival";
+        videoRef.current.play()
+    }, []);
+
+    useEffect(() => {
+        document.addEventListener('scroll', handleScroll);
+        return () => document.removeEventListener('scroll', handleScroll);
+    })
 
     return (
         <>
-            <Header />
-            <div className="content">
-                <img src="/images/kmtf-bg.jpg" alt="Top Banner" style={{
+            <Header opacity={headerOpacity} />
+            <div className="content" style={{top: 0}}>
+                {/* <img src="/images/kmtf-bg.jpg" alt="Top Banner" style={{
                     width: '100%',
                     objectFit: 'cover'
-                }} />
+                }} /> */}
+                <video ref={videoRef} width={'100%'} muted>
+                    <source src="/bumper.mp4" type="video/mp4" />
+                </video>
                 {/* <SliderBanner
                     datas={[
                         {image: '/images/slide_banner.jpeg'},

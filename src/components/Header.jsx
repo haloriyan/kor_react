@@ -5,7 +5,7 @@ import {Dropdown, Option} from "./Dropdown";
 import { useState, useEffect } from "react";
 import Lang from "./Lang";
 
-const Header = ({active = ''}) => {
+const Header = ({active = '', opacity = 1}) => {
     const [mobileActive, setMobileActive] = useState(false);
     const [sitelang, setSitelang] = useState(null);
     const [showLangOpt, setShowLangOpt] = useState(false);
@@ -36,7 +36,7 @@ const Header = ({active = ''}) => {
     }
 
     return (
-        <header className={styles.Header}>
+        <header className={styles.Header} style={{opacity: opacity}}>
             <a href="/" className={`${styles.LogoWrapper} ${styles.LogoDesktop}`}>
                 <img
                     src={'/images/logo_no_tagline.png'}
