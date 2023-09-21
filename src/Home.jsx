@@ -54,7 +54,9 @@ const Home = () => {
                 <Section
                     // image={'/images/slide_banner.jpeg'}
                     left={
-                        <video ref={videoRef} width={'35%'} muted onEnded={() => {
+                        <video ref={videoRef} width={
+                            window.screen.width < 480 ? '100%' : '35%'
+                        } muted onEnded={() => {
                             videoRef.current.currentTime = 0;
                             videoRef.current.play()
                         }}>
