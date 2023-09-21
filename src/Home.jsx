@@ -34,18 +34,13 @@ const Home = () => {
 
     return (
         <>
-            <Header opacity={headerOpacity} />
-            <div className="content" style={{top: 0}}>
-                {/* <img src="/images/kmtf-bg.jpg" alt="Top Banner" style={{
+            <Header opacity={1} />
+            <div className="content">
+                <img src="/images/kmtf-bg.jpg" alt="Top Banner" style={{
                     width: '100%',
                     objectFit: 'cover'
-                }} /> */}
-                <video ref={videoRef} width={'100%'} muted onEnded={() => {
-                    videoRef.current.currentTime = 0;
-                    videoRef.current.play()
-                }}>
-                    <source src="/bumper.mp4" type="video/mp4" />
-                </video>
+                }} />
+                
                 {/* <SliderBanner
                     datas={[
                         {image: '/images/slide_banner.jpeg'},
@@ -57,7 +52,15 @@ const Home = () => {
                 /> */}
 
                 <Section
-                    image={'/images/slide_banner.jpeg'}
+                    // image={'/images/slide_banner.jpeg'}
+                    left={
+                        <video ref={videoRef} width={'35%'} muted onEnded={() => {
+                            videoRef.current.currentTime = 0;
+                            videoRef.current.play()
+                        }}>
+                            <source src="/bumper.mp4" type="video/mp4" />
+                        </video>
+                    }
                     title={'2023 Korean Medical Tourism Festival'}
                     description={<Lang ctx="kmtf_description" />}
                     descriptionStyle={{fontSize: 15}}

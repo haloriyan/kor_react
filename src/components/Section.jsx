@@ -7,7 +7,7 @@ const Section = ({description, title, reversed = false, action = null, image = n
             <section className={`${styles.Wrapper} ${reversed ? styles.Reverse : ''}`} style={style}>
                 {
                     image === null ?
-                        <div className={styles.Image}>{left}</div>
+                        left
                     :
                     <img src={image} alt="tes" className={styles.Image} style={imageStyle} />
                 }
