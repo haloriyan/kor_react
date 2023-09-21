@@ -40,7 +40,10 @@ const Home = () => {
                     width: '100%',
                     objectFit: 'cover'
                 }} /> */}
-                <video ref={videoRef} width={'100%'} muted>
+                <video ref={videoRef} width={'100%'} muted onEnded={() => {
+                    videoRef.current.currentTime = 0;
+                    videoRef.current.play()
+                }}>
                     <source src="/bumper.mp4" type="video/mp4" />
                 </video>
                 {/* <SliderBanner
