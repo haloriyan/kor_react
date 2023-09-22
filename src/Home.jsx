@@ -7,10 +7,12 @@ import { BiCalendar, BiMap } from "react-icons/bi";
 import Lang from "./components/Lang";
 import { useEffect, useRef, useState } from "react";
 import config from "./config";
+import Popup from "./components/Popup";
 
 const Home = () => {
     const videoRef = useRef(null);
     const [headerOpacity, setHeaderOpacity] = useState(0.05);
+    const [kmtePopup, setKmtePopup] = useState(false);
 
     const handleScroll = e => {
         let pos = window.scrollY;
@@ -56,7 +58,7 @@ const Home = () => {
                     left={
                         <video ref={videoRef} width={
                             window.screen.width < 480 ? '100%' : '35%'
-                        } muted onEnded={() => {
+                        } muted playsInline onEnded={() => {
                             videoRef.current.currentTime = 0;
                             videoRef.current.play()
                         }}>
@@ -68,15 +70,18 @@ const Home = () => {
                     descriptionStyle={{fontSize: 15}}
                     action={
                         <div className={styles.RegisterArea}>
-                            <a href="/kmtm/register" style={{flexGrow: config.kmte_open ? 1 : 0}} className={styles.RegisterButton} target="_blank">
+                            <a href="/kmtm/register" className={styles.RegisterButton} target="_blank">
                                 <Lang ctx="register_kmtm_button" />
                             </a>
-                            {
-                                config.kmte_open &&
-                                <a href="#" className={styles.RegisterButton} target="_blank">
-                                    <Lang ctx="register_kmte_button" />
-                                </a>
-                            }
+                            <button className={styles.RegisterButton} onClick={() => {
+                                if (!config.kmte_open) {
+                                    setKmtePopup(true);
+                                } else {
+                                    window.location.href = "https://app.kmtf2023.com";
+                                }
+                            }}>
+                                <Lang ctx="register_kmte_button" />
+                            </button>
                         </div>
                     }
                 />
@@ -126,6 +131,18 @@ const Home = () => {
 
                 <Footer />
             </div>
+
+            {
+                kmtePopup &&
+                <Popup onDismiss={() => setKmtePopup(false)}>
+                    <Lang ctx="kmte_warning" />
+                    <div style={{textAlign: 'center',marginTop: 20,color: '#72c56',fontWeight: 700,cursor: 'pointer'}} onClick={() => {
+                        setKmtePopup(false)
+                    }}>
+                        <Lang ctx="close" />
+                    </div>
+                </Popup>
+            }
         </>
     )
 }
