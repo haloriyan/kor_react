@@ -60,12 +60,11 @@ const Contact = () => {
                     <div className={styles.Right}>
                         <div className={styles.Title}><Lang ctx="find_us" /></div>
                         <b><Lang ctx="phone" /> :</b>
-                        <div>62-21-5785-3030</div>
-                        
-                        <div style={{height: 30}}></div>
-
-                        <b>No. Fax :</b>
-                        <div>62-21-5785-3029</div>
+                        <div>
+                            <a href="https://wa.me/62811378553" target="_blank" style={{color: '#eb2f28'}}>0811-378-553</a>
+                            -
+                            Imanda
+                        </div>
 
                         <div style={{height: 30}}></div>
 

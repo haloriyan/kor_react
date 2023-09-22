@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import styles from './styles/Home.module.css';
 import Section from "./components/Section";
-import { BiCalendar, BiMap } from "react-icons/bi";
+import { BiCalendar, BiMap, BiSpeaker, BiVolumeFull } from "react-icons/bi";
 import Lang from "./components/Lang";
 import { useEffect, useRef, useState } from "react";
 import config from "./config";
@@ -42,28 +42,28 @@ const Home = () => {
                     width: '100%',
                     objectFit: 'cover'
                 }} />
-                
-                {/* <SliderBanner
-                    datas={[
-                        {image: '/images/slide_banner.jpeg'},
-                        {image: '/images/GATE_1.jpg'},
-                        {image: '/images/BOOTH_EXHIB_1.jpg'},
-                        {image: '/images/MAIN_STAGE_1.jpg'},
-                        {image: '/images/GATE_2.jpg'}
-                    ]}
-                /> */}
 
                 <Section
                     // image={'/images/slide_banner.jpeg'}
                     left={
-                        <video ref={videoRef} width={
-                            window.screen.width < 480 ? '100%' : '35%'
-                        } muted playsInline onEnded={() => {
-                            videoRef.current.currentTime = 0;
-                            videoRef.current.play()
-                        }}>
-                            <source src="/bumper.mp4" type="video/mp4" />
-                        </video>
+                        <div style={{flexBasis: window.screen.width < 480 ? '100%' : '100%'}}>
+                            <video ref={videoRef} width={'100%'} muted playsInline onEnded={() => {
+                                videoRef.current.currentTime = 0;
+                                videoRef.current.play()
+                            }}>
+                                <source src="/bumper.mp4" type="video/mp4" />
+                            </video>
+                            {
+                                videoRef.current !== null &&
+                                <div style={{cursor: 'pointer',display: 'flex',alignItems: 'center',gap: 10,marginTop: 10,fontSize: 14}} onClick={(e) => {
+                                    videoRef.current.muted = false;
+                                    e.currentTarget.remove()
+                                }}>
+                                    <BiVolumeFull size={18} />
+                                    <Lang ctx="enable_sound" />
+                                </div>
+                            }
+                        </div>
                     }
                     title={'2023 Korean Medical Tourism Festival'}
                     description={<Lang ctx="kmtf_description" />}

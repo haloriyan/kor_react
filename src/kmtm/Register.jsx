@@ -9,6 +9,7 @@ import Lang from "../components/Lang";
 import { BiEnvelope, BiPhone, BiUser, BiWindowAlt } from "react-icons/bi";
 import lang from "../lang";
 import Radio from "../components/Radio";
+import config from "../config";
 
 const KMTMRegister = () => {
     const [name, setName] = useState('');
@@ -16,7 +17,8 @@ const KMTMRegister = () => {
     const [phone, setPhone] = useState('');
     const [website, setWebsite] = useState('');
     const [reference, setReference] = useState('');
-    const [joinType, setJoinType] = useState('company');
+    const [joinType, setJoinType] = useState('personal');
+    const [interestingSeller, setInterestingSeller] = useState('');
     const [fromCompany, setFromCompany] = useState('');
     const [lineOfBusiness, setLineOfBusiness] = useState('');
     const [companyEstablished, setCompanyEstablished] = useState('');
@@ -24,6 +26,10 @@ const KMTMRegister = () => {
     const [message, setMessage] = useState('');
     const [questions, setQuestions] = useState(null);
     const [answers, setAnswers] = useState(null);
+    const [sellers, setSellers] = useState([]);
+
+    const [isLoading, setLoading] = useState(true);
+    const [sellersRec, setSellersRec] = useState([]);
 
     useEffect(() => {
         document.title = "Register to KMTM - 2023 Korean Medical Tourism Festival";
@@ -35,6 +41,17 @@ const KMTMRegister = () => {
             setQuestions(lang[siteLang].b2b_questions);
         }
     }, [questions, siteLang, lang]);
+
+    useEffect(() => {
+        if (isLoading) {
+            setLoading(false);
+            axios.get(`${config.baseUrl}/api/exhibitor`)
+            .then(response => {
+                let res = response.data;
+                setSellers(res.exhibitors);
+            });
+        }
+    }, [isLoading]);
 
     useEffect(() => {
         if (siteLang === null) {
@@ -92,6 +109,29 @@ const KMTMRegister = () => {
                                     <Input value={fromCompany} label={<Lang ctx="from_company" />} onInput={e => setFromCompany(e.currentTarget.value)} />
                                     <Input value={lineOfBusiness} label={<Lang ctx="line_of_business" />} onInput={e => setLineOfBusiness(e.currentTarget.value)} />
                                     <Input value={companyEstablished} label={<Lang ctx="established_year" />} onInput={e => setCompanyEstablished(e.currentTarget.value)} />
+                                </>
+                            }
+
+                            {
+                                joinType === 'personal' &&
+                                sellers.length > 0 &&
+                                <>
+                                    <Input value={interestingSeller} label={<Lang ctx="interesting_seller" />} onInput={e => setInterestingSeller(e.currentTarget.value)} />
+
+                                    {/*
+                                        sellers.map((seller, s) => (
+                                            <div className={styles.SellerItem}>
+                                                <img 
+                                                    src={`${config.baseUrl}/storage/exhibitor_icons/${seller.icon}`} alt={seller.name} 
+                                                    className={styles.SellerIcon}
+                                                />
+                                                <div style={{display: 'flex',flexGrow: 1}}>{seller.name}</div>
+                                                <div className={styles.SellerItemButton} onClick={e => {
+                                                    // 
+                                                }}>Pilih</div>
+                                            </div>
+                                        ))
+                                    */}
                                 </>
                             }
 

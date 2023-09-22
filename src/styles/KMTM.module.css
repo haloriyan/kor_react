@@ -17,6 +17,27 @@
     font-size: 16px;
     font-weight: bold;
 }
+
+.SellerItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    height: 60px;
+}
+.SellerIcon {
+    height: 40px;
+    aspect-ratio: 1/1;
+    border-radius: 999px;
+    background-color: #ddd;
+}
+.SellerItemButton {
+    font-weight: 700;
+    color: #eb2f28;
+    cursor: pointer;
+    font-size: 14px;
+}
+
 @media (max-width: 480px) {
     .Form {
         width: 100%;
