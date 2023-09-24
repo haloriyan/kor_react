@@ -5,6 +5,8 @@ import Jumbo from "./components/Jumbo";
 import Section from "./components/Section";
 import Lang from "./components/Lang";
 import config from "./config";
+import styles from './styles/Home.module.css';
+import { BiMap, BiCalendar } from "react-icons/bi";
 
 const Exhibition = () => {
     useEffect(() => {
@@ -27,7 +29,7 @@ const Exhibition = () => {
                             </div>
                         }
                     </>
-                } breadcrumb={'KMTM'} background="/images/Overlay.png" />
+                } breadcrumb={'KMTE'} background="/images/Overlay.png" />
                 <div style={{padding: 50}}>
                     <Section
                         title={''}
@@ -37,6 +39,36 @@ const Exhibition = () => {
                         separator={false}
                     />
 
+<Section
+                        reversed={true}
+                        title={<Lang ctx="find_location" />}
+                        description={
+                            <>
+                                <div className={styles.BoxBar}>
+                                    <div className={styles.BarIcon}>
+                                        <BiMap size={20} />
+                                    </div>
+                                    <div className={styles.BarText}>The Westin Hotel, Jl. Mayjend Jonosewojo No. 2, Surabaya</div>
+                                </div>
+                                <div className={styles.BoxBar}>
+                                    <div className={styles.BarIcon}>
+                                        <BiCalendar size={20} />
+                                    </div>
+                                    <div className={styles.BarText}>27 Oct 2023 | Korean Medical Tourism Mart</div>
+                                </div>
+                            </>
+                        }
+                    />
+                </div>
+
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.5736780871334!2d112.67336147512744!3d-7.2892487927181495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fc498f1cffc5%3A0xc0718e958df80ba0!2sThe%20Westin%20Surabaya!5e0!3m2!1sen!2sid!4v1692679511189!5m2!1sen!2sid" 
+                    style={{border: 0}}
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    className={styles.MapFrame}
+                ></iframe>
+
+                <div style={{padding: 50}}>
                     <h3 style={{textAlign: 'center',fontSize: 46,marginTop: 75,marginBottom: 75}}>
                         <Lang ctx="kmte_title" />
                     </h3>
@@ -93,8 +125,8 @@ const Exhibition = () => {
                         reversed={true}
                     />
                     <Section
-                        title={"What's Your Tea Type"}
-                        description={"What’s Your Tea Type kiosk, Visitors can choose what’s your tea type recommendation in easy way. "}
+                        title={<Lang ctx="teatype_title" />}
+                        description={<Lang ctx="teatype_description" />}
                         descriptionStyle={{fontSize: 20,lineHeight: '32px'}}
                         image={'/images/whats-your-tea-type.png'}
                         imageStyle={{
@@ -106,7 +138,7 @@ const Exhibition = () => {
                     />
                     <Section
                         title={"K-Nail Art"}
-                        description={"Experience and choose your own favorite colour for your pretty nails."}
+                        description={<Lang ctx="knail_description" />}
                         descriptionStyle={{fontSize: 20,lineHeight: '32px'}}
                         image={'/images/k-nail.png'}
                         imageStyle={{
@@ -130,7 +162,7 @@ const Exhibition = () => {
                     />
                     <Section
                         title={"Techno Area"}
-                        description={"Experiences a fun games Throwing ball & Arrow using Virtual Reality at Techno Booth, get more points and get following exchange gifts. "}
+                        description={<Lang ctx="techno_description" />}
                         descriptionStyle={{fontSize: 20,lineHeight: '32px'}}
                         image={'/images/techno-booth.jpg'}
                         imageStyle={{

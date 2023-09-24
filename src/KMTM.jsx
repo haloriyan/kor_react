@@ -55,7 +55,7 @@ const BusinessMeeting = () => {
                                     <div className={styles.BarIcon}>
                                         <BiCalendar size={20} />
                                     </div>
-                                    <div className={styles.BarText}>28 - 29 Oct 2023 | Korean Medical Tourism Mart</div>
+                                    <div className={styles.BarText}>27 Oct 2023 | Korean Medical Tourism Mart</div>
                                 </div>
                             </>
                         }

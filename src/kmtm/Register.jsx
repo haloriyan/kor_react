@@ -17,7 +17,7 @@ const KMTMRegister = () => {
     const [phone, setPhone] = useState('');
     const [website, setWebsite] = useState('');
     const [reference, setReference] = useState('');
-    const [joinType, setJoinType] = useState('personal');
+    const [joinType, setJoinType] = useState('company');
     const [interestingSeller, setInterestingSeller] = useState('');
     const [fromCompany, setFromCompany] = useState('');
     const [lineOfBusiness, setLineOfBusiness] = useState('');
@@ -99,7 +99,6 @@ const KMTMRegister = () => {
                             <div style={{fontSize: 12,color: '#888',marginTop: 20}}><Lang ctx="join_type" /></div>
                             <select name="join_type" id="join_type" value={joinType} onChange={e => setJoinType(e.currentTarget.value)}>
                                 <option value="company"><Lang ctx="company" /></option>
-                                <option value="brand"><Lang ctx="brand" /></option>
                                 <option value="personal"><Lang ctx="personal" /></option>
                             </select>
 
