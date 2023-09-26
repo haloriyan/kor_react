@@ -14,6 +14,17 @@ const Home = () => {
     const [headerOpacity, setHeaderOpacity] = useState(0.05);
     const [kmtePopup, setKmtePopup] = useState(false);
 
+    const sellers = [
+        {logo: "bedah_plastik_view.png"},
+        {logo: "hershe.png"},
+        {logo: "jane_dmc.png"},
+        {logo: "jaseng.png"},
+        {logo: "medical_korea_service.png"},
+        {logo: "ruby_plastic_surgery.png"},
+        {logo: "stantop.png"},
+        {logo: "wonjin.png"},
+    ];
+
     const handleScroll = e => {
         let pos = window.scrollY;
         if (pos <= 18000) {
@@ -86,14 +97,17 @@ const Home = () => {
                     }
                 />
 
-                {/* <div className={styles.EventArea}>
-                    <a href="/kmtm" className={styles.EventItem}>
-                        <img src="/images/kmtm-bg.jpeg" alt="KMTM" style={{width: '100%',borderRadius: 10}} />
-                    </a>
-                    <a href="/kmte" className={styles.EventItem}>
-                        <img src="/images/kmte-bg.jpeg" alt="KMTE" style={{width: '100%',borderRadius: 10}} />
-                    </a>
-                </div> */}
+                <h4 style={{textAlign: 'center',fontSize: 32,marginTop: 0}}><Lang ctx="our_seller" /></h4>
+                <div className={styles.SellerArea}>
+                    {
+                        sellers.map((seller, s) => (
+                            <div key={s} className={styles.SellerItem} style={{
+                                backgroundImage: `url('/images/sellers/${seller.logo}')`,
+                                backgroundSize: 'cover'
+                            }}></div>
+                        ))
+                    }
+                </div>
 
                 <Section
                     reversed={true}

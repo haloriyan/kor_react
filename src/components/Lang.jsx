@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import lang from "../lang";
 
-const Lang = ({ctx = 'contact_us'}) => {
+const Lang = ({ctx = 'contact_us', format = null}) => {
     const [content, setContent] = useState(null);
     const [sitelang, setSitelang] = useState(null);
 
@@ -14,9 +14,11 @@ const Lang = ({ctx = 'contact_us'}) => {
 
     useEffect(() => {
         if (content === null && sitelang !== null) {
-            setContent(
-                lang[sitelang][ctx]
-            )
+            let theContent = lang[sitelang][ctx];
+            if (format !== null) {
+                theContent = format(theContent);
+            }
+            setContent(theContent);
         }
     }, [content, sitelang, ctx]);
 

@@ -8,7 +8,7 @@
     "october": "October",
     "friday": "Friday",
     "saturday": "Saturday",
-    "sunday": "Minggu",
+    "sunday": "Sunday",
     "name": "Name",
     "email": "Email",
     "phone": "Phone Number",
@@ -161,6 +161,9 @@
     "close": "Close",
     "interesting_seller": "Seller you want to visit",
     "enable_sound": "Enable Sound",
+    "download_brochure": "Download Brochure",
+    "pre_reg": "Pre-Register",
+    "our_seller": "Our Sellers",
 
     "las": "sd"
 }

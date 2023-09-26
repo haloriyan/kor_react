@@ -98,11 +98,11 @@ const Header = ({active = '', opacity = 1}) => {
                         </a>
                     </ul>
                 </a>
-                {/* <a href="/program" className={`${styles.NavItem} ${active === 'program' ? styles.NavItemActive : ''}`}>
+                <a href="/program" className={`${styles.NavItem} ${active === 'program' ? styles.NavItemActive : ''}`}>
                     PROGRAM
-                </a> */}
+                </a>
                 <a href="/contact" className={`${styles.NavItem} ${active === 'contact' ? styles.NavItemActive : ''}`}>
-                    CONTACT US
+                    <Lang ctx='contact_us' format={content => content.toUpperCase()} />
                 </a>
             </nav>
 
@@ -143,11 +143,11 @@ const Header = ({active = '', opacity = 1}) => {
                 {/* <a href="/about" className={`${styles.NavItem} ${active === 'about' ? styles.NavItemActive : ''}`}>
                     <div style={{flexGrow: 1}}>ABOUT</div>
                 </a> */}
-                {/* <a href="/program" className={`${styles.NavItem} ${active === 'program' ? styles.NavItemActive : ''}`}>
+                <a href="/program" className={`${styles.NavItem} ${active === 'program' ? styles.NavItemActive : ''}`}>
                     <div style={{flexGrow: 1}}>PROGRAM</div>
-                </a> */}
+                </a>
                 <a href="/contact" className={`${styles.NavItem} ${active === 'contact' ? styles.NavItemActive : ''}`}>
-                    <div style={{flexGrow: 1}}>CONTACT US</div>
+                    <div style={{flexGrow: 1}}><Lang ctx='contact_us' format={content => content.toUpperCase()} /></div>
                 </a>
             </nav>
 

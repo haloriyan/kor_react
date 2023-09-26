@@ -17,44 +17,88 @@ const Program = () => {
                 <Jumbo background="/images/kmte-bg.jpg" />
 
                 <Section
-                    image={'/images/scan-gift-mystery.png'}
+                    title={'Talk Show'}
+                    description={<Lang ctx="talkshow_description" />}
+                    descriptionStyle={{fontSize: 20,lineHeight: '32px'}}
+                    image={'/images/talk-show.png'}
                     imageStyle={{
                         aspectRatio: 1/1,
-                        width: 'auto',
-                        height: 250
-                    }}
-                    title={'Scan Gift Mystery'}
-                    description={
-                        <Lang ctx="scan_gift_description" />
-                    }
-                    descriptionStyle={{fontSize: 16}}
-                />
-                <Section
-                    image={'/images/lucky-draw.png'}
-                    imageStyle={{
-                        width: 'auto',
+                        width: 250,
                         height: 250,
-                        aspectRatio: 1/1,
                     }}
-                    title={'Lucky Draw'}
-                    description={
-                        <Lang ctx="lucky_draw_description" />
-                    }
-                    descriptionStyle={{fontSize: 16}}
                     reversed={true}
                 />
                 <Section
-                    image={'/images/instagram-challenge.png'}
+                    title={<Lang ctx={'claw_machine_title'} />}
+                    description={<Lang ctx="claw_machine_description" />}
+                    descriptionStyle={{fontSize: 20,lineHeight: '32px'}}
+                    image={'/images/claw-machine.jpg'}
                     imageStyle={{
                         aspectRatio: 1/1,
-                        width: 'auto',
-                        height: 250
+                        width: 250,
+                        height: 250,
                     }}
-                    title={'Instagram Challenge'}
-                    description={
-                        <Lang ctx="instagram_challenge_description" />
-                    }
-                    descriptionStyle={{fontSize: 16}}
+                    reversed={true}
+                />
+                <Section
+                    title={<Lang ctx="make_candle_title" />}
+                    description={<Lang ctx="make_candle_description" />}
+                    descriptionStyle={{fontSize: 20,lineHeight: '32px'}}
+                    image={'/images/make-your-own-candle.png'}
+                    imageStyle={{
+                        aspectRatio: 1/1,
+                        width: 250,
+                        height: 250,
+                    }}
+                    reversed={true}
+                />
+                <Section
+                    title={<Lang ctx="teatype_title" />}
+                    description={<Lang ctx="teatype_description" />}
+                    descriptionStyle={{fontSize: 20,lineHeight: '32px'}}
+                    image={'/images/whats-your-tea-type.png'}
+                    imageStyle={{
+                        aspectRatio: 1/1,
+                        width: 250,
+                        height: 250,
+                    }}
+                    reversed={true}
+                />
+                <Section
+                    title={"K-Nail Art"}
+                    description={<Lang ctx="knail_description" />}
+                    descriptionStyle={{fontSize: 20,lineHeight: '32px'}}
+                    image={'/images/k-nail.png'}
+                    imageStyle={{
+                        aspectRatio: 1/1,
+                        width: 250,
+                        height: 250,
+                    }}
+                    reversed={true}
+                />
+                <Section
+                    title={"K-Beauty"}
+                    description={<Lang ctx="kmake_description" />}
+                    descriptionStyle={{fontSize: 20,lineHeight: '32px'}}
+                    image={'/images/k-beauty.png'}
+                    imageStyle={{
+                        aspectRatio: 1/1,
+                        width: 250,
+                        height: 250,
+                    }}
+                    reversed={true}
+                />
+                <Section
+                    title={"Techno Area"}
+                    description={<Lang ctx="techno_description" />}
+                    descriptionStyle={{fontSize: 20,lineHeight: '32px'}}
+                    image={'/images/techno-booth.jpg'}
+                    imageStyle={{
+                        aspectRatio: 1/1,
+                        width: 250,
+                        height: 250,
+                    }}
+                    reversed={true}
                 />
 
                 <Footer />

@@ -11,6 +11,17 @@ const BusinessMeeting = () => {
     useEffect(() => {
         document.title = "KMTM - 2023 Korean Medical Tourism Festival"
     }, [])
+
+    const sellers = [
+        {logo: "bedah_plastik_view.png"},
+        {logo: "hershe.png"},
+        {logo: "jane_dmc.png"},
+        {logo: "jaseng.png"},
+        {logo: "medical_korea_service.png"},
+        {logo: "ruby_plastic_surgery.png"},
+        {logo: "stantop.png"},
+        {logo: "wonjin.png"},
+    ];
     
     return (
         <>
@@ -21,22 +32,38 @@ const BusinessMeeting = () => {
                         <div>Korean Medical Tourism Mart</div>
                         <div style={{marginTop: 10}}>
                             <a href="/kmtm/register">
-                                <button className="JumboButton">Register</button>
+                                <button className="JumboButton">
+                                    <Lang ctx="pre_reg" />
+                                </button>
                             </a>
                         </div>
                     </>
                 } breadcrumb={'KMTM'} background="/images/Overlay.png" />
                 
-                <div style={{padding: 50}}>
+                <div className="wrapper">
                     <Section
                         title={''}
                         description={<Lang ctx="kmtm_description" />}
-                        image={'/images/1_on_1_meeting.jpg'}
+                        image={'/images/1_on_1_meeting.jpeg'}
                         descriptionStyle={{fontSize: 16,lineHeight: '32px'}}
                         separator={false}
                     />
 
-                    <h3 style={{textAlign: 'center',fontSize: 46,marginTop: 20,marginBottom: 0}}>
+                    <h4 style={{textAlign: 'center',fontSize: 32}}><Lang ctx="our_seller" /></h4>
+                    <div className={styles.SellerArea}>
+                        {
+                            sellers.map((seller, s) => (
+                                <div className={styles.SellerItem2}>
+                                    <img src={`/images/sellers/${seller.logo}`} alt={seller.logo} className={styles.SellerItemLogo} />
+                                    <a href="#" className={styles.SellerItemButton}>
+                                        <Lang ctx="download_brochure" />
+                                    </a>
+                                </div>
+                            ))
+                        }
+                    </div>
+
+                    <h3 style={{textAlign: 'center',fontSize: 46,marginTop: 80,marginBottom: 0}}>
                         <Lang ctx="kmtm_title" />
                     </h3>
 

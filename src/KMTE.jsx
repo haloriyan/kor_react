@@ -34,7 +34,7 @@ const Exhibition = () => {
                     <Section
                         title={''}
                         description={<Lang ctx="kmte_description" />}
-                        image={'/images/kto_booth.jpg'}
+                        image={'/images/kto_booth.jpeg'}
                         descriptionStyle={{fontSize: 16,lineHeight: '32px'}}
                         separator={false}
                     />
@@ -62,7 +62,7 @@ const Exhibition = () => {
                 </div>
 
                 <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.5736780871334!2d112.67336147512744!3d-7.2892487927181495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fc498f1cffc5%3A0xc0718e958df80ba0!2sThe%20Westin%20Surabaya!5e0!3m2!1sen!2sid!4v1692679511189!5m2!1sen!2sid" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.574626985207!2d112.6731483751275!3d-7.289141392718268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fc364741c0c3%3A0xba3176bca0f4205a!2sPakuwon%20Mall%20Surabaya!5e0!3m2!1sen!2sid!4v1695722124029!5m2!1sen!2sid"
                     style={{border: 0}}
                     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                     className={styles.MapFrame}
@@ -149,8 +149,8 @@ const Exhibition = () => {
                         reversed={true}
                     />
                     <Section
-                        title={"K-Make Over"}
-                        description={"Experience the simple Korean looks from the Make Up Experts."}
+                        title={"K-Beauty"}
+                        description={<Lang ctx="kmake_description" />}
                         descriptionStyle={{fontSize: 20,lineHeight: '32px'}}
                         image={'/images/k-beauty.png'}
                         imageStyle={{
