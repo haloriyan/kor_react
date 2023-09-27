@@ -55,8 +55,8 @@
     "time": "WAKTU",
     "program": "PROGRAM",
 
-    "register_kmtm_button": "Mendaftar KMTM",
-    "register_kmte_button": "Mendaftar KMTE",
+    "register_kmtm_button": "Registrasi KMTM",
+    "register_kmte_button": "Registrasi KMTE",
 
     "b2b_questions": [
         {
@@ -162,8 +162,9 @@
     "interesting_seller": "Seller yang ingin Anda Kunjungi",
     "enable_sound": "Nyalakan Suara",
     "download_brochure": "Dapatkan Brosur",
-    "pre_reg": "Pra-Registrasi",
-    "pre_reg_kmtm": "Pra-Registrasi KMTM",
+    "pre_reg": "Pre-Registrasi",
+    "pre_reg_kmtm": "Pre-Registrasi KMTM",
+    "pre_reg_kmte": "Pre-Registrasi KMTE",
     "our_seller": "Seller Kami",
 
     "last": "sd"

@@ -55,8 +55,8 @@
     "time": "TIME",
     "program": "PROGRAM",
 
-    "register_kmtm_button": "Register to KMTM",
-    "register_kmte_button": "Register to KMTE",
+    "register_kmtm_button": "Registration KMTM",
+    "register_kmte_button": "Registration KMTE",
 
     "b2b_questions": [
         {
@@ -162,8 +162,9 @@
     "interesting_seller": "Seller you want to visit",
     "enable_sound": "Enable Sound",
     "download_brochure": "Download Brochure",
-    "pre_reg": "Pre-Register",
-    "pre_reg_kmtm": "Pre-Register to KMTM",
+    "pre_reg": "Pre-Registration",
+    "pre_reg_kmtm": "Pre-Registration KMTM",
+    "pre_reg_kmte": "Pre-Registration KMTE",
     "our_seller": "Our Sellers",
 
     "las": "sd"
