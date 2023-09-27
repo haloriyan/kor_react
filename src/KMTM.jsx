@@ -62,6 +62,9 @@ const BusinessMeeting = () => {
                                 </div>
                             ))
                         }
+                        <div className={styles.SellerItem2} style={{aspectRatio: 1/1}}>
+                            <Lang ctx="many_more" format={e => e.toUpperCase()} />
+                        </div>
                     </div>
 
                     <h3 style={{textAlign: 'center',fontSize: 46,marginTop: 80,marginBottom: 0}}>

@@ -145,6 +145,8 @@
     border-radius: 6px;
     margin-top: 20px;
     transition: 0.4s;
+    font-size: 14px;
+    padding: 0px 25px;
 }
 .SellerItemButton:hover {
     background-color: #c92621;
