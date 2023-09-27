@@ -19,18 +19,22 @@ body {
 }
 .CardItem {
   display: flex;
-  flex-grow: 1;
-  flex-basis: 22%;
-  aspect-ratio: 1/1;
+  /* flex-grow: 1; */
+  flex-basis: 25%;
+  max-width: 25%;
+  /* aspect-ratio: 1/1; */
   align-items: center;
-  flex-direction: column;
-  justify-content: center;
   background-color: #172c5630;
   border-radius: 20px;
-  border-bottom: 10px solid #172c56;
+  border-bottom: 10px solid #172c56cc;
+  padding: 20px;
+}
+.CardIcon {
+  width: 40%;
 }
 .CardImage {
-  width: 70%;
+  width: 100%;
+  height: auto;
 }
 .CardTitle {
   font-size: 32px;
