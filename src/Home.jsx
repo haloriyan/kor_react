@@ -108,6 +108,9 @@ const Home = () => {
                             }}></div>
                         ))
                     }
+                    <div className={styles.SellerItem}>
+                        <Lang ctx="many_more" format={e => e.toUpperCase()} />
+                    </div>
                 </div>
 
                 <Section
