@@ -16,7 +16,9 @@ const Program = () => {
         <>
             <Header active="program" />
             <div className="content">
-                <Jumbo background="/images/kmte-bg.jpg" />
+                <Jumbo withNavigation={true} title={
+                    <div style={{textTransform: 'none'}}>Activity Program</div>
+                } middleBreadcrumb={'KMTE'} breadcrumb={'Activity Program'} background="/images/Overlay.png" />
 
                 <div className="wrapper">
                     <h3 style={{textAlign: 'center',fontSize: 46,marginTop: 25,marginBottom: 0}}>
