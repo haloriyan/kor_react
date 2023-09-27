@@ -21,6 +21,7 @@ const Home = () => {
         {logo: "jaseng.png"},
         {logo: "medical_korea_service.png"},
         {logo: "ruby_plastic_surgery.png"},
+        {logo: "seoul-tourism.png"},
         {logo: "stantop.png"},
         {logo: "wonjin.png"},
     ];
@@ -82,7 +83,7 @@ const Home = () => {
                     action={
                         <div className={styles.RegisterArea}>
                             <a href="/kmtm/register" className={styles.RegisterButton} target="_blank">
-                                <Lang ctx="register_kmtm_button" />
+                                <Lang ctx="pre_reg_kmtm" />
                             </a>
                             <button className={styles.RegisterButton} onClick={() => {
                                 if (!config.kmte_open) {

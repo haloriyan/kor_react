@@ -16,6 +16,27 @@ const Program = () => {
             <div className="content">
                 <Jumbo background="/images/kmte-bg.jpg" />
 
+                <div className="wrapper">
+                    <h3 style={{textAlign: 'center',fontSize: 46,marginTop: 75,marginBottom: 75}}>
+                        <Lang ctx="kmte_title" />
+                    </h3>
+
+                    <div className="CardArea">
+                        <div className="CardItem">
+                            <img src="/images/scan-gift-mystery.png" alt="Scan Gift" className="CardImage" />
+                        </div>
+                        <div className="CardItem">
+                            <img src="/images/lucky-draw.png" alt="Lucky Draw" className="CardImage" />
+                        </div>
+                        <div className="CardItem">
+                            <img src="/images/instagram-challenge.png" alt="Instagram Challenge" className="CardImage" />
+                        </div>
+                        <div className="CardItem">
+                            <div className="CardTitle">AND MORE...</div>
+                        </div>
+                    </div>
+                </div>
+
                 <Section
                     title={'Talk Show'}
                     description={<Lang ctx="talkshow_description" />}

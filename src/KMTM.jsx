@@ -19,6 +19,7 @@ const BusinessMeeting = () => {
         {logo: "jaseng.png"},
         {logo: "medical_korea_service.png"},
         {logo: "ruby_plastic_surgery.png"},
+        {logo: "seoul-tourism.png"},
         {logo: "stantop.png"},
         {logo: "wonjin.png"},
     ];

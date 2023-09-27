@@ -48,7 +48,7 @@ const Exhibition = () => {
                                     <div className={styles.BarIcon}>
                                         <BiMap size={20} />
                                     </div>
-                                    <div className={styles.BarText}>The Westin Hotel, Jl. Mayjend Jonosewojo No. 2, Surabaya</div>
+                                    <div className={styles.BarText}>Pakuwon Mall, Jl. Mayjend Jonosewojo No. 2, Surabaya</div>
                                 </div>
                                 <div className={styles.BoxBar}>
                                     <div className={styles.BarIcon}>
@@ -68,112 +68,6 @@ const Exhibition = () => {
                     className={styles.MapFrame}
                 ></iframe>
 
-                <div style={{padding: 50}}>
-                    <h3 style={{textAlign: 'center',fontSize: 46,marginTop: 75,marginBottom: 75}}>
-                        <Lang ctx="kmte_title" />
-                    </h3>
-
-                    <div className="CardArea">
-                        <div className="CardItem">
-                            <img src="/images/scan-gift-mystery.png" alt="Scan Gift" className="CardImage" />
-                        </div>
-                        <div className="CardItem">
-                            <img src="/images/lucky-draw.png" alt="Lucky Draw" className="CardImage" />
-                        </div>
-                        <div className="CardItem">
-                            <img src="/images/instagram-challenge.png" alt="Instagram Challenge" className="CardImage" />
-                        </div>
-                        <div className="CardItem">
-                            <div className="CardTitle">AND MORE...</div>
-                        </div>
-                    </div>
-
-                    <Section
-                        title={'Talk Show'}
-                        description={<Lang ctx="talkshow_description" />}
-                        descriptionStyle={{fontSize: 20,lineHeight: '32px'}}
-                        image={'/images/talk-show.png'}
-                        imageStyle={{
-                            aspectRatio: 1/1,
-                            width: 250,
-                            height: 250,
-                        }}
-                        reversed={true}
-                    />
-                    <Section
-                        title={<Lang ctx={'claw_machine_title'} />}
-                        description={<Lang ctx="claw_machine_description" />}
-                        descriptionStyle={{fontSize: 20,lineHeight: '32px'}}
-                        image={'/images/claw-machine.jpg'}
-                        imageStyle={{
-                            aspectRatio: 1/1,
-                            width: 250,
-                            height: 250,
-                        }}
-                        reversed={true}
-                    />
-                    <Section
-                        title={<Lang ctx="make_candle_title" />}
-                        description={<Lang ctx="make_candle_description" />}
-                        descriptionStyle={{fontSize: 20,lineHeight: '32px'}}
-                        image={'/images/make-your-own-candle.png'}
-                        imageStyle={{
-                            aspectRatio: 1/1,
-                            width: 250,
-                            height: 250,
-                        }}
-                        reversed={true}
-                    />
-                    <Section
-                        title={<Lang ctx="teatype_title" />}
-                        description={<Lang ctx="teatype_description" />}
-                        descriptionStyle={{fontSize: 20,lineHeight: '32px'}}
-                        image={'/images/whats-your-tea-type.png'}
-                        imageStyle={{
-                            aspectRatio: 1/1,
-                            width: 250,
-                            height: 250,
-                        }}
-                        reversed={true}
-                    />
-                    <Section
-                        title={"K-Nail Art"}
-                        description={<Lang ctx="knail_description" />}
-                        descriptionStyle={{fontSize: 20,lineHeight: '32px'}}
-                        image={'/images/k-nail.png'}
-                        imageStyle={{
-                            aspectRatio: 1/1,
-                            width: 250,
-                            height: 250,
-                        }}
-                        reversed={true}
-                    />
-                    <Section
-                        title={"K-Beauty"}
-                        description={<Lang ctx="kmake_description" />}
-                        descriptionStyle={{fontSize: 20,lineHeight: '32px'}}
-                        image={'/images/k-beauty.png'}
-                        imageStyle={{
-                            aspectRatio: 1/1,
-                            width: 250,
-                            height: 250,
-                        }}
-                        reversed={true}
-                    />
-                    <Section
-                        title={"Techno Area"}
-                        description={<Lang ctx="techno_description" />}
-                        descriptionStyle={{fontSize: 20,lineHeight: '32px'}}
-                        image={'/images/techno-booth.jpg'}
-                        imageStyle={{
-                            aspectRatio: 1/1,
-                            width: 250,
-                            height: 250,
-                        }}
-                        reversed={true}
-                    />
-                    
-                </div>
                 <Footer />
             </div>
         </>
