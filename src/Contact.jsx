@@ -60,16 +60,25 @@ const Contact = () => {
                     <div className={styles.Right}>
                         <div className={styles.Title}><Lang ctx="find_us" /></div>
                         <b><Lang ctx="phone" /> :</b>
-                        <div>
+                        <div style={{marginTop: 10}}>
                             <a href="https://wa.me/62811378553" target="_blank" style={{color: '#eb2f28'}}>0811-378-553</a>
                             -
                             Imanda
+                        </div>
+                        <div style={{marginTop: 10}}>
+                            <a href="https://wa.me/6281231365459" target="_blank" style={{color: '#eb2f28'}}>0812-3136-5459</a>
+                            -
+                            Merry
                         </div>
 
                         <div style={{height: 30}}></div>
 
                         <b>Email</b>
-                        <div>ktojakarta@knto.or.kr</div>
+                        <div>
+                            <a href="mailto:admin@kmtf2023.com" style={{color: '#eb2f28'}}>
+                                admin@kmtf2023.com
+                            </a>
+                        </div>
 
                         <div style={{height: 30}}></div>
 

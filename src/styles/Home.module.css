@@ -110,9 +110,10 @@
 }
 .SellerItem,
 .SellerItem2 {
+    position: relative;
     display: flex;
-    flex-basis: 18%;
-    max-width: 20%;
+    flex-basis: 12%;
+    max-width: 18%;
     flex-grow: 1;
     aspect-ratio: 4/3;
     align-items: center;
@@ -135,21 +136,29 @@
     border-radius: 8px;
 }
 .SellerItemButton {
-    background-color: #eb2f28;
-    color: #fff;
+    border:1px solid #eb2f28;
+    color: #eb2f28;
+    text-align: center;
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 45px;
+    height: 40px;
     border-radius: 6px;
     margin-top: 20px;
     transition: 0.4s;
-    font-size: 14px;
-    padding: 0px 25px;
+    font-size: 12px;
+    padding: 0px 30px;
+    cursor: pointer;
 }
 .SellerItemButton:hover {
     background-color: #c92621;
+    color: #fff;
+    border: 1px solid #c92621;
+}
+.SellerDetailLogo {
+    height: 150px;
+    aspect-ratio: 4/3;
 }
 
 @media (max-width: 480px) {

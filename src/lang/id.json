@@ -168,5 +168,78 @@
     "our_seller": "Seller Kami",
     "many_more": "Dan Banyak Lagi...",
 
+    "exhibitors": [
+        {
+            "name": "Rumah Sakit AIN",
+            "description": "Rumah Sakit Ain menduduki peringkat No.1 dalam bidang persalinan di Incheon, dengan tingkat keberhasilan IUI/IVF yang tinggi melebihi rata-rata, yaitu 48%. Sebagai satu-satunya rumah sakit wanita yang mendapat sertifikat Kementerian Kesehatan dan Kesejahteraan di wilayah ini, kami telah menjadi sebuah nama terpercaya dalam kualitas layanan medis, manajemen pasien, dan keselamatan medis. Rumah Sakit Ain memiliki tim terkenal yang terdiri dari 40 tenaga kesehatan profesional dan 450 karyawan yang telah dibekali dengan pengetahuan terbaik dalam spesialisasi mereka, pengalaman klinis, dan kemampuan praktisi terkait bidangnya.",
+            "logo": "ain.png",
+            "specialize": "Perawatan kesehatan terpusat pada wanita (kehamilan, persalinan, perawatan infertilitas, perawatan pasca persalinan, IVF/IUI)",
+            "website": "https://www.ainwh.co.kr/eng"
+        },
+        {
+            "name": "Klinik Gangnam Grand Eye",
+            "description": "Klinik Gangnam Grand Eye berusaha untuk mencapai hasil terbaik dengan ketulusan yang sama seperti memperlakukan keluarga kami yang berharga. Kami menawarkan perawatan premium dengan tingkat apresiasi yang berbeda. Tenanglah, kami akan menjaga mata Anda yang berharga. Klinik Gangnam Grand Eye telah diakui atas kontribusinya terhadap peningkatan layanan kesehatan nasional, terpilih sebagai Korea Good Doctor 100, memenangkan Penghargaan Menteri Kesehatan dan Kesejahteraan Korea untuk oftalmologi dan Hadiah Utama Kontribusi Sosial untuk Perawatan Medis, serta menduduki peringkat 1 untuk indeks kepuasan konsumen di Korea.",
+            "specialize": "LASIK koreksi penglihatan, LASEK, SMILASIK, Katarak Presbiopia Premium",
+            "logo": "gangnam.png",
+            "website": "https://grandeye.kr/"
+        },
+        {
+            "name": "Bedah Plastic Ruby",
+            "description": "Bedah Plastik Ruby didirikan pada tahun 2016 dan terus berkembang hingga saat ini. Selain 5 dokter tetap (3 dokter spesialis bedah plastik, 1 dokter estetika, dan 1 ahli anastesi), Bedak Plastik Ruby memiliki total 30 karyawan yang meliputi perawat, konsultan, dan resepsionis. Bangunan klinik kami terdiri atas ruang konsultasi, ruang pemeriksaan, ruang bedah, ruang pemulihan, pusat anastesiologi, ruang perawatan, dan pusat estetika. Staf kami selalu siap melayani pasien asing mulai dari prosedur awal hingga akhir dan seorang konsultan profesional juga ditugaskan untuk membantu menjembatani pemahaman yang lebih baik antara staf medis dengan dokter spesialis bedah plastik. Kemudian, terdapat pula 4 juru bahasa yang menguasai bahasa Inggris, Jepang, Mandarin, dan Indonesia bagi pasien dari luar negeri. Kini, klinik kami telah dikenal tidak hanya di kalangan penduduk lokal tetapi juga warga negara asing terutama dari Asia Tenggara. Bertujuan menjadi yang terdepan dalam bidang kecantikan global, layanan kami terbuka luas bagi orang-orang dari seluruh penjuru dunia.",
+            "specialize": "Bedah plastic untuk hidung, mata, payudara, kontur wajah dan tubuh, anti-aging, petite surgery",
+            "logo": "ruby_plastic_surgery.png",
+            "website": "http://www.rubypskorea.com"
+        },
+        {
+            "name": "BIOFACE CLINIC",
+            "description": "Klinik Bioface adalah klinik dermatologi yang dilengkapi dengan peralatan medis canggih untuk mencapai kecantikan melalui prosedur bukan operasi. Klinik kami memiliki banyak keunggulan seperti kapasitas perawatan tidak tertandingi, penelitian klinis selama lebih dari 10 tahun yang mengarah pada keahlian dan layanan kami yang terkenal, dan sejumlah besar peralatan medis kelas atas. Untuk meningkatkan kepuasan pelanggan kami, Klinik Bioface mengadakan acara rutin, promosi, dan pameran setiap bulannya. Semua asisten (petugas perawatan kulit, asisten perawat, dll) dari staf medis memiliki sertifikat terakreditasi nasional.",
+            "specialize": "Ulthera Gold, Thermage FLX, Shrink & Liftox, T.O. Fill, ponytail lifting, dll.",
+            "logo": "bioface.png",
+            "website": "https://bioface.kr"
+        },
+        {
+            "name": "MEDI WIN",
+            "description": "MEDI WIN adalah fasilitator yang diakui pemerintah Korea untuk melayani pasien internasional. Sebagai penyedia layanan kesehatan resmi yang juga telah diakui pemerintah di Seoul, kami bersedia memberikan layanan medis terbaik kepada klien kami. Di antara ketatnya persaingan layanan medis yang seolah tidak ada habisnya di Korea, MEDI WIN menjamin dan menjanjikan standar terbaik dalam berbagai layanan medis dari mitra kami. Faktanya, layanan medis kami ditangani oleh dokter berkualifikasi yang telah berkarir secara profesional di rumah sakit besar Korea Selatan. Setiap pasien luar negeri dengan tenang dapat memilih klinik mitra kami yang berkualitas dan menikmati layanan medis terbaiknya.",
+            "specialize": "Memfasilitasi perawatan ataupun tindakan medis dan kecantikan di Korea",
+            "logo": "mediwin.png",
+            "website": "https://www.mediwin.co.kr/eng"
+        },
+        {
+            "name": "BTMEDI",
+            "description": "BTMEDI adalah perusahaan ahli kesehatan global yang berbasis di Korea, dan yang terdepan dalam bisnis menangani pasien internasional. Dengan layanan medis kelas dunia di Korea dan platform medis “KOREA MEDIS”, perusahaan kami telah memperluas batasan bisnis medis dengan mengundang pasien asing sekaligus menyediakan berbagai layanan kepada mereka. BTMEDI berkomitmen untuk menyediakan akses bagi pasien internasional terhadap layanan berkualitas tinggi yang ditawarkan oleh jaringan klinik yang telah kami pilih dengan cermat. Kami juga menyediakan layanan medis & concierge terpadu dari keberangkatan hingga kepulangan melalui kemitraandengan semua rumah sakit besar di Korea.",
+            "specialize": "Layanan medis dan concierge terpadu",
+            "logo": "btmedi.png",
+            "website": "https://www.btmedi.com"
+        },
+        {
+            "name": "JANE DMC",
+            "description": "Berdiri sejak 2006, Jane DMC telah mengumpulkan banyak pengalaman dalam menangani perjalanan grup insentif perusahaan, pelajar, dan medis dari seluruh dunia. Jane DMC memiliki kantor pusat di Seoul dengan beberapa cabang tersebar di beberapa lokasi seperti Busan, Jakarta, dan Abu Dhabi. Memiliki sertifikasi untuk menjalankan wisata medis, Jane DMC sudah terjamin dapat dipercaya dan selalu melakukan yang terbaik untuk memfasilitasi klien yang mencari perawatan medis ataupun kecantikan di Korea. Interpreter berbahasa Indonesia merupakan salah satu keunggulannya.",
+            "specialize": "Medical check up, operasi plastic / estetika, penyakit berat, and konferensi internasional",
+            "logo": "jane_dmc.png",
+            "website": "https://www.instagram.com/janetour_dmc"
+        },
+        {
+            "name": "DOCFINDER",
+            "description": "Docfinderkorea adalah agensi terbesar dan tertua di Korea yang telah mapan dalam pasar pariwisata medis yang berubah dengan cepat selama lebih dari 10 tahun. Berdasarkan pengetahuan profesional dan pengalaman kami yang luas, kami memberikan informasi rinci tentang rumah sakit dan staf medis, serta reservasi klinik dan akomodasi, dukungan juru bahasa 1:1, transportasi, negosiasi harga dengan rumah sakit, dan obat resep (biaya). Layanan ini menjadikan Docfinderkorea sebagai penyedia layanan wisata medis terbaik, bukan sekedar perantara yang memperkenalkan institusi medis. Selain itu, daripada mengandalkan pemasaran offline untuk menargetkan satu negara, kami telah berupaya memperluas jangkauan wisata medis Korea ke Amerika, Eropa, Timur Tengah, Afrika, dan Asia. Hasilnya, kami telah menarik lebih dari 5.500 pasien bedah dari lebih dari 101 negara berbeda, memelopori bidang bedah estetika (bedah plastik, dermatologi, kedokteran gigi, transplantasi rambut, dll.) tanpa memandang jenis kelamin, ras, atau kebangsaan. Tidak terbatas pada pelayanan medis, kami juga menyediakan layanan concierge seperti memberikan informasi pariwisata, makanan, budaya, dan kecantikan (rambut, kuku, kosmetik, dll). Kami juga membantu tur kota untuk menjaga pasien datang kembali ke Korea dan telah menerima peringkat kepuasan pelanggan tertinggi sejak dibuka pada tahun 2012. Berbekal karyawan multilingual yang bisa berbahasa Inggris dan Korea, serta Rusia, Jepang, Mandarin, Kanton, Indonesia, Spanyol, dan Arab, Docfinderkorea sedang mempersiapkan pemasaran yang lebih luas di masa depan. Selain menarik pasien berbahasa Inggris yang menjadi target pasar kami saat ini, kami bersiap mengambil langkah maju dengan memperkuat jaringan offline kami di Indonesia, Jepang, Arab, dan Rusia untuk secara langsung menarik pasien yang tidak dapat dijangkau oleh pemasaran online, sehingga pasien yang lebih beragam dapat merasakan layanan medis Korea.",
+            "specialize": "Layanan fasilitator dan concierge medis",
+            "logo": "",
+            "website": "http://www.docfinderkorea.com/"
+        },
+        {
+            "name": "Pusat Promosi Kesehatan Genehealth",
+            "description": "Yayasan Kesehatan Macrogen telah membuka Pusat Promosi Kesehatan Genehealth di Korea yang dilengkapi dengan peralatan mutakhir untuk mewujudkan pengobatan masa depan. Berbekal keahlian dan pengalaman panjang Macrogen dalam pengobatan presisi dan genomik, Genehealth menyediakan layanan perawatan kesehatan berdasarkan siklus hidup. Melalui diagnosis dan manajemen kesehatan yang bisa dipersonalisasi, institusi di Incheon ini menawarkan layanan pemeriksaan kesehatan berkualitas tinggi. Berlokasi di Incheon, Genehealth menawarkan layanan cek kesehatan berkualitas tinggi yang cukup berbeda melalui diagnosis dan manajemen kesehatan yang dipersonalisasi.",
+            "specialize": "Medical check up, operasi plastic / estetika, penyakit berat, and konferensi internasional",
+            "logo": "genehealth.png",
+            "website": "http://www.genehealth.or.kr/"
+        },
+        {
+            "name": "Medical Korea Service",
+            "description": "",
+            "specialize": "",
+            "logo": "",
+            "website": ""
+        }
+    ],
+
     "last": "sd"
 }

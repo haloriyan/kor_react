@@ -168,5 +168,77 @@
     "our_seller": "Our Sellers",
     "many_more": "and Many More...",
 
+    "exhibitors": [
+        {
+            "name": "AIN HOSPITAL",
+            "description": "Ain Hospital has been ranked No.1 in childbirth in Incheon, boasting the high IUI / IVF success rate that is over average, 48%. As the only Ministry of Health and Welfare certified women’s hospital in the region, we have been a trusted name in quality of medical service, patient management and medical safety. We have a renowned team of 40 health professionals and 450 employees equipped with the best knowledge in their specialties, clinical experience, and related know-hows.",
+            "logo": "ain.png",
+            "specialize": "Women centered healthcare (pregnancy, childbirth, infertility treatment, postnatal treatment, IVF/IUI)",
+            "website": "https://www.ainwh.co.kr/eng"
+        },
+        {
+            "name": "Gangnam Grand Eye Clinic",
+            "description": "Gangnam Grand Eye Clinic strives to achieve the best results with the same sincerity as we would for our precious family. We offer premium treatments with a distinct level of dignity. Rest assured, we will take care of your precious eyes. Our clinic is recognized for contributing to the improvement of national healthcare, selected as Korea Good Doctor 100,  won Korean Minister of Health and Welfare Award for ophthalmology, SocialContribution Grand Prize for Medical Care, and Korea's No. 1 consumer satisfaction index",
+            "specialize": "Visual correction LASIK, LASEK, SMILASIK, Premium Presbyopia Cataract",
+            "logo": "gangnam.png",
+            "website": "https://grandeye.kr/"
+        },
+        {
+            "name": "Ruby Plastic Surgery",
+            "description": "Ruby Plastic Surgery was founded in 2016 and continues to grow until today. Apart from 5 permanent doctors (3 plastic surgeons, 1 aesthetic doctor and 1 anesthesiologist), Ruby Plastic Surgery has a total of 30 employees including nurses, consultants and receptionists. Our clinic building consists of consultation room, examination room, surgical room, recovery room, anesthesiology center, treatment room and aesthetics center. Our staff is always ready to serve foreign patients from the beginning of the procedure to the end and a professional consultant is also assigned to help bridging a better understanding between the medical staff and the specialized plastic surgeon. Then, there are also 4 interpreters who master English, Japanese, Mandarin and Indonesian to assist patients from abroad. Now, our clinic is well known not only among local residents but also foreigners, especially from Southeast Asia. Aiming to be a leader in the global beauty sector, our services are open to people from all over the world.",
+            "specialize": "Plastic surgery for nose, eye, breast; face and body contour, anti-aging, petite surgery",
+            "logo": "ruby_plastic_surgery.png",
+            "website": "http://www.rubypskorea.com"
+        },
+        {
+            "name": "BIOFACE CLINIC",
+            "description": "Bioface Clinic is a dermatology clinic that equipped with advanced medical equipment to achieve beauty by procedure not surgery. Our clinic has a lot of strengths such as unrivaled treatment capacity, clinical research for more than 10 years leading to our well-known expertise and services, and a large number of high-end medical equipment. To deepen our customer satisfaction, Bioface Clinic is doing regular event, promotion, and exhibition every month. All assistants (skin care workers, nursing assistants, etc.) of the medical staff have national accredited certificates.",
+            "specialize": "Ulthera Gold, Thermage FLX, Shrink & Liftox, T.O. Fill, ponytail lifting, etc.",
+            "logo": "bioface.png",
+            "website": "https://bioface.kr"
+        },
+        {
+            "name": "MEDI WIN",
+            "description": "MEDI WIN is a Korean-government approved facilitator for international patients. As an official government approved medical provider in Seoul, we are willing to provide the best medical service to our clients. Among the various and seemingly endless-competitions in medical services in Korea, MEDI WIN guarantees and promises the best standard of various medical services based on our concrete partners; in fact, our medical services are provided by qualified physicians who have had their professional careers from South Korea's major   hospitals. Each patient from overseas will be able to choose our qualified partner-clinics and enjoy its excellent medical service.",
+            "specialize": "Facilitating beauty and medical treatment in Korea",
+            "logo": "mediwin.png",
+            "website": "https://www.mediwin.co.kr/eng"
+        },
+        {
+            "name": "BTMEDI",
+            "description": "BTMEDI is a global healthcare expert company based in Korea, and a leader in foreign patient inviting business. With world-class medical service in Korea and medical platform KOREA MEDIS, the company has been expanding the boundaries of medical business through inviting foreign patients by providing them with a variety of services. BTMEDI is committed to providing international patients access to high quality care offered by our carefully selected network of clinics. Especially we provide one-stop medical & concierge service from departure to return through partnership with all the major hospitals in Korea.",
+            "specialize": "One-stop medical & concierge service",
+            "logo": "btmedi.png",
+            "website": "https://www.btmedi.com"
+        },
+        {
+            "name": "JANE DMC",
+            "description": "Established in 2006, Jane DMC has accumulated a lot of experiences in handling incentive, students, medical groups from all over the world. Jane  DMC’s main office is located at Seoul, while the branches spread out in Busan, Jakarta & Abu Dhabi. A certified DMC  for medical tourism, Jane DMC is guaranteed to be capable and give its best to assist customer who seeks medical or beauty treatment in Korea. Indonesian speaking interpreter is one of its strength.",
+            "specialize": "medical check up, plastic surgery/aesthetics, heavy disease, and international conference",
+            "logo": "jane_dmc.png",
+            "website": "https://www.instagram.com/janetour_dmc"
+        },
+        {
+            "name": "DOCFINDER",
+            "description": "Docfinderkorea is the largest and oldest agency in Korea that has been firmly established in the rapidly changing medical tourism market for over 10 years. Based on our professional knowledge and vast experience, we provide detailed information on hospitals and medical staff, as well as clinic and accommodation reservations, 1:1 interpreter support, transportation, price negotiation with hospitals, and prescription medications (cost). These services make Docfinderkorea the best medical tourism service provider, not just an intermediary that introduces medical institutions. In addition, rather than relying on offline marketing to target one country, we have been working to expand the reach of Korean medical tourism to America, Europe, the Middle East, Africa, and Asia. As a result, we have attracted more than 5,500 surgical patients from more than 101 different countries, pioneering the field of aesthetic surgery (plastic surgery, dermatology, dentistry, hair transplant, etc.) regardless of gender, race, or nationality. Not limited to medical care, we also provide concierge services such as providing information on tourism, food, culture, and beauty (hair, nails, cosmetics, etc.). We also assist with city tours to keep patients coming back to Korea and have received the highest customer satisfaction ratings since opening in 2012. With multilingual employees speaking English and Korean, as well as Russian, Japanese, Mandarin, Cantonese, Indonesian, Spanish, and Arabic, Docfinderkorea is preparing for more targeted marketing in the future. In addition to attracting English-speaking patients, which is our current target market, we are preparing to take another step forward by strengthening our offline network in Indonesia, Japan, Arab, and Russia to directly attract patients that online marketing cannot reach, so that more diverse patients can experience Korean medical services",
+            "logo": "",
+            "website": "http://www.docfinderkorea.com/"
+        },
+        {
+            "name": "Genehealth Health Promotion Center",
+            "description": "Macrogen Medical Foundation, has opened the Genehealth Health Promotion Center in Korea, equipped with cutting-edge equipment to actualize the future medicine. Based on Macrogen's expertise and long experience in precision medicine and genomics, Genehealth Promotion Center provides health care services according to the life cycle and is Incheon's health center that provides differentiated high-quality checkup services through personalized diagnosis and health management. This is a specialized health examination institution.",
+            "specialize": "Medical check up, operasi plastic / estetika, penyakit berat, and konferensi internasional",
+            "logo": "genehealth.png",
+            "website": "http://www.genehealth.or.kr/"
+        },
+        {
+            "name": "Medical Korea Service",
+            "description": "",
+            "specialize": "",
+            "logo": "",
+            "website": ""
+        }
+    ],
+
     "las": "sd"
 }

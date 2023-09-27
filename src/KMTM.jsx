@@ -5,24 +5,26 @@ import Jumbo from "./components/Jumbo";
 import Section from "./components/Section";
 import styles from './styles/Home.module.css';
 import Lang from "./components/Lang";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import lang from "./lang";
+import Popup from "./components/Popup";
 
 const BusinessMeeting = () => {
     useEffect(() => {
         document.title = "KMTM - 2023 Korea Medical Tourism Festival"
     }, [])
 
-    const sellers = [
-        {logo: "bedah_plastik_view.png"},
-        {logo: "hershe.png"},
-        {logo: "jane_dmc.png"},
-        {logo: "jaseng.png"},
-        {logo: "medical_korea_service.png"},
-        {logo: "ruby_plastic_surgery.png"},
-        {logo: "seoul-tourism.png"},
-        {logo: "stantop.png"},
-        {logo: "wonjin.png"},
-    ];
+    const [sellers, setSellers] = useState(null);
+    const [seller, setSeller] = useState(null);
+
+    useEffect(() => {
+        if (sellers === null) {
+            let sl = window.localStorage.getItem('sitelang');
+            setSellers(
+                lang[sl].exhibitors
+            );
+        }
+    }, [sellers, lang]);
     
     return (
         <>
@@ -54,14 +56,19 @@ const BusinessMeeting = () => {
                     <h4 style={{textAlign: 'center',fontSize: 32}}><Lang ctx="our_seller" /></h4>
                     <div className={styles.SellerArea}>
                         {
-                            sellers.map((seller, s) => (
-                                <div className={styles.SellerItem2}>
-                                    <img src={`/images/sellers/${seller.logo}`} alt={seller.logo} className={styles.SellerItemLogo} />
-                                    <a href="#" className={styles.SellerItemButton}>
-                                        <Lang ctx="download_brochure" />
-                                    </a>
-                                </div>
-                            ))
+                            sellers !== null &&
+                            sellers.map((sllr, s) => {
+                                if (sllr.logo !== "") return (
+                                    <div className={styles.SellerItem2} key={s}>
+                                        <img src={`/images/sellers/${sllr.logo}`} alt={sllr.logo} className={styles.SellerItemLogo} />
+                                        <div className={styles.SellerItemButton} onClick={() => {
+                                            setSeller(sllr)
+                                        }}>
+                                            DETAIL
+                                        </div>
+                                    </div>
+                                )
+                            })
                         }
                         <div className={styles.SellerItem2} style={{aspectRatio: 1/1}}>
                             <Lang ctx="many_more" format={e => e.toUpperCase()} />
@@ -102,6 +109,23 @@ const BusinessMeeting = () => {
 
                 <Footer />
             </div>
+
+            {
+                seller !== null &&
+                <Popup onDismiss={() => setSeller(null)}>
+                    <div style={{display: 'flex',flexDirection: 'column',alignItems: 'center',gap: 40}}>
+                        <img src={`/images/sellers/${seller.logo}`} alt={seller.name} className={styles.SellerDetailLogo} />
+                        <div style={{display: 'flex',flexGrow: 1,flexDirection: 'column'}}>
+                            <h3 style={{margin: 0,fontSize: 32}}>{seller.name}</h3>
+                            <div style={{fontSize: 14,marginTop: 20,lineHeight: '22px'}}>{seller.description}</div>
+                        </div>
+                    </div>
+
+                    <div style={{cursor: 'pointer',marginTop: 20,textAlign: 'center',fontWeight: 700}} onClick={() => setSeller(null)}>
+                        Tutup
+                    </div>
+                </Popup>
+            }
         </>
     )
 }
