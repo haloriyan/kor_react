@@ -10,7 +10,7 @@ import { BiMap, BiCalendar } from "react-icons/bi";
 
 const Exhibition = () => {
     useEffect(() => {
-        document.title = "KMTE - 2023 Korean Medical Tourism Festival"
+        document.title = "KMTE - 2023 Korea Medical Tourism Festival"
     }, [])
     return (
         <>
@@ -19,7 +19,7 @@ const Exhibition = () => {
                 {/* <Jumbo breadcrumb={'KMTE'} background="/images/kmte-bg.jpg" /> */}
                 <Jumbo withNavigation={true} title={
                     <>
-                        <div>Korean Medical Tourism Expo</div>
+                        <div>Korea Medical Tourism Expo</div>
                         {
                             config.kmte_open &&
                             <div style={{marginTop: 10}}>
@@ -54,7 +54,7 @@ const Exhibition = () => {
                                     <div className={styles.BarIcon}>
                                         <BiCalendar size={20} />
                                     </div>
-                                    <div className={styles.BarText}>27 Oct 2023 | Korean Medical Tourism Mart</div>
+                                    <div className={styles.BarText}>28-29 <Lang ctx="october" /> 2023 | Korea Medical Tourism Mart</div>
                                 </div>
                             </>
                         }

@@ -32,7 +32,7 @@ const KMTMRegister = () => {
     const [sellersRec, setSellersRec] = useState([]);
 
     useEffect(() => {
-        document.title = "Register to KMTM - 2023 Korean Medical Tourism Festival";
+        document.title = "Register to KMTM - 2023 Korea Medical Tourism Festival";
     });
 
     useEffect(() => {
@@ -91,7 +91,7 @@ const KMTMRegister = () => {
                 <div className="wrapper">
                     <form onSubmit={submit} className={styles.Form}>
                         <div className={styles.FormInner}>
-                            <h2>Register to Korean Medical Tourism Mart</h2>
+                            <h2>Register to Korea Medical Tourism Mart</h2>
                             <Input value={name} label={<Lang ctx="name" />} icon={<BiUser />} onInput={e => setName(e.currentTarget.value)} />
                             <Input value={email} label={<Lang ctx="email" />} icon={<BiEnvelope />} onInput={e => setEmail(e.currentTarget.value)} />
                             <Input value={phone} label={<Lang ctx="phone" />} icon={<BiPhone />} onInput={e => setPhone(e.currentTarget.value)} />

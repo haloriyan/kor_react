@@ -7,7 +7,7 @@ import { useEffect } from "react";
 
 const Program = () => {
     useEffect(() => {
-        document.title = "Program - 2023 Korean Medical Tourism Festival"
+        document.title = "Program - 2023 Korea Medical Tourism Festival"
     }, [])
     
     return (
@@ -32,7 +32,9 @@ const Program = () => {
                             <img src="/images/instagram-challenge.png" alt="Instagram Challenge" className="CardImage" />
                         </div>
                         <div className="CardItem">
-                            <div className="CardTitle">AND MORE...</div>
+                            <div className="CardTitle">
+                                <Lang ctx="many_more" />
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -6,7 +6,7 @@ import Lang from "../components/Lang";
 
 const KMTMRundown = () => {
     useEffect(() => {
-        document.title = "Rundown KMTM - 2023 Korean Medical Tourism Festival";
+        document.title = "Rundown KMTM - 2023 Korea Medical Tourism Festival";
     }, []);
     return (
         <>

@@ -37,7 +37,7 @@ const Home = () => {
     }
 
     useEffect(() => {
-        document.title = "2023 Korean Medical Tourism Festival";
+        document.title = "2023 Korea Medical Tourism Festival";
         videoRef.current.play()
     }, []);
 
@@ -77,7 +77,7 @@ const Home = () => {
                             }
                         </div>
                     }
-                    title={'2023 Korean Medical Tourism Festival'}
+                    title={'2023 Korea Medical Tourism Festival'}
                     description={<Lang ctx="kmtf_description" />}
                     descriptionStyle={{fontSize: 15}}
                     action={
@@ -128,13 +128,13 @@ const Home = () => {
                                 <div className={styles.BarIcon}>
                                     <BiCalendar size={20} />
                                 </div>
-                                <div className={styles.BarText}>27 Oct 2023 | Korean Medical Tourism Mart | The Westin Hotel</div>
+                                <div className={styles.BarText}>27 Oct 2023 | Korea Medical Tourism Mart | The Westin Hotel</div>
                             </div>
                             <div className={styles.BoxBar}>
                                 <div className={styles.BarIcon}>
                                     <BiCalendar size={20} />
                                 </div>
-                                <div className={styles.BarText}>28 - 29 Oct 2023 | Korean Medical Tourism Expo | Grand Atrium Pakuwon Mall</div>
+                                <div className={styles.BarText}>28 - 29 Oct 2023 | Korea Medical Tourism Expo | Grand Atrium Pakuwon Mall</div>
                             </div>
                         </>
                     }

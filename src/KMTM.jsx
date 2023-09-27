@@ -9,7 +9,7 @@ import { useEffect } from "react";
 
 const BusinessMeeting = () => {
     useEffect(() => {
-        document.title = "KMTM - 2023 Korean Medical Tourism Festival"
+        document.title = "KMTM - 2023 Korea Medical Tourism Festival"
     }, [])
 
     const sellers = [
@@ -30,7 +30,7 @@ const BusinessMeeting = () => {
             <div className="content">
                 <Jumbo withNavigation={true} title={
                     <>
-                        <div>Korean Medical Tourism Mart</div>
+                        <div>Korea Medical Tourism Mart</div>
                         <div style={{marginTop: 10}}>
                             <a href="/kmtm/register">
                                 <button className="JumboButton">
@@ -48,6 +48,7 @@ const BusinessMeeting = () => {
                         image={'/images/1_on_1_meeting.jpeg'}
                         descriptionStyle={{fontSize: 16,lineHeight: '32px'}}
                         separator={false}
+                        style={{gap: 50}}
                     />
 
                     <h4 style={{textAlign: 'center',fontSize: 32}}><Lang ctx="our_seller" /></h4>
@@ -86,7 +87,7 @@ const BusinessMeeting = () => {
                                     <div className={styles.BarIcon}>
                                         <BiCalendar size={20} />
                                     </div>
-                                    <div className={styles.BarText}>27 Oct 2023 | Korean Medical Tourism Mart</div>
+                                    <div className={styles.BarText}>27 Oct 2023 | Korea Medical Tourism Mart</div>
                                 </div>
                             </>
                         }

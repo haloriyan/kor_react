@@ -9,7 +9,7 @@ import { useEffect } from "react";
 
 const Contact = () => {
     useEffect(() => {
-        document.title = "Contact Us - 2023 Korean Medical Tourism Festival"
+        document.title = "Contact Us - 2023 Korea Medical Tourism Festival"
     }, [])
     return (
         <>

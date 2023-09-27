@@ -7,7 +7,7 @@ import styles from "../styles/Rundown.module.css";
 
 const Rundown = () => {
     useEffect(() => {
-        document.title = "Rundown KMTE - 2023 Korean Medical Tourism Festival";
+        document.title = "Rundown KMTE - 2023 Korea Medical Tourism Festival";
     }, []);
     const [tab, setTab] = useState('day1');
 

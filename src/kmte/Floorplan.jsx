@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 
 const Floorplan = () => {
     useEffect(() => {
-        document.title = "KMTE Floorplan - 2023 Korean Medical Tourism Festival"
+        document.title = "KMTE Floorplan - 2023 Korea Medical Tourism Festival"
     }, [])
     return (
         <>
