@@ -25,7 +25,7 @@ const Contact = () => {
                         <div>Jl. Jend. Sudirman Kav.28 Jakarta 10210, Indonesia</div>
 
                         <div style={{height: 30}}></div>
-                        <b>Jam Kerja :</b>
+                        <b><Lang ctx="work_hour" /> :</b>
                         <div>08:00 - 17:00</div>
 
                         <div style={{height: 30}}></div>
