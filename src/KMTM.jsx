@@ -20,6 +20,9 @@ const BusinessMeeting = () => {
     useEffect(() => {
         if (sellers === null) {
             let sl = window.localStorage.getItem('sitelang');
+            if (sl === null) {
+                sl = 'en';
+            }
             setSellers(
                 lang[sl].exhibitors
             );
