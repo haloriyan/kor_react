@@ -10,6 +10,7 @@ import { BiEnvelope, BiPhone, BiUser, BiWindowAlt } from "react-icons/bi";
 import lang from "../lang";
 import Radio from "../components/Radio";
 import config from "../config";
+import Chip from "../components/Chip";
 
 const KMTMRegister = () => {
     const [name, setName] = useState('');
@@ -26,7 +27,8 @@ const KMTMRegister = () => {
     const [message, setMessage] = useState('');
     const [questions, setQuestions] = useState(null);
     const [answers, setAnswers] = useState(null);
-    const [sellers, setSellers] = useState([]);
+    const [sellers, setSellers] = useState(null);
+    const [sellersRaw, setSellersRaw] = useState(null);
 
     const [isLoading, setLoading] = useState(true);
     const [sellersRec, setSellersRec] = useState([]);
@@ -43,29 +45,35 @@ const KMTMRegister = () => {
     }, [questions, siteLang, lang]);
 
     useEffect(() => {
-        if (isLoading) {
-            setLoading(false);
-            axios.get(`${config.baseUrl}/api/exhibitor`)
-            .then(response => {
-                let res = response.data;
-                setSellers(res.exhibitors);
-            });
-        }
-    }, [isLoading]);
-
-    useEffect(() => {
         if (siteLang === null) {
             let sl = window.localStorage.getItem('sitelang');
             setSiteLang(sl === null ? 'en' : sl);
         }
     }, [siteLang]);
 
+    useEffect(() => {
+        if (siteLang !== null && sellers === null) {
+            let sells = lang[siteLang].exhibitors;
+            let slls = [];
+            let sllsRaw = [];
+            sells.map(sell => {
+                if (sell.logo !== "") {
+                    slls.push(sell.name)
+                    sllsRaw.push(sell)
+                }
+            });
+            setSellersRaw(sllsRaw);
+            setSellers(slls);
+        }
+    }, [siteLang, sellers]);
+
     const submit = e => {
-        axios.post(`https://app.kmtf2023.com/api/kmtm-register`, {
+        axios.post(`${config.baseUrl}/api/kmtm-register`, {
         // axios.post(`http://127.0.0.1:8001/api/kmtm-register`, {
             name, email, phone, joinType, fromCompany, answers, website, reference,
             lineOfBusiness, companyEstablished,
-            lang: siteLang
+            lang: siteLang,
+            interesting_sellers: interestingSeller
         })
         .then(response => {
             let res = response.data;
@@ -76,7 +84,6 @@ const KMTMRegister = () => {
             setWebsite('');
             setLineOfBusiness('');
             setCompanyEstablished('');
-            setJoinType('company');
             setMessage(res.message);
             setAnswers(questions);
         })
@@ -108,29 +115,6 @@ const KMTMRegister = () => {
                                     <Input value={fromCompany} label={<Lang ctx="from_company" />} onInput={e => setFromCompany(e.currentTarget.value)} />
                                     <Input value={lineOfBusiness} label={<Lang ctx="line_of_business" />} onInput={e => setLineOfBusiness(e.currentTarget.value)} />
                                     <Input value={companyEstablished} label={<Lang ctx="established_year" />} onInput={e => setCompanyEstablished(e.currentTarget.value)} />
-                                </>
-                            }
-
-                            {
-                                joinType === 'personal' &&
-                                sellers.length > 0 &&
-                                <>
-                                    <Input value={interestingSeller} label={<Lang ctx="interesting_seller" />} onInput={e => setInterestingSeller(e.currentTarget.value)} />
-
-                                    {/*
-                                        sellers.map((seller, s) => (
-                                            <div className={styles.SellerItem}>
-                                                <img 
-                                                    src={`${config.baseUrl}/storage/exhibitor_icons/${seller.icon}`} alt={seller.name} 
-                                                    className={styles.SellerIcon}
-                                                />
-                                                <div style={{display: 'flex',flexGrow: 1}}>{seller.name}</div>
-                                                <div className={styles.SellerItemButton} onClick={e => {
-                                                    // 
-                                                }}>Pilih</div>
-                                            </div>
-                                        ))
-                                    */}
                                 </>
                             }
 
@@ -183,7 +167,37 @@ const KMTMRegister = () => {
 
                             {
                                 joinType === 'personal' &&
-                                <Input required={false} label={<Lang ctx="company_referer" />} onInput={e => setReference(e.currentTarget.value)} />
+                                <>
+                                    <Input required={false} label={<Lang ctx="company_referer" />} onInput={e => setReference(e.currentTarget.value)} />
+
+                                    <div style={{fontSize: 12,marginTop: 20,color: '#777'}}>
+                                        <Lang ctx="interesting_seller" />
+                                    </div>
+                                    <Chip
+                                        value={interestingSeller}
+                                        setValue={(setInterestingSeller)}
+                                        options={sellers}
+                                        item={(e, i) => (
+                                            <div style={{display: 'flex',flexDirection: 'row',gap: 10,alignItems: 'center'}}>
+                                                <img 
+                                                    src={`/images/sellers/${sellersRaw[i].logo}`} alt={e} 
+                                                    style={{
+                                                        height: 40,
+                                                        aspectRatio: 1,
+                                                        borderRadius: 999,
+                                                        backgroundSize: 'cover'
+                                                    }}
+                                                />
+                                                <div>{e}</div>
+                                            </div>
+                                        )}
+                                        max={2}
+                                    />
+
+                                    <div style={{marginTop: 20}}>
+                                        *<Lang ctx="interesting_seller_note" />
+                                    </div>
+                                </>
                             }
 
                             {
