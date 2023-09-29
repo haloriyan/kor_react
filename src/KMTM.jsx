@@ -24,7 +24,7 @@ const BusinessMeeting = () => {
                 sl = 'en';
             }
             setSellers(
-                lang[sl].exhibitors
+                lang[sl].exhibitors.sort((a, b) => a.name.localeCompare(b.name))
             );
         }
     }, [sellers, lang]);
@@ -120,7 +120,7 @@ const BusinessMeeting = () => {
                         <img src={`/images/sellers/${seller.logo}`} alt={seller.name} className={styles.SellerDetailLogo} />
                         <div style={{display: 'flex',flexGrow: 1,flexDirection: 'column'}}>
                             <h3 style={{margin: 0,fontSize: 32}}>{seller.name}</h3>
-                            <div style={{fontSize: 14,marginTop: 20,lineHeight: '22px'}}>{seller.description}</div>
+                            <pre style={{fontSize: 14,marginTop: 20,lineHeight: '22px',fontFamily: "sans-serif",whiteSpace: 'pre-wrap',wordWrap: 'break-word'}}>{seller.description}</pre>
                         </div>
                     </div>
 

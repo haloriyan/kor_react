@@ -233,6 +233,48 @@
             "website": "http://www.genehealth.or.kr/"
         },
         {
+            "name": "HERSHE Plastic Surgery",
+            "description": "HERSHE Plastic Surgery is a specialized hospital established in 1992, focusing on surgical and non-surgical treatments for aging-related issues. Our team of specialized plastic surgeons offers personalized plans to address individual customers' diverse aging symptoms throughout different stages of life. HERSHE Plastic Surgery puts customers' safety and satisfaction first through \"improving the quality of life\" and believes that plastic surgery is a highly personal experience, so we operate on a 100% pre-reservation system to be able to concentrate on each individual customer. Various components will be blended to pursue natural and harmonious beauty while keeping alive the characteristics and individual strengths. Thus, the result will enhance one's natural beauty and can represent personal strength by being natural.",
+            "specialize": "Lifting procedure, cosmetic hip surgery, cosmetic eye surgery",
+            "logo": "hershe.png",
+            "website": "https://www.hershe.com"
+        },
+        {
+            "name": "Wonjin Beauty Medical Group",
+            "description": "Wonjin is the largest plastic surgery clinic with a scale of 5,200m2. Our strength lies in its extensive surgical experience for 20 years so that it can provide satisfactory results, fully accredited surgeons using the best techniques, adoption of the most sophisticated medical equipment, fast post-operative recovery time, thorough post-operative service, and the system of full service and personal care. \nOur health services provide more than 40 specialist doctors, and our translation coordinator will help throughout the entire process. WONJIN is ready at any time to provide a variety of treatments with our many years of medical experience and know-how.",
+            "specialize": "Face contour (jaw surgery), plastic surgery, anti-aging & hair loss, dermatology",
+            "logo": "wonjin.png",
+            "website": "https://wonjinbeauty.com/in"
+        },
+        {
+            "name": "VIEW Plastic Surgery",
+            "description": "View Plastic Surgery thinks from the patient's perspective and finds the value of beauty from the patient's perspective. A group of skilled medical professionals strives to provide ideal surgical results that hopefully impact positively on the lives and minds of patients. \nView has its own 19-story building whose use is optimized for consultation, examination, surgery and recovery procedures on each floor. Prioritizing safety, we provide a very complete medical service for customers by building a safe operating system at the level of a university hospital.",
+            "specialize": "Breast surgery, jaw surgery, face contouring, etc.",
+            "logo": "bedah_plastik_view.png",
+            "website": "https://id.viewplasticsurgery.com"
+        },
+        {
+            "name": "DA Plastic Surgery",
+            "description": "DA Plastic Surgery Clinic base our medical practices on 5 fundamental values, and we will never stop  for the best surgery result for our customers. Our values make us only to provide precise examination and an accurate diagnosis. We only performs the necessary surgery only and focus on enhancing the natural beauty feature of each customers. For satisfying and successful result, doctors at DA will always actively study and do in-depth researches. Not only that DA will take full responsibility for the safety of our customers with an established safety-first system consists of various medical equipment and collaboration between plastic surgeon, anesthesiologist, and dermatologist. Last, we will provide the beauty that our customers desire through outstanding services and genuine communication. \n\nHonest diagnosis, constant research, and years of experience create value for surgery results. Based on a systematic safety system, the value of understanding and empathy for customers, we will create the beauty that goes beyond Korea towards the World.",
+            "specialize": "facial contouring, double jaw surgery, eye, rhinoplasty, breast, lifting and body contouring surgery",
+            "logo": "da.png",
+            "website": "https://www.daprseng.com"
+        },
+        {
+            "name": "Jaseng Hospital of Korean Medicine",
+            "description": "Specialized in non-surgical treatment for spine and joint disease, Jaseng help to boost the self-healing power of your body in a safe and effective approach by combining Korean Tradional Medicine with conventional medicine. Jaseng non-surgical treatments range from swift pain alleviation techniques those have scientifically proven to prevent recurrence and help regenerate bone and nerve tissue and conducted in accordance with the patient’s condition and speed of recovery. Jaseng treatment successfully contains paraspinal inflammation, strengthens supporting ligaments & muscles, and fortifies bones and nerves to treat the fundamental cause of the problem. \n\nOperating in Korea and USA, Jaseng has providing care to 250,000 patients each year, equaling a total of 1.6 million treatment sessions through standardization of Korean medicine treatment. The Jaseng International Clinic is staffed with doctors and coordinators who speak English, Japanese, Russian, and Mongolian. Services provided include consultation, appointment arrangements, interpretation, and domestic/international medication deliveries. We provide an all-inclusive care package for international patients.",
+            "specialize": "Chuna manual therapy, herbal medicine treatment targeting musculoskeletal disorders, acupuncture (general, herbal, motion style acupuncture treatment [MSAT])",
+            "logo": "jaseng.png",
+            "website": "https://www.jaseng.net"
+        },
+        {
+            "name": "StanTop Urology & Andrology Clinic",
+            "description": "STANTOP have excellent experience and know-how in the field of men's medicine. These medical staffs directly provide all treatments for male functions. Men's sexual problems and body shape distress can be a big problem in their relationship with their partner, not to mention the man’s involvement. It is the function of men that affects daily problems such as conflict with spouse and personal activity leading to loss of self-confidence. There is no reason to be reluctant to consult a urologist because you are ashamed or you lost your confidence. Based on our global experience, we will provide better counseling and treatment services to ensure satisfactory results. \n\nStanTop Urology & Andrology Clinic is a specialized medical institution in men’s health that leads the way in improving the quality of life for men, both domestically and globally with over 20 years experience and more than 100,000 counsel experiences",
+            "specialize": "Erectile dysfunction surgery, prostate surgery, man’s six pack liposuction surgery, penile plastic surgery (enlargement & length extension), premature ejaculation treatment, vasectomy",
+            "logo": "stantop.png",
+            "website": "https://www.stantopclinic.com"
+        },
+        {
             "name": "Medical Korea Service",
             "description": "",
             "specialize": "",

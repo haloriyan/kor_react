@@ -234,6 +234,48 @@
             "website": "http://www.genehealth.or.kr/"
         },
         {
+            "name": "Bedah Plastic HERSHE",
+            "description": "Bedah Plastik HERSHE adalah rumah sakit khusus yang didirikan pada tahun 1992, dengan fokus pada  bedah dan non-bedah untuk masalah terkait penuaan. Tim ahli bedah plastik khusus kami menawarkan rencana tindakan yang dipersonalisasi untuk mengatasi beragam gejala penuaan setiap pelanggan di berbagai tahap kehidupan. \n\nBedah Plastik HERSHE mengutamakan keselamatan dan kepuasan pelanggan melalui \"peningkatan kualitas hidup\" dan percaya bahwa operasi plastik adalah pengalaman yang sangat pribadi, jadi kami beroperasi dengan sistem pra-reservasi 100% agar dapat berkonsentrasi pada setiap pelanggan individu. Berbagai komponen akan dikombinasikan untuk mewujudkan keindahan alami dan harmonis sekaligus tetap mempertahankan ciri dan kelebihan fitur setiap individu. Dengan demikian, hasilnya akan menambah kecantikan alami seseorang dan memberikan kepercayaan diri baru.",
+            "specialize": "Lifting, bedah plastik pinggul, bedah plastik mata",
+            "logo": "hershe.png",
+            "website": "https://www.hershebeauty.com"
+        },
+        {
+            "name": "Wonjin Beauty Medical Group",
+            "description": "Wonjin merupakan klinik operasi plastik terbesar dengan skala 5,200m2. Keunggulan Wonjin terletak pada pengalaman operasi yang banyak selama 20 tahun sehingga mampu memberikan hasil yang memuaskan, ahli bedah yang sudah terakreditasi penuh menggunakan teknik terbaik, pengadopsian peralatan kesehatan yang paling canggih, waktu pemulihan pasca operasi yang cepat, layanan sesudah operasi yang teliti, serta sistem perawatan pribadi dan layanan penuh. \n\nLayanan kesehatan kami menyediakan dengan lebih dari 40 dokter ahli dalam,dan kordinator penerjemah kami akan membantu selama semua proses. Wonjin siap setiap saat untuk menyediakan berbagai perawatan dengan pengalaman medis dan know-how bertahun-tahun kami.",
+            "specialize": "Kontur wajah (operasi rahang), bedah plastik, anti-aging dan kerontokan rambut, dermatologi",
+            "logo": "wonjin.png",
+            "website": "https://wonjinbeauty.com/in"
+        },
+        {
+            "name": "Bedah Plastic View",
+            "description": "View Plastic Surgery berpikir dari sudut pandang pasien dan menemukan nilai keindahan dari sudut pandang pasien. Sekelompok profesional medis yang terampil berusaha memberikan hasil bedah yang ideal yang harapannya berdampak positif pada kehidupan dan pikiran pasien. \n\nView memiliki gedung sendiri setinggi 19 tingkat yang penggunaannya dioptimalkan untuk prosedur konsultasi, pemeriksaan, operasi, dan pemulihan di setiap lantai. Mengutamakan keselamatan, kami memberikan layanan medis yang sangat lengkap untuk pelanggan dengan membangun sistem operasi aman setaraf rumah sakit universitas. Bedah Plastik View juga memiliki staf medis baik spesialis bedah plastik, anestesi, dan dermatologis  yang  mumpuni di bidangnya.",
+            "specialize": "Operasi payudara, kontur wajah, operasi rahang, dll.",
+            "logo": "bedah_plastik_view.png",
+            "website": "https://id.viewplasticsurgery.com/"
+        },
+        {
+            "name": "Jaseng Hospital of Korean Medicine",
+            "description": "Spesialis dalam pengobatan non-bedah untuk gangguan tulang belakang dan sendi, Jaseng membantu meningkatkan kekuatan penyembuhan diri tubuh Anda dengan pendekatan yang aman dan efektif melalui kombinasi pengobatan tradisional Korea dengan pengobatan konvensional. Perawatan non-bedah Jaseng meliputi teknik pereda nyeri cepat yang telah terbukti secara ilmiah dapat mencegah kekambuhan dan membantu regenerasi jaringan tulang dan saraf serta dilakukan sesuai dengan kondisi dan tingkat kecepatan pemulihan pasien. Perawatan Jaseng berhasil mengatasi peradangan paraspinal, memperkuat ligamen & otot pendukung, serta memperkuat tulang dan saraf untuk mengatasi penyebab mendasar dari masalah tersebut. \n\nBeroperasi di Korea dan Amerika, Jaseng telah memberikan perawatan kepada 250.000 pasien setiap tahunnya, setara dengan total 1,6 juta sesi pengobatan melalui standarisasi pengobatan tradisional Korea. Klinik Internasional Jaseng dikelola oleh dokter dan koordinator yang bisa berbahasa Inggris, Jepang, Rusia, dan Mongolia. Layanan yang diberikan meliputi konsultasi, pengaturan janji temu, penerjemahan, dan pengiriman obat domestik/internasional. Kami menyediakan paket perawatan lengkap untuk pasien internasional.",
+            "specialize": "Pengobatan non bedah untuk gangguan tulang belakang dan sendi, terapi manual Chuna, terapi obat herbal untuk gangguan muskuloskeletal, akupuntur (umum, herbal, motion style acupuncture treatment [MSAT])",
+            "logo": "jaseng.png",
+            "website": "https://www.jaseng.net"
+        },
+        {
+            "name": "Klinik Urologi dan Andrologi StanTop",
+            "description": "STANTOP memiliki pengalaman dan pengetahuan luar biasa di bidang kedokteran pria. Staf medis  secara langsung menyediakan semua perawatan untuk fungsionalitas pria. Masalah seksual dan tekanan akan bentuk tubuh pada pria bisa menjadi masalah besar dalam hubungannya dengan pasangan, terutama yang membutuhkan keterlibatan sang pria. Kondisi fungsi seksual laki-lakilah  yang mempengaruhi permasalahan sehari-hari seperti konflik dengan pasangan dan aktivitas pribadi yang berujung pada hilangnya rasa percaya diri. Tidak ada alasan untuk ragu berkonsultasi dengan dokter urologi karena malu atau kehilangan rasa percaya diri. Berdasarkan pengalaman global kami, StanTop akan memberikan layanan konseling dan pengobatan yang lebih baik untuk memastikan hasil yang memuaskan. \n\nKlinik Urologi dan Andrologi StanTop adalah institusi medis khusus kesehatan pria yang memimpin dalam meningkatkan kualitas hidup pria, baik di dalam negeri maupun global dengan pengalaman lebih dari 20 tahun dan telah menangani lebih dari 100,000 sesi konseling.",
+            "specialize": "Operasi disfungsi ereksi, operasi prostat, operasi sedot lemak six pack pria, operasi plastik penis (pembesaran & pemanjangan), pengobatan ejakulasi dini, vasektomi",
+            "logo": "stantop.png",
+            "website": "https://www.stantopclinic.com"
+        },
+        {
+            "name": "Bedah Plastic DA",
+            "description": "Klinik Bedah Plastik DA mendasarkan praktik medis kami pada 5 nilai dasar, dan kami tidak akan pernah berhenti belajar untuk mendapatkan hasil operasi terbaik bagi pelanggan kami. Nilai-nilai yang kami miliki membuat kami hanya memberikan pemeriksaan yang tepat dan diagnosis yang akurat. Kami hanya melakukan operasi yang diperlukan dan berfokus pada peningkatan fitur kecantikan alami setiap pelanggan. Untuk mendapatkan hasil yang memuaskan dan sukses, para dokter di DA akan selalu aktif belajar dan melakukan penelitian mendalam. Tidak hanya itu DA akan bertanggung jawab penuh atas keselamatan pelanggan kami dengan sistem yang mengutamakan keselamatan yang terdiri dari berbagai peralatan medis dan kolaborasi antara ahli bedah plastik, ahli anestesi, dan dokter kulit. Terakhir, kami akan memberikan keindahan yang diinginkan pelanggan kami melalui layanan luar biasa dan komunikasi yang tulus. \n\nDiagnosis yang jujur, penelitian terus-menerus, dan pengalaman bertahun-tahun menciptakan nilai bagi hasil operasi. Berdasarkan sistem keselamatan yang sistematis, pengertian dan empati bagi pelanggan, kami akan menciptakan keindahan yang melampaui Korea menuju Dunia.",
+            "specialize": "Kontur wajah, operasi dua rahang, mata, hidung, payudara, lifting and kontur tubuh",
+            "logo": "da.png",
+            "website": "https://www.daprseng.com"
+        },
+        {
             "name": "Medical Korea Service",
             "description": "",
             "specialize": "",
