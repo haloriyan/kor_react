@@ -123,7 +123,7 @@ const BusinessMeeting = () => {
                             <pre style={{fontSize: 14,marginTop: 20,lineHeight: '22px',fontFamily: "sans-serif",whiteSpace: 'pre-wrap',wordWrap: 'break-word'}}>{seller.description}</pre>
 
                             <div style={{display: 'flex',flexDirection: 'row',gap: 20,borderBottomWidth: 1,borderBottomColor: '#ddd',borderBottomStyle: 'solid',padding: 20,alignItems: 'center'}}>
-                                <b>Specialize</b>
+                                <b>Specialization</b>
                                 <div>{seller.specialize}</div>
                             </div>
                             <div style={{display: 'flex',flexDirection: 'row',gap: 20,borderBottomWidth: 1,borderBottomColor: '#ddd',borderBottomStyle: 'solid',padding: 20,alignItems: 'center'}}>
