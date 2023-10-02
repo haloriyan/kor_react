@@ -102,7 +102,7 @@ const KMTMRegister = () => {
                             <Input value={name} label={<Lang ctx="name" />} icon={<BiUser />} onInput={e => setName(e.currentTarget.value)} />
                             <Input value={email} label={<Lang ctx="email" />} icon={<BiEnvelope />} onInput={e => setEmail(e.currentTarget.value)} />
                             <Input value={phone} label={<Lang ctx="phone" />} icon={<BiPhone />} onInput={e => setPhone(e.currentTarget.value)} />
-                            <Input value={website} label={<Lang ctx="website" />} icon={<BiWindowAlt />} onInput={e => setWebsite(e.currentTarget.value)} />
+                            <Input value={website} label={<Lang ctx="website_sns" />} icon={<BiWindowAlt />} onInput={e => setWebsite(e.currentTarget.value)} />
                             <div style={{fontSize: 12,color: '#888',marginTop: 20}}><Lang ctx="join_type" /></div>
                             <select name="join_type" id="join_type" value={joinType} onChange={e => setJoinType(e.currentTarget.value)}>
                                 <option value="company"><Lang ctx="company" /></option>

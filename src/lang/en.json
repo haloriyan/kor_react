@@ -12,7 +12,7 @@
     "name": "Name",
     "email": "Email",
     "phone": "Phone Number",
-    "website": "Website / SNS Profile URL",
+    "website_sns": "Website / SNS Profile URL",
     "company_referer": "Company referer",
     "message": "Message",
     "personal": "B2C (Personal)",
@@ -282,6 +282,9 @@
             "website": ""
         }
     ],
+
+    "specialize": "Specialization",
+    "website": "Website",
 
     "las": "sd"
 }

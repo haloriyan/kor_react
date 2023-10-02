@@ -12,7 +12,7 @@
     "name": "Nama",
     "email": "Email",
     "phone": "No. Telepon",
-    "website": "Situs web / URL Profil SNS",
+    "website_sns": "Situs web / URL Profil SNS",
     "message": "Pesan",
     "personal": "B2C (Pribadi)",
     "company": "B2B (Perusahaan)",
@@ -283,6 +283,9 @@
             "website": ""
         }
     ],
+
+    "specialize": "Spesialisasi",
+    "website": "Situs Resmi",
 
     "last": "sd"
 }
