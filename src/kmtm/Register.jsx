@@ -19,7 +19,7 @@ const KMTMRegister = () => {
     const [website, setWebsite] = useState('');
     const [reference, setReference] = useState('');
     const [joinType, setJoinType] = useState('company');
-    const [interestingSeller, setInterestingSeller] = useState('');
+    const [interestingSeller, setInterestingSeller] = useState(null);
     const [fromCompany, setFromCompany] = useState('');
     const [lineOfBusiness, setLineOfBusiness] = useState('');
     const [companyEstablished, setCompanyEstablished] = useState('');
