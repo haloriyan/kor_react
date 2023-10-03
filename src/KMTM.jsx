@@ -122,10 +122,13 @@ const BusinessMeeting = () => {
                             <h3 style={{margin: 0,fontSize: 32}}>{seller.name}</h3>
                             <pre style={{fontSize: 14,marginTop: 20,lineHeight: '22px',fontFamily: "sans-serif",whiteSpace: 'pre-wrap',wordWrap: 'break-word'}}>{seller.description}</pre>
 
-                            <div style={{display: 'flex',flexDirection: 'row',gap: 20,borderBottomWidth: 1,borderBottomColor: '#ddd',borderBottomStyle: 'solid',padding: 20,alignItems: 'center'}}>
-                                <b><Lang ctx="specialize" /></b>
-                                <div>{seller.specialize}</div>
-                            </div>
+                            {
+                                seller.specialize !== "" &&
+                                <div style={{display: 'flex',flexDirection: 'row',gap: 20,borderBottomWidth: 1,borderBottomColor: '#ddd',borderBottomStyle: 'solid',padding: 20,alignItems: 'center'}}>
+                                    <b><Lang ctx="specialize" /></b>
+                                    <div>{seller.specialize}</div>
+                                </div>
+                            }
                             <div style={{display: 'flex',flexDirection: 'row',gap: 20,borderBottomWidth: 1,borderBottomColor: '#ddd',borderBottomStyle: 'solid',padding: 20,alignItems: 'center'}}>
                                 <b><Lang ctx="website" /></b>
                                 <div>

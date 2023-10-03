@@ -276,11 +276,32 @@
             "website": "https://www.daprseng.com"
         },
         {
-            "name": "Medical Korea Service",
-            "description": "",
+            "name": "Rumah Sakit Universitas SoonChunHyang Seoul",
+            "description": "Rumah Sakit Universitas SoonChunHyang Seoul dibuka pada tahun 1974 dengan kecintaan pada kemanusiaan, rasa hormat terhadap kemanusiaan berbasis pada semangat SoonChunHyang untuk membangun desa kampung halaman yang merangkul kehendak surga di bawah ketekunan, pelayanan, dan penelitian. Kami memiliki banyak pusat khusus, seperti pusat gawat darurat, pusat ginjal, pusat nyeri, pusat jantung, pusat penyakit pencernaan, pusat kesehatan ibu dan anak, pusat sel induk, pusat alergi anak, dan pusat tanpa darah.\n\nRumah sakit kami saat ini mengoperasikan 730 tempat tidur di 32 departemen, dan lebih dari 1,800 anggota fakultas, termasuk 200 profesor profesional yang selalu melakukan yang terbaik untuk perawatan pasien, penelitian, dan pendidikan. Salah satu keunggulan kami adalah layanan integrasi keperawatan untuk meningkatkan kepuasan karyawan serta pasien dan perawatnya, karena hanya personel yang tepat akan menangani pasien secara intensif. Dalam evaluasi sertifikasi institusi medis, kami terus menerus mendapatkan hasil yang sangat baik. Pada tahun 2018, dengan menempati peringkat pertama di Seoul dan kedua secara nasional dalam evaluasi institusi medis darurat regional Kementerian Kesehatan dan Kesejahteraan, membuktikan bahwa layanan medis kami berkualitas tinggi. Pada tahun 2018, dalam penilaian kualitas medis yang diselenggarakan oleh Kementerian Kesehatan dan Kesejahteraan, kami mendapat nilai pertama selama tiga tahun berturut-turut. Rumah Sakit ini berada di peringkat ke-12 di antara 322 organisasi yang dievaluasi, termasuk Rumah Sakit Umum Tingkat Lanjut.\n\nMeskipun bukan yang terbesar, SoonChunHyang adalah rumah sakit yang aman, memberikan perawatan berkualitas tinggi, serta selalu memuaskan pasien dan staf sekaligus memenuhi tanggung jawab sosial dalam upaya menciptakan nilai-nilai kebersamaan.",
+            "specialize": "Kanker payudara dan ginekologi, kanker gastrointestinal, artikulasi buatan dan tulang belakang, pengobatan penyakit kardiovaskular (gangguan pada jantung dan pembuluh darah) dan serebrovaskular (terkait pembuluh darah otak)",
+            "logo": "soonchunhyang.png",
+            "website": "https://international.schmc.ac.kr/"
+        },
+        {
+            "name": "Badan Pariwisata Seoul",
+            "description": "Organisasi Pariwisata Seoul adalah organisasi publik yang bertugas menarik pengunjung internasional melalui pengembangan, komersialisasi, dan pemasaran sumber daya pariwisata Seoul yang efektif. Hal ini bertujuan untuk memperkuat daya saing global Seoul dan meningkatkan keahlian dan efektivitas proyek pemasaran Kota Seoul untuk memastikan keberlanjutannya.",
             "specialize": "",
-            "logo": "",
-            "website": ""
+            "logo": "seoul-tourism.png",
+            "website": "https://www.sto.or.kr/english"
+        },
+        {
+            "name": "MEDICOPER",
+            "description": "Didirikan pada tahun 2014, MEDICOPER menyediakan berbagai layanan yang di dalamnya termasuk pemasaran dan konsultasi medis, menarik kunjungan pasien asing, perjalanan wisata medis, pengaturan perjalanan lainnya, penjualan secara grosir dan eceran untuk peralatan medis, kosmetik dan suplemen kesehatan.\n\nSaat ini, kami telah menandatangani perjanjian dengan berbagai rumah sakit besar dan rumah sakit kecil menengah untuk melayani konsultasi dan pemasaran yang memanfaatkan kekuatan masing-masing rumah sakit secara maksimal. Selain itu, berdasarkan teknologi medis canggih dan sumber daya pariwisata kota Incheon di Korea, kami telah berupaya mengembangkan dan menstimulasi pertumbuhan produk medis bagi orang asing yang mengunjungi Korea. Kami akan membantu merekomendasikan rumah sakit yang cocok untuk Anda dan membuat janji reservasi serta konsultasi (termasuk terjemahan) jika Anda berniat mendapatkan layanan medis selama perjalanan pribadi Anda.\n\nMEDICOPER menyediakan asistensi perawatan total untuk semua subjek medis",
+            "specialize": "Paket layanan penuh wisata medis, concierge medis, visa medis",
+            "logo": "medicoper.png",
+            "website": "https://www.facebook.com/medicoper"
+        },
+        {
+            "name": "Medical Korea Service",
+            "description": "We provide customized beauty and medical consulting as well as group training programs in Korea's latest aesthetics trends, plastic surgery and medical treatment. With more than 15 years experience, we select the most suitable doctors and hospitals for people from all around the world through our know how and wide networks in the medical industry. \n\nPromise the 3 Cs when serving our customers : Credibility, Commitment and Caring,  MKS will help you to make the correct choice in recommending relevant doctors based on experience, commit to every consultation session thus save you time and money by negotiating the best deal for you, and last, provide all the care needed-while in Korea giving outstanding customer service.\n\nWe are a legal consulting company that ensures that we only bring our clients to the institutions those are authorized by the Korean government to provide medical services to international customers",
+            "specialize": "Beauty facilitator and concierge, medical tourism insurance, premium VIP K-pop experience, training package",
+            "logo": "medical_korea_service.png",
+            "website": "https://www.medicalkoreaservice.com/"
         }
     ],
 

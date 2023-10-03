@@ -275,11 +275,32 @@
             "website": "https://www.stantopclinic.com"
         },
         {
-            "name": "Medical Korea Service",
-            "description": "",
+            "name": "SoonChunHyang University Seoul Hospital",
+            "description": "SoonChunHyang University Seoul Hospital was opened in 1974 with the love of human beings, respect for humanity with the spirit of SoonChunHyang, to build a hometown village that embraces the will of heaven under the diligence, service, and research. We have many specialized centers, such as emergency center, kidney center, pain center, heart center, digestive disease center, maternal and child health center, stem cells center, pediatric allergy center, and bloodless center. \n\nOur hospital currently operates 730 beds in 32 departments, and more than 1,800 faculty members, including 200 professional professors, are doing their best for patient care, research, and education. One of our strong point is the nursing care integration service enhances the satisfaction of employees as well as patients and their caregivers, because the proper personnel intensively manage patients. In the certification evaluation of medical institutions, we are getting excellent results every time, and in 2018, the Ministry of Health and Welfare's regional emergency medical institutions evaluation proved high-quality medical services, ranking first in Seoul and second in nationwide. In 2018, in the medical quality assessment organized by the Ministry of Health and Welfare, we received the first grade for three consecutive years. It is ranked 12th among the 322 organizations evaluated, including the Advanced General Hospital. \n\nAlthough it is not the largest hospital, it is a safe hospital, providing high quality treatment, a hospital that satisfies both patient and staff members while fulfilling social responsibilities and making efforts to create shared values.",
+            "specialize": "breast & gynecologic cancer, gastrointestinal cancer, artificial articulation and spine, cardiovascular disease & cerebrovascular disease treatment",
+            "logo": "soonchunhyang.png",
+            "website": "https://international.schmc.ac.kr/"
+        },
+        {
+            "name": "Seoul Tourism Organization",
+            "description": "The Seoul Tourism Organization is a public organization tasked with attracting international visitors through the effective development, commercialization and marketing of Seoul's tourism resources. It aims to strengthen Seoul's global competitiveness and increase the expertise and effectiveness of Seoul City's marketing project to ensure their sustainability.",
             "specialize": "",
-            "logo": "",
-            "website": ""
+            "logo": "seoul-tourism.png",
+            "website": "https://www.sto.or.kr/english"
+        },
+        {
+            "name": "MEDICOPER",
+            "description": "Founded in 2014, MEDICOPER provide a wide range of services, including medical marketing and consulting, attracting foreign patients, medical tourism travel, other travel arrangements, wholesale and retail of medical devices, cosmetics and health supplements. \n\nCurrently, we have signed agreements with various large hospitals and small medium-sized hospitals to conduct consulting and marketing that utilizes the strengths of each hospital to its fullest. In addition, based on the advanced medical technology and tourism resources of Incheon city in Korea, we have been striving to develop and vitalize medical products for foreigners visiting Korea. We will help to recommend a hospital that suits you and support reservations and consultation (translation included) services if you want to take time during your personal trip to receive medical service.\n\nMEDICOPER provides total care assistance for all medical subjects",
+            "specialize": "Full package service for medical tourism, medical concierge, medical tourism visa",
+            "logo": "medicoper.png",
+            "website": "https://www.facebook.com/medicoper "
+        },
+        {
+            "name": "Medical Korea Service",
+            "description": "Kami menyediakan konsultasi kecantikan dan medis yang dipersonalisasi serta program pelatihan kelompok mengenai tren estetika terkini, operasi plastik, dan perawatan medis Korea. Dengan pengalaman lebih dari 15 tahun, kami memilih dokter dan rumah sakit yang paling cocok untuk orang-orang dari seluruh dunia melalui know how kami dan jaringan luas di industri medis.\n\nMenjanjikan 3 C dalam melayani pelanggan kami : Kredibilitas, Komitmen dan Kepedulian, MKS akan membantu Anda membuat pilihan yang tepat dalam merekomendasikan dokter terkait berdasarkan pada pengalaman; berkomitmen pada setiap sesi konsultasi sehingga menghemat waktu dan uang Anda dengan menegosiasikan kesepakatan terbaik untuk Anda , dan terakhir, memberikan semua layanan perawatan luar biasa yang diperlukan selama berada di Korea.\n\nMKS adalah perusahaan konsultan legal yang memastikan bahwa kami hanya membawa klien kami ke klinik yang telah mendapat izin oleh pemerintah Korea untuk memberikan layanan medis kepada pelanggan internasional",
+            "specialize": "Layanan fasilitator and concierge kecantikan, asuransi wisata medis, pengalaman K-pop premium VIP, paket pelatihan",
+            "logo": "medical_korea_service.png",
+            "website": "https://www.medicalkoreaservice.com/"
         }
     ],
 
