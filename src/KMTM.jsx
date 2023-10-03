@@ -23,6 +23,7 @@ const BusinessMeeting = () => {
             if (sl === null) {
                 sl = 'en';
             }
+            console.log(lang[sl].exhibitors.length);
             setSellers(
                 lang[sl].exhibitors.sort((a, b) => a.name.localeCompare(b.name))
             );
