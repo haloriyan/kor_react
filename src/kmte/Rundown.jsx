@@ -41,22 +41,14 @@ const Rundown = () => {
                             <tbody>
                                 <tr>
                                     <td>13.00 - 14.00</td>
-                                    <td>Opening Ceremony</td>
-                                </tr>
-                                <tr>
-                                    <td>16.00 - 17.00</td>
-                                    <td>K-Make Over</td>
-                                </tr>
-                                <tr>
-                                    <td>18.00 - 19.00</td>
-                                    <td>Live Acoustic</td>
+                                    <td>Opening Ceremony & Press Conference</td>
                                 </tr>
                                 <tr>
                                     <td>19.00 - 20.00</td>
                                     <td>Wellness Talk</td>
                                 </tr>
                                 <tr>
-                                    <td>20.30 - 21.00</td>
+                                    <td>20.30 - 21.15</td>
                                     <td>Live Acoustic</td>
                                 </tr>
                             </tbody>
@@ -73,16 +65,24 @@ const Rundown = () => {
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>15.00 - 16.00</td>
-                                    <td>Sharing Wow Korea Supporters 2023 Session</td>
-                                </tr>
-                                <tr>
-                                    <td>19.00 - 20.00</td>
+                                    <td>12.00 - 13.00</td>
                                     <td>Korea Medical Beauty</td>
                                 </tr>
                                 <tr>
-                                    <td>20.30 - 21.00</td>
-                                    <td>Announcement Winner (Lucky Draw)</td>
+                                    <td>16.00 - 17.00</td>
+                                    <td>Sharing Wow Korea Supporters 2023 Session</td>
+                                </tr>
+                                <tr>
+                                    <td>18.00 - 19.00</td>
+                                    <td>K-Make Over (Personal Color Curator)</td>
+                                </tr>
+                                <tr>
+                                    <td>20.00 - 20.30</td>
+                                    <td>Announcement Winner (Lucky Draw & Instagram Challenge)</td>
+                                </tr>
+                                <tr>
+                                    <td>20.30 - 21.15</td>
+                                    <td>Live Acoustic</td>
                                 </tr>
                             </tbody>
                         </table>
