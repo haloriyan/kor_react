@@ -181,8 +181,15 @@
             "name": "Gangnam Grand Eye Clinic",
             "description": "Gangnam Grand Eye Clinic strives to achieve the best results with the same sincerity as we would for our precious family. We offer premium treatments with a distinct level of dignity. Rest assured, we will take care of your precious eyes. Our clinic is recognized for contributing to the improvement of national healthcare, selected as Korea Good Doctor 100,  won Korean Minister of Health and Welfare Award for ophthalmology, SocialContribution Grand Prize for Medical Care, and Korea's No. 1 consumer satisfaction index",
             "specialize": "Visual correction LASIK, LASEK, SMILASIK, Premium Presbyopia Cataract",
-            "logo": "gangnam.png",
+            "logo": "gangnam_gec.png",
             "website": "https://grandeye.kr/"
+        },
+        {
+            "name": "Gangnam JS Hospital",
+            "description": "A specialized hospital that started with the first arthritis stem cell surgery and currently has treated and cured more than 2,300 arthritis patients. Overcome the limitations of existing degenerative arthritis treatment methods, we present a new paradigm for cartilage damage treatment.\n\nCord blood stem cell transplantation is a treatment method that induces and restores the regeneration of new cartilage, eliminating joint pain and restoring the healthy knees that existed before arthritis occurred. For arthritis and cartilage damage that had no choice but to be treated with symptomatic therapy and artificial implant insertion, we are continuing to cure cases by creating cartilage through umbilical cord blood stem cell transplantation. It has been recognized as a new technology by several world-class academic journals (SCI-E), including World of Stem Cell.\n\nGangnam JS Hospital puts the patient's quality of life as a top priority, we will keep you healthy with the best medical technology.",
+            "specialize": "Orthopedic for sports injury, spine & joints ; cord blood stem cell therapy",
+            "logo": "gangnam.png",
+            "website": "http://www.sjshospital.com/ "
         },
         {
             "name": "Ruby Plastic Surgery",
@@ -229,7 +236,7 @@
             "name": "Genehealth Health Promotion Center",
             "description": "Macrogen Medical Foundation, has opened the Genehealth Health Promotion Center in Korea, equipped with cutting-edge equipment to actualize the future medicine. Based on Macrogen's expertise and long experience in precision medicine and genomics, Genehealth Promotion Center provides health care services according to the life cycle and is Incheon's health center that provides differentiated high-quality checkup services through personalized diagnosis and health management. This is a specialized health examination institution.",
             "specialize": "Medical check up, operasi plastic / estetika, penyakit berat, and konferensi internasional",
-            "logo": "genehealth.png",
+            "logo": "",
             "website": "http://www.genehealth.or.kr/"
         },
         {
@@ -275,8 +282,8 @@
             "website": "https://www.stantopclinic.com"
         },
         {
-            "name": "SoonChunHyang University Seoul Hospital",
-            "description": "SoonChunHyang University Seoul Hospital was opened in 1974 with the love of human beings, respect for humanity with the spirit of SoonChunHyang, to build a hometown village that embraces the will of heaven under the diligence, service, and research. We have many specialized centers, such as emergency center, kidney center, pain center, heart center, digestive disease center, maternal and child health center, stem cells center, pediatric allergy center, and bloodless center. \n\nOur hospital currently operates 730 beds in 32 departments, and more than 1,800 faculty members, including 200 professional professors, are doing their best for patient care, research, and education. One of our strong point is the nursing care integration service enhances the satisfaction of employees as well as patients and their caregivers, because the proper personnel intensively manage patients. In the certification evaluation of medical institutions, we are getting excellent results every time, and in 2018, the Ministry of Health and Welfare's regional emergency medical institutions evaluation proved high-quality medical services, ranking first in Seoul and second in nationwide. In 2018, in the medical quality assessment organized by the Ministry of Health and Welfare, we received the first grade for three consecutive years. It is ranked 12th among the 322 organizations evaluated, including the Advanced General Hospital. \n\nAlthough it is not the largest hospital, it is a safe hospital, providing high quality treatment, a hospital that satisfies both patient and staff members while fulfilling social responsibilities and making efforts to create shared values.",
+            "name": "SoonChunHyang University Hospital Seoul",
+            "description": "SoonChunHyang University Seoul Hospital was opened in 1974 with the love of human beings, respect for humanity with the spirit of SoonChunHyang, to build a hometown village that embraces the will of heaven under the diligence, service, and research. We have many specialized centers, such as emergency center, kidney center, pain center, heart center, digestive disease center, maternal and child health center, stem cells center, pediatric allergy center, and bloodless center.\n\nOur hospital currently operates 730 beds in 32 departments, and more than 1,800 faculty members, including 200 professional professors, are doing their best for patient care, research, and education. One of our strong point is the nursing care integration service enhances the satisfaction of employees as well as patients and their caregivers, because the proper personnel intensively manage patients. In the certification evaluation of medical institutions, we are getting excellent results every time, and in 2018, the Ministry of Health and Welfare's regional emergency medical institutions evaluation proved high-quality medical services, ranking first in Seoul and second in nationwide. In 2018, in the medical quality assessment organized by the Ministry of Health and Welfare, we received the first grade for three consecutive years. It is ranked 12th among the 322 organizations evaluated, including the Advanced General Hospital.\n\nAlthough it is not the largest hospital, it is a safe hospital, providing high quality treatment, a hospital that satisfies both patient and staff members while fulfilling social responsibilities and making efforts to create shared values.",
             "specialize": "breast & gynecologic cancer, gastrointestinal cancer, artificial articulation and spine, cardiovascular disease & cerebrovascular disease treatment",
             "logo": "soonchunhyang.png",
             "website": "https://international.schmc.ac.kr/"

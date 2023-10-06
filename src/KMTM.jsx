@@ -142,7 +142,7 @@ const BusinessMeeting = () => {
                     </div>
 
                     <div style={{cursor: 'pointer',marginTop: 20,textAlign: 'center',fontWeight: 700}} onClick={() => setSeller(null)}>
-                        Tutup
+                        <Lang ctx="close" />
                     </div>
                 </Popup>
             }
