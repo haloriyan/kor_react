@@ -8,6 +8,8 @@ import Lang from "./components/Lang";
 import { useEffect, useState } from "react";
 import lang from "./lang";
 import Popup from "./components/Popup";
+import axios from "axios";
+import config from "./config";
 
 const BusinessMeeting = () => {
     useEffect(() => {
@@ -16,19 +18,40 @@ const BusinessMeeting = () => {
 
     const [sellers, setSellers] = useState(null);
     const [seller, setSeller] = useState(null);
+    const [sitelang, setSiteLang] = useState(null);
+
+    const payload = (payloads, key) => {
+        let toReturn = null;
+        key += `_${sitelang}`;
+        payloads.map((item, i) => {
+            if (item.type === key) {
+                toReturn = item.value;
+            }
+        })
+        return toReturn;
+    }
 
     useEffect(() => {
-        if (sellers === null) {
+        if (sitelang === null) {
             let sl = window.localStorage.getItem('sitelang');
             if (sl === null) {
                 sl = 'en';
             }
-            console.log(lang[sl].exhibitors.length);
-            setSellers(
-                lang[sl].exhibitors.sort((a, b) => a.name.localeCompare(b.name))
-            );
+            setSiteLang(sl);
         }
-    }, [sellers, lang]);
+    }, [sitelang]);
+
+    useEffect(() => {
+        if (sellers === null && sitelang !== null) {
+            setSeller('loading');
+            axios.get(`${config.baseUrl}/api/seller`)
+            .then(response => {
+                let res = response.data;
+                let sellers = res.sellers;
+                setSellers(sellers);
+            });
+        }
+    }, [sellers, sitelang]);
     
     return (
         <>
@@ -61,22 +84,24 @@ const BusinessMeeting = () => {
                     <div className={styles.SellerArea}>
                         {
                             sellers !== null &&
-                            sellers.map((sllr, s) => {
-                                if (sllr.logo !== "") return (
-                                    <div className={styles.SellerItem2} key={s}>
-                                        <img src={`/images/sellers/${sllr.logo}`} alt={sllr.logo} className={styles.SellerItemLogo} />
-                                        <div className={styles.SellerItemButton} onClick={() => {
-                                            setSeller(sllr)
-                                        }}>
-                                            DETAIL
+                            <>
+                                {
+                                    sellers.map((sllr, s) => (
+                                        <div className={styles.SellerItem2} key={s}>
+                                            <img src={`${config.baseUrl}/storage/seller_logos/${sllr.logo}`} alt={sllr.logo} className={styles.SellerItemLogo} />
+                                            <div className={styles.SellerItemButton} onClick={() => {
+                                                setSeller(sllr)
+                                            }}>
+                                                DETAIL
+                                            </div>
                                         </div>
-                                    </div>
-                                )
-                            })
+                                    ))
+                                }
+                                <div className={styles.SellerItem2} style={{aspectRatio: 1/1}}>
+                                    <Lang ctx="many_more" format={e => e.toUpperCase()} />
+                                </div>
+                            </>
                         }
-                        <div className={styles.SellerItem2} style={{aspectRatio: 1/1}}>
-                            <Lang ctx="many_more" format={e => e.toUpperCase()} />
-                        </div>
                     </div>
 
                     <h3 style={{textAlign: 'center',fontSize: 46,marginTop: 80,marginBottom: 0}}>
@@ -115,19 +140,19 @@ const BusinessMeeting = () => {
             </div>
 
             {
-                seller !== null &&
+                (seller !== null && seller !== "loading") &&
                 <Popup onDismiss={() => setSeller(null)}>
                     <div style={{display: 'flex',flexDirection: 'column',alignItems: 'center',gap: 40}}>
-                        <img src={`/images/sellers/${seller.logo}`} alt={seller.name} className={styles.SellerDetailLogo} />
+                        <img src={`${config.baseUrl}/storage/seller_logos/${seller.logo}`} alt={seller.name} className={styles.SellerDetailLogo} />
                         <div style={{display: 'flex',flexGrow: 1,flexDirection: 'column'}}>
-                            <h3 style={{margin: 0,fontSize: 32}}>{seller.name}</h3>
-                            <pre style={{fontSize: 14,marginTop: 20,lineHeight: '22px',fontFamily: "sans-serif",whiteSpace: 'pre-wrap',wordWrap: 'break-word'}}>{seller.description}</pre>
+                            <h3 style={{margin: 0,fontSize: 32}}>{payload(seller.payloads, 'name')}</h3>
+                            <pre style={{fontSize: 14,marginTop: 20,lineHeight: '22px',fontFamily: "sans-serif",whiteSpace: 'pre-wrap',wordWrap: 'break-word'}}>{payload(seller.payloads, 'description')}</pre>
 
                             {
                                 seller.specialize !== "" &&
                                 <div style={{display: 'flex',flexDirection: 'row',gap: 20,borderBottomWidth: 1,borderBottomColor: '#ddd',borderBottomStyle: 'solid',padding: 20,alignItems: 'center'}}>
                                     <b><Lang ctx="specialize" /></b>
-                                    <div>{seller.specialize}</div>
+                                    <div>{payload(seller.payloads, `specialization`)}</div>
                                 </div>
                             }
                             <div style={{display: 'flex',flexDirection: 'row',gap: 20,borderBottomWidth: 1,borderBottomColor: '#ddd',borderBottomStyle: 'solid',padding: 20,alignItems: 'center'}}>
