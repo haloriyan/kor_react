@@ -19,7 +19,7 @@ const KMTMRegister = () => {
     const [website, setWebsite] = useState('');
     const [reference, setReference] = useState('');
     const [joinType, setJoinType] = useState('company');
-    const [interestingSeller, setInterestingSeller] = useState(null);
+    const [interestingSeller, setInterestingSeller] = useState([]);
     const [fromCompany, setFromCompany] = useState('');
     const [lineOfBusiness, setLineOfBusiness] = useState('');
     const [companyEstablished, setCompanyEstablished] = useState('');
@@ -53,23 +53,30 @@ const KMTMRegister = () => {
 
     useEffect(() => {
         if (siteLang !== null && sellers === null) {
-            let sells = lang[siteLang].exhibitors;
-            let slls = [];
-            let sllsRaw = [];
-            sells.map(sell => {
-                if (sell.logo !== "") {
-                    slls.push(sell.name)
-                    sllsRaw.push(sell)
-                }
-            });
-            setSellersRaw(sllsRaw);
-            setSellers(slls);
+            setSellers([]);
+            console.log('getting seller');
+            axios.get(`${config.baseUrl}/api/seller`)
+            .then(response => {
+                let res = response.data;
+                setSellersRaw(res.sellers);
+                setSellers(res.sellers);
+            })
+            // let sells = lang[siteLang].exhibitors;
+            // let slls = [];
+            // let sllsRaw = [];
+            // sells.map(sell => {
+            //     if (sell.logo !== "") {
+            //         slls.push(sell.name)
+            //         sllsRaw.push(sell)
+            //     }
+            // });
+            // setSellersRaw(sllsRaw);
+            // setSellers(slls);
         }
     }, [siteLang, sellers]);
 
     const submit = e => {
         axios.post(`${config.baseUrl}/api/kmtm-register`, {
-        // axios.post(`http://127.0.0.1:8001/api/kmtm-register`, {
             name, email, phone, joinType, fromCompany, answers, website, reference,
             lineOfBusiness, companyEstablished,
             lang: siteLang,
@@ -104,7 +111,10 @@ const KMTMRegister = () => {
                             <Input value={phone} label={<Lang ctx="phone" />} icon={<BiPhone />} onInput={e => setPhone(e.currentTarget.value)} />
                             <Input value={website} label={<Lang ctx="website_sns" />} icon={<BiWindowAlt />} onInput={e => setWebsite(e.currentTarget.value)} />
                             <div style={{fontSize: 12,color: '#888',marginTop: 20}}><Lang ctx="join_type" /></div>
-                            <select name="join_type" id="join_type" value={joinType} onChange={e => setJoinType(e.currentTarget.value)}>
+                            <select name="join_type" id="join_type" onChange={e => {
+                                // console.log(e.currentTarget.value);
+                                setJoinType(e.currentTarget.value)
+                            }}>
                                 <option value="company"><Lang ctx="company" /></option>
                                 <option value="personal"><Lang ctx="personal" /></option>
                             </select>
@@ -175,7 +185,7 @@ const KMTMRegister = () => {
                                     </div>
                                     <Chip
                                         value={interestingSeller}
-                                        setValue={(setInterestingSeller)}
+                                        setValue={setInterestingSeller}
                                         options={sellers}
                                         item={(e, i) => (
                                             <div style={{display: 'flex',flexDirection: 'row',gap: 10,alignItems: 'center'}}>
@@ -185,7 +195,7 @@ const KMTMRegister = () => {
                                                         height: 40,
                                                         aspectRatio: 1,
                                                         borderRadius: 999,
-                                                        backgroundSize: 'cover'
+                                                        objectFit: 'cover'
                                                     }}
                                                 />
                                                 <div>{e}</div>
