@@ -74,6 +74,17 @@ const KMTMRegister = () => {
             // setSellers(slls);
         }
     }, [siteLang, sellers]);
+    
+    const payload = (payloads, key) => {
+        let toReturn = null;
+        key += `_${siteLang}`;
+        payloads.map((item, i) => {
+            if (item.type === key) {
+                toReturn = item.value;
+            }
+        })
+        return toReturn;
+    }
 
     const submit = e => {
         axios.post(`${config.baseUrl}/api/kmtm-register`, {
@@ -198,7 +209,7 @@ const KMTMRegister = () => {
                                                         objectFit: 'cover'
                                                     }}
                                                 />
-                                                <div>{e}</div>
+                                                <div>{payload(e.payloads, `name`)}</div>
                                             </div>
                                         )}
                                         max={2}

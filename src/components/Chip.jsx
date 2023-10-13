@@ -3,6 +3,7 @@ import styles from "./styles/Chip.module.css";
 import config from "../config";
 
 const Chip = ({value, setValue, options, itemStyle, containerStyle, rounded = 8, item = null, max = null, multiple = true}) => {
+    console.log(options);
     return (
         <div className={styles.Container}>
             {
