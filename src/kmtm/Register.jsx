@@ -11,6 +11,7 @@ import lang from "../lang";
 import Radio from "../components/Radio";
 import config from "../config";
 import Chip from "../components/Chip";
+import InArray from "../components/InArray";
 
 const KMTMRegister = () => {
     const [name, setName] = useState('');
@@ -54,12 +55,15 @@ const KMTMRegister = () => {
     useEffect(() => {
         if (siteLang !== null && sellers === null) {
             setSellers([]);
-            console.log('getting seller');
             axios.get(`${config.baseUrl}/api/seller`)
             .then(response => {
                 let res = response.data;
                 setSellersRaw(res.sellers);
-                setSellers(res.sellers);
+                let theSellers = [];
+                res.sellers.map(sllr => {
+                    theSellers.push(sllr.name);
+                })
+                setSellers(theSellers);
             })
             // let sells = lang[siteLang].exhibitors;
             // let slls = [];
@@ -95,13 +99,13 @@ const KMTMRegister = () => {
         })
         .then(response => {
             let res = response.data;
-            console.log(res);
             setName('');
             setEmail('');
             setPhone('');
             setWebsite('');
             setLineOfBusiness('');
             setCompanyEstablished('');
+            setFromCompany('');
             setMessage(res.message);
             setAnswers(questions);
         })
@@ -123,7 +127,6 @@ const KMTMRegister = () => {
                             <Input value={website} label={<Lang ctx="website_sns" />} icon={<BiWindowAlt />} onInput={e => setWebsite(e.currentTarget.value)} />
                             <div style={{fontSize: 12,color: '#888',marginTop: 20}}><Lang ctx="join_type" /></div>
                             <select name="join_type" id="join_type" onChange={e => {
-                                // console.log(e.currentTarget.value);
                                 setJoinType(e.currentTarget.value)
                             }}>
                                 <option value="company"><Lang ctx="company" /></option>
@@ -209,7 +212,7 @@ const KMTMRegister = () => {
                                                         objectFit: 'cover'
                                                     }}
                                                 />
-                                                <div>{payload(e.payloads, `name`)}</div>
+                                                <div>{e}</div>
                                             </div>
                                         )}
                                         max={2}

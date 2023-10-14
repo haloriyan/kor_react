@@ -2,8 +2,7 @@ import React from "react";
 import styles from "./styles/Chip.module.css";
 import config from "../config";
 
-const Chip = ({value, setValue, options, itemStyle, containerStyle, rounded = 8, item = null, max = null, multiple = true}) => {
-    console.log(options);
+const Chip = ({value, setValue, options, itemStyle, containerStyle, rounded = 8, item = null, max = null, multiple = true, onClick = null}) => {
     return (
         <div className={styles.Container}>
             {
@@ -20,17 +19,21 @@ const Chip = ({value, setValue, options, itemStyle, containerStyle, rounded = 8,
                             ...itemStyle
                         }}
                         onClick={() => {
-                            if (multiple) {
-                                if (i >= 0) {
-                                    vals.splice(i, 1);
-                                } else {
-                                    if (max === null || vals.length < max) {
-                                        vals.push(option);
+                            if (onClick === null) {
+                                if (multiple) {
+                                    if (i >= 0) {
+                                        vals.splice(i, 1);
+                                    } else {
+                                        if (max === null || vals.length < max) {
+                                            vals.push(option);
+                                        }
                                     }
+                                    setValue(vals);
+                                } else {
+                                    setValue(option)
                                 }
-                                setValue(vals);
                             } else {
-                                setValue(option)
+                                onClick(option);
                             }
                         }}>
                             {item === null ? option : item(option, o)}
