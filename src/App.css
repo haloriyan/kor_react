@@ -11,6 +11,18 @@ body {
 .wrapper {
   padding: 50px;
 }
+.separator {
+  display: flex;
+  flex-grow: 1;
+  height: 1px;
+  background-color: #ddd;
+}
+.inline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
 .CardArea {
   display: flex;
   flex-direction: row;

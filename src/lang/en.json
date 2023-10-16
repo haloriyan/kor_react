@@ -18,6 +18,7 @@
     "personal": "B2C (Personal)",
     "company": "B2B (Corporate)",
     "brand": "B2B (Brand)",
+    "show_more": "Show More",
     "join_type": "Registering as",
     "line_of_business": "Line of Business",
     "established_year": "Established Year",
@@ -32,6 +33,11 @@
     "scan_gift_description": "Visitors must register at KTO Booth first, do a mission scan QR barcodes after a consultation on 5 Seller Booth and get special merchandise from KTO.",
     "lucky_draw_description": "Visitors can get lucky draw ticket after consultation/ booking at Seller Booth and get a chance to win SQ Airlines tickets to Korea (round-trip).",
     "instagram_challenge_description": "Visitors can compete by take the documentation trough the highlight event on Instagram reels and mention @ktoid and get a chance to win Instax Camera.",
+
+    "check_modal_title": "Double Check Your Data",
+    "check_modal_description": "Make sure all datas you entered are correct.",
+    "check_modal_yes": "Yes, Submit My Data",
+    "check_modal_no": "No, I want to change some data",
 
     "kmtf_description": "The 2023 Korea Medical Tourism Festival offers the combination of advanced healthcare services with Korea’s interesting tourism attractions. This event aims to provide an opportunity for businesspeople to establish new networks and for general visitors to find references or seek information for medical treatment from the best institution in Korea.",
     

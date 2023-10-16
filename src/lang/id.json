@@ -20,6 +20,7 @@
     "from_company": "Dari Perusahaan / Brand",
     "line_of_business": "Bidang / Lini Bisnis",
     "established_year": "Tahun Berdiri",
+    "show_more": "Selengkapnya",
     "join_type": "Mendaftar sebagai",
     "brand": "B2B (Brand)",
     "find_us": "Hubungi Kami!",
@@ -32,6 +33,11 @@
     "scan_gift_description": "Pengunjung harus mendaftar di booth KTO terlebih dahulu, menyelesaikan misi scan QR setelah sesi konsultasi pada 5 booth dan dapatkan merchandise spesial dari KTO",
     "lucky_draw_description": "Pengunjung bisa mendapatkan tiket untuk Lucky Draw setelah konsultasi / booking di booth seller dan mendapat kesempatan untuk memenangkan tiket SQ Airline ke Korea (Pulang-Pergi)",
     "instagram_challenge_description": "Pengunjung dapat berkompetisi dengan mengambil dokumentasi melalui highlight event di Instagram reels dan mention @ktoid serta berkesempatan memenangkan Instax Camera.",
+
+    "check_modal_title": "Periksa Data Anda",
+    "check_modal_description": "Periksa kembali data Anda dan pastikan semuanya telah terisi dengan benar",
+    "check_modal_yes": "Ya, Simpan Data Saya",
+    "check_modal_no": "Jangan dulu, Saya ingin mengubah beberapa data",
 
     "kmtf_description": "2023 Korea Medical Tourism Festival (KMTF) menghadirkan penawaran layanan kesehatan berteknologi canggih dikombinasikan dengan kekayaan pariwisata Korea yang menarik. Acara ini ditujukan bagi pelaku usaha ataupun pengunjung umum yang mencari kerjasama ataupun referensi perawatan medis terbaik di Korea.",
 

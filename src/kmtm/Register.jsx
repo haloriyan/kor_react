@@ -1,17 +1,18 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "../styles/KMTM.module.css";
 import Header from "../components/Header";
 import Jumbo from "../components/Jumbo";
 import Footer from "../components/Footer";
 import Input from "../components/Input";
 import Lang from "../components/Lang";
-import { BiEnvelope, BiPhone, BiUser, BiWindowAlt } from "react-icons/bi";
+import { BiChevronDown, BiChevronUp, BiEnvelope, BiPhone, BiUser, BiWindowAlt } from "react-icons/bi";
 import lang from "../lang";
 import Radio from "../components/Radio";
 import config from "../config";
 import Chip from "../components/Chip";
 import InArray from "../components/InArray";
+import Popup from "../components/Popup";
 
 const KMTMRegister = () => {
     const [name, setName] = useState('');
@@ -30,9 +31,12 @@ const KMTMRegister = () => {
     const [answers, setAnswers] = useState(null);
     const [sellers, setSellers] = useState(null);
     const [sellersRaw, setSellersRaw] = useState(null);
+    const theForm = useRef(null);
 
     const [isLoading, setLoading] = useState(true);
     const [sellersRec, setSellersRec] = useState([]);
+    const [showReview, setShowReview] = useState(false);
+    const [reviewingQuestion, setReviewingQuestion] = useState(false);
 
     useEffect(() => {
         document.title = "Register to KMTM - 2023 Korea Medical Tourism Festival";
@@ -65,17 +69,6 @@ const KMTMRegister = () => {
                 })
                 setSellers(theSellers);
             })
-            // let sells = lang[siteLang].exhibitors;
-            // let slls = [];
-            // let sllsRaw = [];
-            // sells.map(sell => {
-            //     if (sell.logo !== "") {
-            //         slls.push(sell.name)
-            //         sllsRaw.push(sell)
-            //     }
-            // });
-            // setSellersRaw(sllsRaw);
-            // setSellers(slls);
         }
     }, [siteLang, sellers]);
     
@@ -90,7 +83,7 @@ const KMTMRegister = () => {
         return toReturn;
     }
 
-    const submit = e => {
+    const submit = (e = null) => {
         axios.post(`${config.baseUrl}/api/kmtm-register`, {
             name, email, phone, joinType, fromCompany, answers, website, reference,
             lineOfBusiness, companyEstablished,
@@ -108,8 +101,9 @@ const KMTMRegister = () => {
             setFromCompany('');
             setMessage(res.message);
             setAnswers(questions);
+            setShowReview(false);
         })
-        e.preventDefault();
+        e?.preventDefault();
     }
 
     return (
@@ -118,7 +112,7 @@ const KMTMRegister = () => {
             <div className="content">
                 <Jumbo background="/images/kmtm-bg.jpg" />
                 <div className="wrapper">
-                    <form onSubmit={submit} className={styles.Form}>
+                    <form onSubmit={submit} className={styles.Form} ref={theForm}>
                         <div className={styles.FormInner}>
                             <h2>Register to Korea Medical Tourism Mart</h2>
                             <Input value={name} label={<Lang ctx="name" />} icon={<BiUser />} onInput={e => setName(e.currentTarget.value)} />
@@ -231,12 +225,107 @@ const KMTMRegister = () => {
                                 </div>
                             }
 
-                            <button className={styles.Button}>REGISTER</button>
+                            <button className={styles.Button} type="button" onClick={() => setShowReview(true)}>REGISTER</button>
                         </div>
                     </form>
                 </div>
                 <Footer />
             </div>
+
+            {
+                showReview &&
+                <Popup onDismiss={() => setShowReview(false)}>
+                    <div style={{padding: 20}}>
+                        <h3 style={{marginTop: 0,marginBottom: 10}}><Lang ctx="check_modal_title" /></h3>
+                        <div style={{fontSize: 14,color: '#666'}}><Lang ctx="check_modal_description" /></div>
+
+                        <div className="inline" style={{marginTop: 40}}>
+                            <div style={{flexGrow: 1,maxWidth: '48%'}}>
+                                <div style={{fontSize: 14,color: '#666'}}><Lang ctx="name" /></div>
+                                <div style={{marginTop: 5,fontWeight: 700}}>{name}</div>
+                            </div>
+                            <div style={{flexGrow: 1,maxWidth: '48%'}}>
+                                <div style={{fontSize: 14,color: '#666'}}><Lang ctx="email" /></div>
+                                <div style={{marginTop: 5,fontWeight: 700}}>{email}</div>
+                            </div>
+                        </div>
+                        <div className="inline" style={{marginTop: 40}}>
+                            <div style={{flexGrow: 1,maxWidth: '48%'}}>
+                                <div style={{fontSize: 14,color: '#666'}}><Lang ctx="phone" /></div>
+                                <div style={{marginTop: 5,fontWeight: 700}}>{phone}</div>
+                            </div>
+                            <div style={{flexGrow: 1,maxWidth: '48%'}}>
+                                <div style={{fontSize: 14,color: '#666'}}><Lang ctx="website_sns" /></div>
+                                <div style={{marginTop: 5,fontWeight: 700}}>{website}</div>
+                            </div>
+                        </div>
+                        <div className="inline" style={{marginTop: 40}}>
+                            <div style={{flexGrow: 1,maxWidth: '48%'}}>
+                                <div style={{fontSize: 14,color: '#666'}}><Lang ctx="join_type" /></div>
+                                <div style={{marginTop: 5,fontWeight: 700}}>{joinType}</div>
+                            </div>
+                        </div>
+
+                        <div className="inline" style={{marginTop: 20}}>
+                            <div className="separator"></div>
+                            <div className="inline" style={{cursor: 'pointer',gap: 10}} onClick={() => setReviewingQuestion(!reviewingQuestion)}>
+                                <Lang ctx="show_more" />
+                                {
+                                    reviewingQuestion ?
+                                        <BiChevronUp />
+                                    :
+                                        <BiChevronDown />
+                                }
+                            </div>
+                        </div>
+
+                        {
+                            reviewingQuestion &&
+                            <>
+                                {   
+                                    joinType === 'company' &&
+                                    questions.map((b2b_question, bq) => {
+                                        if (b2b_question.parent_id === null && b2b_question.answer !== null) return (
+                                            <>
+                                                <div style={{marginTop: 10}}>
+                                                    <div style={{color: '#555',fontSize: 14}}>{b2b_question.body}</div>
+                                                    <div style={{fontWeight: 700,marginTop: 5}}>{b2b_question.answer}</div>
+                                                </div>
+        
+                                                {
+                                                    questions.map((question, q) => {
+                                                        if (question.parent_id === b2b_question.id && question.expected_parent_answer === answers[bq].answer && answers[bq].answer !== null) return (
+                                                            <div style={{marginTop: 10}}>
+                                                                <div style={{color: '#555',fontSize: 14}}>{question.body}</div>
+                                                                <div style={{fontWeight: 700,marginTop: 5}}>{question.answer}</div>
+                                                            </div>
+                                                        )
+                                                    })
+                                                }
+                                            </>
+                                        )
+                                    })
+                                }
+                                {
+                                    joinType === 'personal' &&
+                                    <>
+                                        <div style={{fontSize: 14,color: '#666',marginTop: 20}}><Lang ctx="company_referer" /></div>
+                                        <div style={{marginTop: 5,fontWeight: 700}}>{reference}</div>
+
+                                        <div style={{fontSize: 14,color: '#666',marginTop: 20}}><Lang ctx="interesting_seller" /></div>
+                                        <div style={{marginTop: 5,fontWeight: 700}}>{interestingSeller.join(', ')}</div>
+                                    </>
+                                }
+                            </>
+                        }
+
+                        <button className={styles.Button} onClick={() => submit(null)}><Lang ctx="check_modal_yes" /></button>
+                        <div style={{textAlign: 'center',marginTop: 20}}>
+                            <Lang ctx="check_modal_no" />
+                        </div>
+                    </div>
+                </Popup>
+            }
         </>
     )
 }
