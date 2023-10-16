@@ -320,7 +320,7 @@ const KMTMRegister = () => {
                         }
 
                         <button className={styles.Button} onClick={() => submit(null)}><Lang ctx="check_modal_yes" /></button>
-                        <div style={{textAlign: 'center',marginTop: 20}}>
+                        <div style={{textAlign: 'center',marginTop: 20,cursor: 'pointer'}} onClick={() => setShowReview(false)}>
                             <Lang ctx="check_modal_no" />
                         </div>
                     </div>
