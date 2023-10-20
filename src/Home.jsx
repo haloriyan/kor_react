@@ -86,11 +86,7 @@ const Home = () => {
                                 <Lang ctx="pre_reg_kmtm" />
                             </a>
                             <button className={styles.RegisterButton} onClick={() => {
-                                if (!config.kmte_open) {
-                                    setKmtePopup(true);
-                                } else {
-                                    window.location.href = "https://app.kmtf2023.com";
-                                }
+                                window.open("https://app.kmtf2023.com/kmte/register", "_blank");
                             }}>
                                 <Lang ctx="register_kmte_button" />
                             </button>

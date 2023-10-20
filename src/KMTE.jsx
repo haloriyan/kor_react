@@ -20,14 +20,11 @@ const Exhibition = () => {
                 <Jumbo withNavigation={true} title={
                     <>
                         <div>Korea Medical Tourism Expo</div>
-                        {
-                            config.kmte_open &&
-                            <div style={{marginTop: 10}}>
-                                <a href="/kmte/register">
-                                    <button className="JumboButton">Register</button>
-                                </a>
-                            </div>
-                        }
+                        <div style={{marginTop: 10}}>
+                            <a href="https://app.kmtf2023.com/kmte/register" target="_blank">
+                                <button className="JumboButton">Register</button>
+                            </a>
+                        </div>
                     </>
                 } breadcrumb={'KMTE'} background="/images/Overlay.png" />
                 <div style={{padding: 50}}>

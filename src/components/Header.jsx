@@ -74,9 +74,9 @@ const Header = ({active = '', opacity = 1}) => {
                                     <a href="/kmtm/floorplan">
                                         Floorplan
                                     </a>
-                                    {/* <a href="/kmtm/rundown">
+                                    <a href="/kmtm/rundown">
                                         Rundown
-                                    </a> */}
+                                    </a>
                                 </ul>
                             </div>
                         </a>
@@ -126,9 +126,9 @@ const Header = ({active = '', opacity = 1}) => {
                         <a href="/kmtm/floorplan" className={`${styles.NavSubItem} ${styles.SubSubItemMobile}`}>
                             Floorplan
                         </a>
-                        {/* <a href="/kmtm/rundown" className={`${styles.NavSubItem} ${styles.SubSubItemMobile}`}>
+                        <a href="/kmtm/rundown" className={`${styles.NavSubItem} ${styles.SubSubItemMobile}`}>
                             Rundown
-                        </a> */}
+                        </a>
                         <a href="/kmte" className={styles.NavSubItem}>
                             KMTE
                         </a>
