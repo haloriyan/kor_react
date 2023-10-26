@@ -33,7 +33,7 @@ const Flyer = () => {
                     withNavigation={true}
                     title={
                         <>
-                            <div style={{textTransform: 'none'}}>KMTM Floorplan</div>
+                            <div style={{textTransform: 'none'}}>Seller Flyers</div>
                         </>
                     }
                     breadcrumb={'Flyer'} background="/images/Overlay.png"
@@ -46,7 +46,6 @@ const Flyer = () => {
                         :
                         <div className={styles.Form}>
                             <div className={styles.FormInner}>
-                                <h1>Sellers Flyers</h1>
                                 <div className={styles.FlyerArea}>
                                     {
                                         sellers.map((seller, s) => (
