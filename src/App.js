@@ -9,12 +9,14 @@ import Rundown from "./kmte/Rundown";
 import KMTMRundown from "./kmtm/Rundown";
 import KMTMFloorplan from "./kmtm/Floorplan";
 import KMTMRegister from "./kmtm/Register";
+import Flyer from "./kmtm/Flyer";
 
 const App = () => {
 	return (
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" Component={Home} />
+				<Route path="/flyers" Component={Flyer} />
 				<Route path="/kmte" Component={Exhibition} />
 				<Route path="/kmte/floorplan" Component={Floorplan} />
 				<Route path="/kmte/rundown" Component={Rundown} />

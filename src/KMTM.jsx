@@ -148,6 +148,15 @@ const BusinessMeeting = () => {
                             <h3 style={{margin: 0,fontSize: 32}}>{payload(seller.payloads, 'name')}</h3>
                             <pre style={{fontSize: 14,marginTop: 20,lineHeight: '22px',fontFamily: "sans-serif",whiteSpace: 'pre-wrap',wordWrap: 'break-word'}}>{payload(seller.payloads, 'description')}</pre>
 
+                            <div style={{display: 'flex',flexDirection: 'row',gap: 20,borderBottomWidth: 1,borderBottomColor: '#ddd',borderBottomStyle: 'solid',padding: 20,alignItems: 'center'}}>
+                                <b>Download Flyers</b>
+                                <div>
+                                    <a href={`https://www.kmtf2023.com/SellerFlyers/${seller.name.split(' ').join('_')}.pdf`} target="_blank" style={{color: '#eb2f28'}}>
+                                        {seller.name.split(' ').join('_')}.pdf
+                                    </a>
+                                </div>
+                            </div>
+
                             {
                                 seller.specialize !== "" &&
                                 <div style={{display: 'flex',flexDirection: 'row',gap: 20,borderBottomWidth: 1,borderBottomColor: '#ddd',borderBottomStyle: 'solid',padding: 20,alignItems: 'center'}}>

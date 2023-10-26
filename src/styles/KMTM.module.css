@@ -4,6 +4,7 @@
     align-items: center;
 }
 .FormInner {
+    /* width: 50%; */
     max-width: 50%;
 }
 .Button {
@@ -38,11 +39,52 @@
     font-size: 14px;
 }
 
+.FlyerArea {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+}
+.FlyerItem {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.SellerLogo {
+    height: 80px;
+    object-fit: cover;
+    background-color: #ddd;
+    border-radius: 12px;
+}
+.FlyerButton {
+    background-color: #eb2f28;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
+.Separator {
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+}
+
 @media (max-width: 480px) {
     .Form {
         width: 100%;
     }
     .FormInner {
         max-width: 100%;
+    }
+    .SellerLogo {
+        height: 60px;
+    }
+    .FlyerButton {
+        font-size: 12px;
     }
 }
